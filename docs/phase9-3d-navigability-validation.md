@@ -4,7 +4,7 @@
 
 Phase 9 adds 3D navigability evidence to the 48 Phase 8 `interior_interior_crossing` events. It preserves every Phase 8 event ID, source coordinate, segment and Shape identity, parameter pair, residual, same-Shape flag, and anomaly flag. It does not revise the Phase 8 mathematics.
 
-The result is **BLOCKED PENDING MANUAL 3D REVIEW**: all 48 events remain `manual_review_required`. This is a conservative validation result, not a failed analysis and not permission to begin Phase 10.
+The result is **PHASE 9 COMPLETE**. Direct researcher inspection of all 48 locations in the 3D Unity environments confirmed every event as `connected_same_level`. No event remains `manual_review_required`. Phase 10 remains outside this phase and was not started.
 
 ## 2. Reason for 3D Validation
 
@@ -66,7 +66,7 @@ The classification hierarchy was:
 4. source proof that relevant crossings share one road plane and cannot be grade-separated;
 5. manual Unity visual and movement inspection.
 
-Available evidence establishes the canonical 2D curves, horizontal affine mapping, terrain, TerrainCollider, and explicit collider-backed bridges. It does not provide an explicit 3D road-centerline dataset, road-specific meshes/colliders, a road connectivity graph, or a serialized association between Phase 8 segment IDs and 3D bridge/road objects.
+Available static evidence establishes the canonical 2D curves, horizontal affine mapping, terrain, TerrainCollider, and explicit collider-backed bridges. It does not provide an explicit 3D road-centerline dataset, road-specific meshes/colliders, a road connectivity graph, or a serialized association between Phase 8 segment IDs and 3D bridge/road objects. Static classification therefore remained blocked until the researcher directly inspected all review locations in Unity.
 
 ## 8. Navigability Classification Policy
 
@@ -76,15 +76,15 @@ The terrain texture cannot by itself prove a semantic junction. In addition, `Ma
 
 ## 9. Env38 Interior Crossings
 
-All 28 Env38 interior crossings were mapped horizontally and retained as distinct review locations `E38-C001` through `E38-C028`. None received a final connectivity decision from static evidence; all 28 are `manual_review_required`.
+All 28 Env38 interior crossings were mapped horizontally and retained as distinct review locations `E38-C001` through `E38-C028`. Direct researcher inspection confirmed all 28 as `connected_same_level`; none is grade-separated and none remains unresolved.
 
 ## 10. Env38 Cross-Shape Crossings
 
-Env38 contains 23 cross-Shape interior crossings. Their decision counts are: 0 connected, 0 grade-separated, and 23 manual. Shape membership was preserved as provenance and was not treated as connectivity evidence.
+Env38 contains 23 cross-Shape interior crossings. Their verified decision counts are: 23 connected, 0 grade-separated, and 0 manual. Shape membership was preserved as provenance and was not itself treated as connectivity evidence; the decisions come from direct Unity inspection.
 
 ## 11. Env39 Interior Crossings
 
-All 20 grid crossings were evaluated under the same evidence policy and retained as `E39-C001` through `E39-C020`. Their regular appearance did not determine topology. Counts are: 0 connected, 0 grade-separated, and 20 manual.
+All 20 grid crossings were evaluated under the same evidence policy and retained as `E39-C001` through `E39-C020`. Their regular appearance did not determine topology. Direct researcher inspection confirmed all 20 as connected, with 0 grade-separated and 0 manual.
 
 ## 12. Zero-Chord Artifact Review
 
@@ -92,15 +92,21 @@ None of the 48 Phase 9 events has `source_anomaly_involved=true`. The 11 Phase 8
 
 ## 13. Connected Same-Level Events
 
-No event is currently classified `connected_same_level`. This count is zero because the required positive evidence is absent, not because the crossings were proven disconnected.
+All 48 events are classified `connected_same_level`. The evidence type is `manual_unity_3d_visual_inspection`: the researcher inspected the corresponding crossings in the actual Env38 and Env39 3D environments and confirmed that both road trajectories meet on the same navigable surface.
 
 ## 14. Grade-Separated Events
 
-No event is currently classified `grade_separated_not_connected`. Both target prefabs contain explicit bridges, proving that grade-separated structures are supported and present, but the serialized static evidence does not associate a particular Phase 8 event with both relevant 3D trajectories strongly enough for a final decision.
+No event is classified `grade_separated_not_connected`. Static inspection found five collider-backed bridges in each environment but could not reliably associate those bridges with the Phase 8 road-crossing events. Subsequent direct manual inspection confirmed that none of the 48 reviewed road-road crossings has one road passing above or below the other. Bridges still exist; they simply do not invalidate any reviewed junction.
 
 ## 15. Manual Review Required
 
-All 48 events require manual review. Exact per-location instructions, source coordinates, source segments, Shapes, mapped horizontal locators, and decision observations are in [the Phase 9 manual Unity review](phase9-manual-unity-review.md).
+No event remains `manual_review_required`. The original per-location instructions, source coordinates, source segments, Shapes, mapped horizontal locators, and completed decisions remain in [the Phase 9 manual Unity review](phase9-manual-unity-review.md) as an audit trail.
+
+### Manual Unity 3D Review Results
+
+The researcher directly inspected 48 unique crossing locations: 28 in Env38 and 20 in Env39. All 48 were confirmed `connected_same_level`; zero were grade-separated and zero remain unresolved. This includes all 23 Env38 cross-Shape interior crossings. No zero-chord source anomaly participates in the review inventory.
+
+The manual review also established that the collider-backed bridges identified during static inspection do not create road-over-road or road-under-road separation at any reviewed crossing. Phase 8 event IDs and exact mathematical X/Y coordinates were not modified. The classification records future topology eligibility only; it does not itself split a road or create topology.
 
 ## 16. Numbered QA Figures
 
@@ -113,7 +119,7 @@ They use the Phase 7 detailed geometry without rotation, projection, translation
 
 ## 17. Limitations
 
-This is read-only static inspection of the Unity repository. It does not validate runtime player movement, camera-visible continuity, collider contacts at a location, bridge deck membership for a source segment, or a scene-specific transform. The Unity working tree was already dirty before inspection; exact status and HEAD provenance are frozen in the machine-readable QA file.
+The repository audit was read-only, and the final decisions incorporate the researcher's direct visual inspection of the actual Unity environments. No vertical measurements were made, no vertical coordinates were invented, and no scene-specific transform was added to the dataset. The Unity working tree was already dirty before static inspection; exact status and HEAD provenance are frozen in the machine-readable QA file.
 
 Physical metre scale remains unverified and no CRS has been assigned.
 
@@ -130,10 +136,13 @@ Physical metre scale remains unverified and no CRS has been assigned.
 - [x] No graph node was created.
 - [x] No NetworkX or OSMnx graph exists.
 - [x] No final morphology metric was calculated.
-- [ ] `manual_review_required = 0`.
+- [x] Direct researcher Unity inspection completed for all 48 locations.
+- [x] `connected_same_level = 48`.
+- [x] `grade_separated_not_connected = 0`.
+- [x] `manual_review_required = 0`.
 
-Acceptance status: **BLOCKED PENDING MANUAL 3D REVIEW**.
+Acceptance status: **PHASE 9 COMPLETE**.
 
 ## 19. Deferred Phase-10 Work
 
-Phase 10 must not begin until every manual item has an evidence-backed `connected_same_level` or `grade_separated_not_connected` decision. Endpoint snapping, near-miss analysis, road splitting, topology, graph-node construction, NetworkX/OSMnx graph creation, graph analysis, and scientific morphology metrics remain deferred.
+All Phase 9 manual items now have evidence-backed decisions, but Phase 10 was not begun as part of this finalization. Endpoint snapping, near-miss analysis, road splitting, topology, graph-node construction, NetworkX/OSMnx graph creation, graph analysis, and scientific morphology metrics remain deferred to separately authorized future work.

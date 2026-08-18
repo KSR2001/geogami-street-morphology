@@ -1,7 +1,7 @@
 {
   "phase9_validation_schema_version": "1.0.0",
-  "phase9_analysis_version": "1.0.0",
-  "generated_at_utc": "2026-08-18T21:33:27.778819+00:00",
+  "phase9_analysis_version": "1.1.0",
+  "generated_at_utc": "2026-08-18T22:03:50.879692+00:00",
   "source_hashes": {
     "38": "43ea446a4a88e9f3d594fb8b72742f5d4b2a1ee8a03ebf8350c4c3cce45c5819",
     "39": "e5dbce6b4d88656c9e0f3bbf6a814434f64b0fbe9b3ff1864ea3fafaf0883602"
@@ -106,25 +106,46 @@
       "no road connectivity graph or road-specific nav surface is present",
       "bridge generation uses endpoint chords rather than lossless quadratic curves"
     ],
-    "classification_result": "manual review required for every event"
+    "static_classification_result": "Static repository evidence was insufficient for all 48 events; direct manual Unity inspection was required.",
+    "final_classification_result": "All 48 events are connected_same_level based on completed direct researcher inspection of the 3D Unity environments."
   },
+  "manual_review_completed": true,
+  "manual_review_method": "direct researcher inspection of the 3D Unity environments",
+  "manual_review_scope": {
+    "unique_locations": 48,
+    "environment_38": 28,
+    "environment_39": 20
+  },
+  "bridge_evidence_clarification": "Static inspection found five collider-backed bridges in each environment but could not reliably associate them with Phase 8 crossing events. Subsequent direct manual Unity inspection confirmed that none of the 48 reviewed road-road crossings is road-over-road or road-under-road grade-separated.",
   "counts": {
     "total_events_reviewed": 48,
-    "connected_same_level": 0,
+    "connected_same_level": 48,
     "grade_separated_not_connected": 0,
-    "manual_review_required": 48,
+    "manual_review_required": 0,
     "by_environment": {
       "38": {
-        "manual_review_required": 28
+        "connected_same_level": 28,
+        "grade_separated_not_connected": 0,
+        "manual_review_required": 0
       },
       "39": {
-        "manual_review_required": 20
+        "connected_same_level": 20,
+        "grade_separated_not_connected": 0,
+        "manual_review_required": 0
       }
     },
+    "cross_shape_event_count": 23,
     "cross_shape": {
-      "manual_review_required": 23
+      "connected_same_level": 23,
+      "grade_separated_not_connected": 0,
+      "manual_review_required": 0
     },
-    "source_anomaly_involved": {},
+    "source_anomaly_involved_event_count": 0,
+    "source_anomaly_involved": {
+      "connected_same_level": 0,
+      "grade_separated_not_connected": 0,
+      "manual_review_required": 0
+    },
     "unique_review_locations": 48
   },
   "review_location_grouping": {
@@ -158,12 +179,12 @@
       "mapped_prefab_local_x": -13.946407044994544,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": -3.9676413023137798,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0004",
@@ -190,12 +211,12 @@
       "mapped_prefab_local_x": -63.01113415417987,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 5.380421378208609,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0005",
@@ -222,12 +243,12 @@
       "mapped_prefab_local_x": -115.5364907692339,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 54.48429643569199,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0007",
@@ -254,12 +275,12 @@
       "mapped_prefab_local_x": -121.54595922363276,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 114.82231487760464,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0008",
@@ -286,12 +307,12 @@
       "mapped_prefab_local_x": -107.34726010527805,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 148.19057385845792,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0009",
@@ -318,12 +339,12 @@
       "mapped_prefab_local_x": -27.938902997788063,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 191.85463193042477,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0011",
@@ -350,12 +371,12 @@
       "mapped_prefab_local_x": 53.215875122422915,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 168.1637450741693,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0012",
@@ -382,12 +403,12 @@
       "mapped_prefab_local_x": 78.86014077672695,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 135.72428702608573,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0013",
@@ -414,12 +435,12 @@
       "mapped_prefab_local_x": 62.323031082273644,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 29.235076106336066,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0014",
@@ -446,12 +467,12 @@
       "mapped_prefab_local_x": 61.212292240667466,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 28.069886851962053,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0015",
@@ -478,12 +499,12 @@
       "mapped_prefab_local_x": 82.20623609988684,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 61.401704756230004,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0023",
@@ -510,12 +531,12 @@
       "mapped_prefab_local_x": 125.5502468099674,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": -178.41645463572104,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0024",
@@ -542,12 +563,12 @@
       "mapped_prefab_local_x": 125.47460985847755,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": -219.4211613003625,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0025",
@@ -574,12 +595,12 @@
       "mapped_prefab_local_x": 116.84793832407752,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 205.0588081992496,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0033",
@@ -606,12 +627,12 @@
       "mapped_prefab_local_x": 47.5309586177317,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 88.92746237406129,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0035",
@@ -638,12 +659,12 @@
       "mapped_prefab_local_x": 43.873075734427175,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 122.61059741483763,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0049",
@@ -670,12 +691,12 @@
       "mapped_prefab_local_x": -8.854096402046991,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 108.28359302107197,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0054",
@@ -702,12 +723,12 @@
       "mapped_prefab_local_x": -87.13941530872685,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 114.75381753504507,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0055",
@@ -734,12 +755,12 @@
       "mapped_prefab_local_x": -85.50399635511889,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 114.7505778738144,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0057",
@@ -766,12 +787,12 @@
       "mapped_prefab_local_x": -205.94639152615133,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 103.50192481797393,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0058",
@@ -798,12 +819,12 @@
       "mapped_prefab_local_x": -234.55400272148518,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 102.749979407301,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0061",
@@ -830,12 +851,12 @@
       "mapped_prefab_local_x": -17.954845226001567,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 153.5296526617301,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0062",
@@ -862,12 +883,12 @@
       "mapped_prefab_local_x": -79.78332933608692,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 148.98924911580355,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0064",
@@ -894,12 +915,12 @@
       "mapped_prefab_local_x": -85.4934056410141,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 114.44907373067781,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0075",
@@ -926,12 +947,12 @@
       "mapped_prefab_local_x": -9.982698628108096,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": -146.88328311022175,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0078",
@@ -958,12 +979,12 @@
       "mapped_prefab_local_x": -11.077446619151488,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 71.53217740275551,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0096",
@@ -990,12 +1011,12 @@
       "mapped_prefab_local_x": -186.30831937166778,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": -121.51140866387229,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env38_intersection_event_0103",
@@ -1022,12 +1043,12 @@
       "mapped_prefab_local_x": -1.0606472518155101,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": -222.193253197177,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 38.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_38.prefab; Assets/Terrain Data/Terrain_Data_VirEnv38.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_38/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env39_intersection_event_0005",
@@ -1054,12 +1075,12 @@
       "mapped_prefab_local_x": 46.52092772212484,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": -3.673436064801251,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 39.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_39.prefab; Assets/Terrain Data/Terrain_Data_VirEnv39.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_39/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env39_intersection_event_0006",
@@ -1086,12 +1107,12 @@
       "mapped_prefab_local_x": -12.690830455068692,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": -3.6825564888368376,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 39.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_39.prefab; Assets/Terrain Data/Terrain_Data_VirEnv39.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_39/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env39_intersection_event_0007",
@@ -1118,12 +1139,12 @@
       "mapped_prefab_local_x": -203.63675262260503,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": -3.711615790899259,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 39.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_39.prefab; Assets/Terrain Data/Terrain_Data_VirEnv39.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_39/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env39_intersection_event_0012",
@@ -1150,12 +1171,12 @@
       "mapped_prefab_local_x": 111.89771775752638,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": -180.97026680329526,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 39.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_39.prefab; Assets/Terrain Data/Terrain_Data_VirEnv39.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_39/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env39_intersection_event_0017",
@@ -1182,12 +1203,12 @@
       "mapped_prefab_local_x": -237.83772231368556,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 107.56173577732176,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 39.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_39.prefab; Assets/Terrain Data/Terrain_Data_VirEnv39.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_39/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env39_intersection_event_0019",
@@ -1214,12 +1235,12 @@
       "mapped_prefab_local_x": 44.33587281465958,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 106.80818817450324,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 39.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_39.prefab; Assets/Terrain Data/Terrain_Data_VirEnv39.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_39/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env39_intersection_event_0020",
@@ -1246,12 +1267,12 @@
       "mapped_prefab_local_x": -14.37588757806435,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 106.96504675748008,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 39.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_39.prefab; Assets/Terrain Data/Terrain_Data_VirEnv39.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_39/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env39_intersection_event_0021",
@@ -1278,12 +1299,12 @@
       "mapped_prefab_local_x": -205.41140269737173,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 107.47518304086054,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 39.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_39.prefab; Assets/Terrain Data/Terrain_Data_VirEnv39.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_39/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env39_intersection_event_0022",
@@ -1310,12 +1331,12 @@
       "mapped_prefab_local_x": -126.33539141622683,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 107.26406653288393,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 39.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_39.prefab; Assets/Terrain Data/Terrain_Data_VirEnv39.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_39/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env39_intersection_event_0023",
@@ -1342,12 +1363,12 @@
       "mapped_prefab_local_x": -73.75239625475189,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 107.12364488223528,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 39.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_39.prefab; Assets/Terrain Data/Terrain_Data_VirEnv39.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_39/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env39_intersection_event_0026",
@@ -1374,12 +1395,12 @@
       "mapped_prefab_local_x": -235.92312497098874,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": -113.24517382045968,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 39.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_39.prefab; Assets/Terrain Data/Terrain_Data_VirEnv39.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_39/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env39_intersection_event_0037",
@@ -1406,12 +1427,12 @@
       "mapped_prefab_local_x": 48.72768498607081,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": -113.2564394848433,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 39.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_39.prefab; Assets/Terrain Data/Terrain_Data_VirEnv39.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_39/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env39_intersection_event_0038",
@@ -1438,12 +1459,12 @@
       "mapped_prefab_local_x": 43.48923028827642,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 150.1786160921879,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 39.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_39.prefab; Assets/Terrain Data/Terrain_Data_VirEnv39.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_39/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env39_intersection_event_0039",
@@ -1470,12 +1491,12 @@
       "mapped_prefab_local_x": 45.3824456173806,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 53.63590711205234,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 39.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_39.prefab; Assets/Terrain Data/Terrain_Data_VirEnv39.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_39/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env39_intersection_event_0044",
@@ -1502,12 +1523,12 @@
       "mapped_prefab_local_x": -15.670609623317091,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 191.98683907452062,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 39.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_39.prefab; Assets/Terrain Data/Terrain_Data_VirEnv39.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_39/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env39_intersection_event_0045",
@@ -1534,12 +1555,12 @@
       "mapped_prefab_local_x": -11.022175196928515,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": -113.24567176098384,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 39.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_39.prefab; Assets/Terrain Data/Terrain_Data_VirEnv39.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_39/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env39_intersection_event_0046",
@@ -1566,12 +1587,12 @@
       "mapped_prefab_local_x": -15.04256506997632,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 150.74385718687023,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 39.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_39.prefab; Assets/Terrain Data/Terrain_Data_VirEnv39.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_39/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env39_intersection_event_0047",
@@ -1598,12 +1619,12 @@
       "mapped_prefab_local_x": -13.559664091785407,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 53.367594566853484,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 39.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_39.prefab; Assets/Terrain Data/Terrain_Data_VirEnv39.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_39/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env39_intersection_event_0049",
@@ -1630,12 +1651,12 @@
       "mapped_prefab_local_x": -10.0303887446629,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": -222.87966824057506,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 39.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_39.prefab; Assets/Terrain Data/Terrain_Data_VirEnv39.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_39/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     },
     {
       "event_id": "env39_intersection_event_0067",
@@ -1662,12 +1683,12 @@
       "mapped_prefab_local_x": -74.26791361680907,
       "mapped_prefab_local_y": null,
       "mapped_prefab_local_z": 150.93138317997506,
-      "navigability_decision": "manual_review_required",
-      "evidence_type": "repository_static_inspection_insufficient",
+      "navigability_decision": "connected_same_level",
+      "evidence_type": "manual_unity_3d_visual_inspection",
       "unity_source_path": "Assets/Tools/VirtualEnvironmentCreation/2DMapPrefabs/2D Map Vir 39.prefab; Assets/Prefabs/VIrtualEnvironments/VirEnv_39.prefab; Assets/Terrain Data/Terrain_Data_VirEnv39.asset; Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
       "unity_object_or_hierarchy_if_available": "VirEnv_39/Terrain; Bridges hierarchy present, but no canonical road-segment association is serialized",
-      "evidence_summary": "Source establishes the horizontal affine mapping and a shared TerrainCollider, but roads are terrain alphamap texture rather than separate semantic road meshes. Collider-backed bridge objects exist, and static assets do not prove whether both trajectories form a same-level navigable junction at this location.",
-      "manual_review_notes": "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road trajectories at the labelled location in 3D and verify continuous same-level movement versus vertical separation/non-connection."
+      "evidence_summary": "Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.",
+      "manual_review_notes": "Manual review completed by the researcher. Both road trajectories were observed to meet on the same navigable surface; no road-over-road or road-under-road grade separation was observed."
     }
   ],
   "evidence_paths": [
@@ -1680,8 +1701,8 @@
     "Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
     "ProjectSettings/ProjectVersion.txt"
   ],
-  "acceptance_status": "BLOCKED_PENDING_MANUAL_3D_REVIEW",
-  "acceptance_reason": "48 events remain manual_review_required",
+  "acceptance_status": "COMPLETE",
+  "acceptance_reason": "All 48 mathematically reconstructed interior road crossings have evidence-backed 3D navigability decisions; all are confirmed connected_same_level and none remains unresolved.",
   "snapping_performed": false,
   "topology_constructed": false,
   "road_lines_split": false,

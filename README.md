@@ -11,7 +11,7 @@ The planned workflow is:
 
 The analysis will compare street-network orientation, curvature, and topology without assuming in advance that the intended classifications are quantitatively supported. The immutable raw Bézier representation, detailed sampled geometry, and topological network are kept conceptually and operationally distinct.
 
-Phases 0–8 establish the methodology, verified Unity source provenance, exporter contract, frozen canonical raw Bézier exports, reproducible Python environment, converged adaptive linework, and a refined pairwise geometric-intersection inventory. Phase 9 has mapped and packaged all 48 interior crossings for 3D navigability validation; its status is **BLOCKED PENDING MANUAL 3D REVIEW**. Final navigable topology and scientific morphology metrics have not yet been implemented.
+Phases 0–8 establish the methodology, verified Unity source provenance, exporter contract, frozen canonical raw Bézier exports, reproducible Python environment, converged adaptive linework, and a refined pairwise geometric-intersection inventory. **Phase 9 is COMPLETE:** direct researcher inspection of the 3D Unity environments confirmed all 48 interior crossings as same-level connected road junctions. Final navigable topology and scientific morphology metrics have not yet been implemented.
 
 The Phase 4 canonical exports in `data/raw/` are frozen immutable research inputs; all later transformations must create new files under `data/processed/`.
 

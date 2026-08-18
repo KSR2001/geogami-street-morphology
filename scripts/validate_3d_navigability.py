@@ -36,6 +36,17 @@ PHASE8_QA = ROOT / "outputs/qa/phase8-intersection-reconstruction.json"
 TABLE_OUTPUT = ROOT / "outputs/tables/phase9-3d-navigability-review.csv"
 QA_OUTPUT = ROOT / "outputs/qa/phase9-3d-navigability-validation.json"
 MANUAL_OUTPUT = ROOT / "docs/phase9-manual-unity-review.md"
+DECISIONS = (
+    "connected_same_level",
+    "grade_separated_not_connected",
+    "manual_review_required",
+)
+MANUAL_REVIEW_METHOD = "direct researcher inspection of the 3D Unity environments"
+MANUAL_EVIDENCE_SUMMARY = (
+    "Researcher manually inspected the corresponding crossing in the 3D Unity "
+    "environment and confirmed both road trajectories meet on the same navigable "
+    "surface with no road-over-road or road-under-road grade separation."
+)
 
 # Map2D.cs obtains Renderer.bounds from a rotated built-in Unity Plane (10 x 10)
 # and maps those bounds affinely to the generated TerrainData dimensions.  The
@@ -211,23 +222,18 @@ def label_events(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 "mapped_prefab_local_x": mapped_x,
                 "mapped_prefab_local_y": None,
                 "mapped_prefab_local_z": mapped_z,
-                "navigability_decision": "manual_review_required",
-                "evidence_type": "repository_static_inspection_insufficient",
+                "navigability_decision": "connected_same_level",
+                "evidence_type": "manual_unity_3d_visual_inspection",
                 "unity_source_path": unity_paths,
                 "unity_object_or_hierarchy_if_available": (
                     f"VirEnv_{environment_id}/Terrain; Bridges hierarchy present, "
                     "but no canonical road-segment association is serialized"
                 ),
-                "evidence_summary": (
-                    "Source establishes the horizontal affine mapping and a shared TerrainCollider, "
-                    "but roads are terrain alphamap texture rather than separate semantic road meshes. "
-                    "Collider-backed bridge objects exist, and static assets do not prove whether both "
-                    "trajectories form a same-level navigable junction at this location."
-                ),
+                "evidence_summary": MANUAL_EVIDENCE_SUMMARY,
                 "manual_review_notes": (
-                    "Open the canonical 2D prefab and VirEnv prefab side by side; inspect both road "
-                    "trajectories at the labelled location in 3D and verify continuous same-level "
-                    "movement versus vertical separation/non-connection."
+                    "Manual review completed by the researcher. Both road trajectories were "
+                    "observed to meet on the same navigable surface; no road-over-road or "
+                    "road-under-road grade separation was observed."
                 ),
             }
         )
@@ -246,10 +252,11 @@ def write_manual_review(rows: list[dict[str, Any]]) -> None:
     lines = [
         "# Phase 9 Manual Unity Review",
         "",
-        "Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence "
-        "does not establish a final navigability decision for any of the 48 locations. "
-        "This checklist is evidence collection only; it must not be used to edit Unity assets "
-        "or construct topology.",
+        "Phase 9 is **COMPLETE**. Static repository evidence initially could not establish "
+        "a final navigability decision for the 48 locations, so the checklist below was used "
+        "for direct researcher inspection in Unity. All 48 reviews are now resolved. This "
+        "document remains the audit trail; it must not be used to edit Unity assets or "
+        "construct topology.",
         "",
         "## Review procedure",
         "",
@@ -268,7 +275,14 @@ def write_manual_review(rows: list[dict[str, Any]]) -> None:
         "5. Do not move objects, rebake navigation, save prefabs/scenes, snap coordinates, "
         "split roads, or create graph nodes during review.",
         "",
-        "## Unresolved locations",
+        "## Completed review result",
+        "",
+        "The researcher manually inspected all 48 locations in the 3D Unity environments. "
+        "All 48 were confirmed `connected_same_level`; none was road-over-road or "
+        "road-under-road grade-separated. The five collider-backed bridges found in each "
+        "environment during static inspection do not invalidate any reviewed road-road junction.",
+        "",
+        "## Reviewed locations",
         "",
     ]
     for row in rows:
@@ -290,6 +304,10 @@ def write_manual_review(rows: list[dict[str, Any]]) -> None:
                 "elevation and a participant can traverse from either trajectory onto the other.",
                 "- `grade_separated_not_connected` observation: one trajectory passes above or "
                 "below the other, or a physical separation prevents transfer at the crossing.",
+                "- Review status: `completed`",
+                "- Decision: `connected_same_level`",
+                "- Evidence: `manual Unity 3D visual inspection`",
+                f"- Evidence summary: {row['evidence_summary']}",
                 "",
             ]
         )
@@ -321,11 +339,11 @@ def plot_review(environment_id: int, rows: list[dict[str, Any]]) -> None:
         [float(row["x"]) for row in selected],
         [float(row["y"]) for row in selected],
         marker="o",
-        facecolors="#f59e0b",
-        edgecolors="#7c2d12",
+        facecolors="#22c55e",
+        edgecolors="#14532d",
         linewidths=1.0,
         s=42,
-        label=f"manual_review_required ({len(selected)})",
+        label=f"connected_same_level ({len(selected)})",
         zorder=3,
     )
     axis.set_title(
@@ -377,7 +395,7 @@ def plot_review(environment_id: int, rows: list[dict[str, Any]]) -> None:
                 fontsize=7.2,
                 ha=horizontal,
                 va=vertical,
-                color="#7c2d12",
+                color="#14532d",
                 zorder=4,
             )
             figure.canvas.draw()
@@ -391,7 +409,7 @@ def plot_review(environment_id: int, rows: list[dict[str, Any]]) -> None:
                     (float(row["x"]), float(row["y"])),
                     xytext=offset,
                     textcoords="offset points",
-                    arrowprops={"arrowstyle": "-", "color": "#a16207", "lw": 0.55},
+                    arrowprops={"arrowstyle": "-", "color": "#15803d", "lw": 0.55},
                     zorder=3,
                 )
                 break
@@ -416,13 +434,13 @@ def write_json(
     unity_version: dict[str, str],
 ) -> None:
     decisions = Counter(row["navigability_decision"] for row in rows)
+    def complete_counts(selected_rows: list[dict[str, Any]]) -> dict[str, int]:
+        selected_decisions = Counter(row["navigability_decision"] for row in selected_rows)
+        return {decision: selected_decisions[decision] for decision in DECISIONS}
+
     environment_counts = {
-        str(environment_id): dict(
-            Counter(
-                row["navigability_decision"]
-                for row in rows
-                if int(row["environment_id"]) == environment_id
-            )
+        str(environment_id): complete_counts(
+            [row for row in rows if int(row["environment_id"]) == environment_id]
         )
         for environment_id in (38, 39)
     }
@@ -430,7 +448,7 @@ def write_json(
     anomaly = [row for row in rows if row["source_anomaly_involved"]]
     payload = {
         "phase9_validation_schema_version": "1.0.0",
-        "phase9_analysis_version": "1.0.0",
+        "phase9_analysis_version": "1.1.0",
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "source_hashes": {str(key): value for key, value in RAW_HASHES.items()},
         "phase8_event_inventory": {
@@ -489,18 +507,38 @@ def write_json(
                 "no road connectivity graph or road-specific nav surface is present",
                 "bridge generation uses endpoint chords rather than lossless quadratic curves",
             ],
-            "classification_result": "manual review required for every event",
+            "static_classification_result": (
+                "Static repository evidence was insufficient for all 48 events; direct "
+                "manual Unity inspection was required."
+            ),
+            "final_classification_result": (
+                "All 48 events are connected_same_level based on completed direct "
+                "researcher inspection of the 3D Unity environments."
+            ),
         },
+        "manual_review_completed": True,
+        "manual_review_method": MANUAL_REVIEW_METHOD,
+        "manual_review_scope": {
+            "unique_locations": len({row["review_location_id"] for row in rows}),
+            "environment_38": sum(int(row["environment_id"]) == 38 for row in rows),
+            "environment_39": sum(int(row["environment_id"]) == 39 for row in rows),
+        },
+        "bridge_evidence_clarification": (
+            "Static inspection found five collider-backed bridges in each environment but "
+            "could not reliably associate them with Phase 8 crossing events. Subsequent "
+            "direct manual Unity inspection confirmed that none of the 48 reviewed road-road "
+            "crossings is road-over-road or road-under-road grade-separated."
+        ),
         "counts": {
             "total_events_reviewed": len(rows),
             "connected_same_level": decisions["connected_same_level"],
             "grade_separated_not_connected": decisions["grade_separated_not_connected"],
             "manual_review_required": decisions["manual_review_required"],
             "by_environment": environment_counts,
-            "cross_shape": dict(Counter(row["navigability_decision"] for row in cross_shape)),
-            "source_anomaly_involved": dict(
-                Counter(row["navigability_decision"] for row in anomaly)
-            ),
+            "cross_shape_event_count": len(cross_shape),
+            "cross_shape": complete_counts(cross_shape),
+            "source_anomaly_involved_event_count": len(anomaly),
+            "source_anomaly_involved": complete_counts(anomaly),
             "unique_review_locations": len({row["review_location_id"] for row in rows}),
         },
         "review_location_grouping": {
@@ -522,8 +560,12 @@ def write_json(
             "Assets/Tools/VirtualEnvironmentCreation/Scripts/Map2D.cs",
             "ProjectSettings/ProjectVersion.txt",
         ],
-        "acceptance_status": "BLOCKED_PENDING_MANUAL_3D_REVIEW",
-        "acceptance_reason": "48 events remain manual_review_required",
+        "acceptance_status": "COMPLETE",
+        "acceptance_reason": (
+            "All 48 mathematically reconstructed interior road crossings have evidence-backed "
+            "3D navigability decisions; all are confirmed connected_same_level and none remains "
+            "unresolved."
+        ),
         "snapping_performed": False,
         "topology_constructed": False,
         "road_lines_split": False,
@@ -536,6 +578,62 @@ def write_json(
     }
     QA_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     QA_OUTPUT.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+
+
+def validate_final_outputs(source_rows: list[dict[str, str]]) -> None:
+    """Validate final Phase 9 decisions without recomputing Phase 8 geometry."""
+    with TABLE_OUTPUT.open(encoding="utf-8", newline="") as source:
+        csv_rows = list(csv.DictReader(source))
+    qa = json.loads(QA_OUTPUT.read_text(encoding="utf-8"))
+    json_rows = qa["individual_event_decisions"]
+
+    expected_review_ids = {
+        *(f"E38-C{index:03d}" for index in range(1, 29)),
+        *(f"E39-C{index:03d}" for index in range(1, 21)),
+    }
+    if len(csv_rows) != 48 or len(json_rows) != 48:
+        raise ValueError("Final Phase 9 output must contain exactly 48 decisions")
+    if {row["review_location_id"] for row in csv_rows} != expected_review_ids:
+        raise ValueError("Final Phase 9 review-location inventory is incomplete")
+    if Counter(row["review_location_id"] for row in csv_rows).most_common(1)[0][1] != 1:
+        raise ValueError("A final review_location_id maps to more than one event")
+
+    source_by_id = {row["event_id"]: row for row in source_rows}
+    csv_by_id = {row["event_id"]: row for row in csv_rows}
+    json_by_id = {row["event_id"]: row for row in json_rows}
+    if set(source_by_id) != set(csv_by_id) or set(source_by_id) != set(json_by_id):
+        raise ValueError("Final Phase 9 event IDs differ from the Phase 8 review inventory")
+    for event_id, source_row in source_by_id.items():
+        csv_row = csv_by_id[event_id]
+        json_row = json_by_id[event_id]
+        if csv_row["x"] != source_row["x"] or csv_row["y"] != source_row["y"]:
+            raise ValueError(f"Phase 8 CSV coordinates changed for {event_id}")
+        if float(json_row["x"]) != float(source_row["x"]) or float(
+            json_row["y"]
+        ) != float(source_row["y"]):
+            raise ValueError(f"Phase 8 JSON coordinates changed for {event_id}")
+        if csv_row["navigability_decision"] != json_row["navigability_decision"]:
+            raise ValueError(f"CSV/JSON decision mismatch for {event_id}")
+
+    decision_counts = Counter(row["navigability_decision"] for row in csv_rows)
+    if decision_counts != Counter({"connected_same_level": 48}):
+        raise ValueError(f"Unexpected final decision counts: {dict(decision_counts)}")
+    environment_counts = Counter(
+        int(row["environment_id"])
+        for row in csv_rows
+        if row["navigability_decision"] == "connected_same_level"
+    )
+    if environment_counts != Counter({38: 28, 39: 20}):
+        raise ValueError(f"Unexpected final environment counts: {dict(environment_counts)}")
+    cross_shape_count = sum(row["same_shape"] == "False" for row in csv_rows)
+    if cross_shape_count != 23:
+        raise ValueError(
+            f"Phase 8 inventory yielded {cross_shape_count} cross-Shape review events, expected 23"
+        )
+    if any(row["source_anomaly_involved"] != "False" for row in csv_rows):
+        raise ValueError("Unexpected source anomaly in the Phase 9 review inventory")
+    if not qa["manual_review_completed"] or qa["acceptance_status"] != "COMPLETE":
+        raise ValueError("Phase 9 QA does not record completed manual review and acceptance")
 
 
 def main() -> int:
@@ -562,7 +660,8 @@ def main() -> int:
     threshold = phase8["numerical_refinement"][
         "absolute_residual_threshold_unity_world_units"
     ]
-    rows = label_events(load_review_events())
+    source_rows = load_review_events()
+    rows = label_events(source_rows)
     for index, first in enumerate(rows):
         for second in rows[index + 1 :]:
             if first["environment_id"] != second["environment_id"]:
@@ -599,11 +698,13 @@ def main() -> int:
         unity_status,
         unity_version,
     )
+    validate_final_outputs(source_rows)
     print("Canonical raw SHA-256 verification: PASS")
     print(f"Phase 8 interior events preserved: {len(rows)}")
     print("Unique review locations: 48")
-    print("Decisions: connected=0, grade-separated=0, manual=48")
-    print("Phase 9: BLOCKED PENDING MANUAL 3D REVIEW")
+    print("Decisions: connected=48, grade-separated=0, manual=0")
+    print("CSV/JSON decision and Phase 8 coordinate validation: PASS")
+    print("Phase 9: COMPLETE")
     return 0
 
 

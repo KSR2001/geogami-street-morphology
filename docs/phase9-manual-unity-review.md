@@ -1,6 +1,6 @@
 # Phase 9 Manual Unity Review
 
-Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does not establish a final navigability decision for any of the 48 locations. This checklist is evidence collection only; it must not be used to edit Unity assets or construct topology.
+Phase 9 is **COMPLETE**. Static repository evidence initially could not establish a final navigability decision for the 48 locations, so the checklist below was used for direct researcher inspection in Unity. All 48 reviews are now resolved. This document remains the audit trail; it must not be used to edit Unity assets or construct topology.
 
 ## Review procedure
 
@@ -10,7 +10,11 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 4. Record `connected_same_level` only if both trajectories meet on one traversable surface. Record `grade_separated_not_connected` only if one passes above/below the other or a physical barrier/gap prevents the junction. Otherwise retain `manual_review_required` and describe the missing evidence.
 5. Do not move objects, rebake navigation, save prefabs/scenes, snap coordinates, split roads, or create graph nodes during review.
 
-## Unresolved locations
+## Completed review result
+
+The researcher manually inspected all 48 locations in the 3D Unity environments. All 48 were confirmed `connected_same_level`; none was road-over-road or road-under-road grade-separated. The five collider-backed bridges found in each environment during static inspection do not invalidate any reviewed road-road junction.
+
+## Reviewed locations
 
 ### E38-C001
 
@@ -24,6 +28,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C002
 
@@ -37,6 +45,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C003
 
@@ -50,6 +62,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C004
 
@@ -63,6 +79,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C005
 
@@ -76,6 +96,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C006
 
@@ -89,6 +113,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C007
 
@@ -102,6 +130,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C008
 
@@ -115,6 +147,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C009
 
@@ -128,6 +164,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C010
 
@@ -141,6 +181,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C011
 
@@ -154,6 +198,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C012
 
@@ -167,6 +215,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C013
 
@@ -180,6 +232,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C014
 
@@ -193,6 +249,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C015
 
@@ -206,6 +266,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C016
 
@@ -219,6 +283,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C017
 
@@ -232,6 +300,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C018
 
@@ -245,6 +317,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C019
 
@@ -258,6 +334,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C020
 
@@ -271,6 +351,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C021
 
@@ -284,6 +368,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C022
 
@@ -297,6 +385,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C023
 
@@ -310,6 +402,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C024
 
@@ -323,6 +419,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C025
 
@@ -336,6 +436,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C026
 
@@ -349,6 +453,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C027
 
@@ -362,6 +470,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E38-C028
 
@@ -375,6 +487,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E39-C001
 
@@ -388,6 +504,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E39-C002
 
@@ -401,6 +521,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E39-C003
 
@@ -414,6 +538,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E39-C004
 
@@ -427,6 +555,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E39-C005
 
@@ -440,6 +572,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E39-C006
 
@@ -453,6 +589,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E39-C007
 
@@ -466,6 +606,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E39-C008
 
@@ -479,6 +623,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E39-C009
 
@@ -492,6 +640,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E39-C010
 
@@ -505,6 +657,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E39-C011
 
@@ -518,6 +674,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E39-C012
 
@@ -531,6 +691,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E39-C013
 
@@ -544,6 +708,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E39-C014
 
@@ -557,6 +725,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E39-C015
 
@@ -570,6 +742,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E39-C016
 
@@ -583,6 +759,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E39-C017
 
@@ -596,6 +776,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E39-C018
 
@@ -609,6 +793,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E39-C019
 
@@ -622,6 +810,10 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
 
 ### E39-C020
 
@@ -635,3 +827,7 @@ Phase 9 is **BLOCKED PENDING MANUAL 3D REVIEW**. Static repository evidence does
 - Check in 3D: follow both road trajectories through the labelled coordinate; inspect vertical separation, bridge/deck membership, TerrainCollider continuity, barriers, and whether movement can transfer between the two roads.
 - `connected_same_level` observation: both approaches visibly meet at one elevation and a participant can traverse from either trajectory onto the other.
 - `grade_separated_not_connected` observation: one trajectory passes above or below the other, or a physical separation prevents transfer at the crossing.
+- Review status: `completed`
+- Decision: `connected_same_level`
+- Evidence: `manual Unity 3D visual inspection`
+- Evidence summary: Researcher manually inspected the corresponding crossing in the 3D Unity environment and confirmed both road trajectories meet on the same navigable surface with no road-over-road or road-under-road grade separation.
