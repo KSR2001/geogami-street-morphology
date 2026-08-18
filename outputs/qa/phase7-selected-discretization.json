@@ -1,0 +1,179 @@
+{
+  "selection_schema_version": "1.0.0",
+  "phase7_analysis_version": "1.0.0",
+  "algorithm": "recursive quadratic de Casteljau subdivision at t=0.5",
+  "flatness_error_criterion": "0.5 * perpendicular distance of p1 from the infinite p0-p2 chord line",
+  "zero_chord_policy": "mandatory initial split before ordinary adaptive testing",
+  "selected_relative_tolerance": 0.0002,
+  "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+  "common_reference_scale_unity_world_units": 701.656542085319,
+  "acceptance_rule": {
+    "selection_policy": "coarsest pre-defined tolerance satisfying every criterion for both environments",
+    "aggregate_relative_length_error_maximum": 0.0001,
+    "aggregate_total_length_relative_change_to_next_finer_maximum": 0.0001,
+    "ordinary_segment_relative_length_error_maximum": 0.001,
+    "ordinary_segment_definition": "non-zero p0-p2 chord and reference length >= 1e-12 * common_reference_scale",
+    "zero_chord_rule": "excursion must be preserved and absolute reference-length error must not exceed the candidate absolute tolerance"
+  },
+  "convergence_result": {
+    "38": {
+      "relative_tolerance": 0.0002,
+      "absolute_tolerance_unity_world_units": 0.1403313084170638,
+      "total_polyline_vertex_count": 324,
+      "total_polyline_segment_count": 204,
+      "minimum_vertices_per_bezier": 2,
+      "maximum_vertices_per_bezier": 17,
+      "median_vertices_per_bezier": 2.0,
+      "reference_total_length_unity_world_units": 5173.411044840865,
+      "total_polyline_length_unity_world_units": 5173.163206365717,
+      "aggregate_absolute_length_error_unity_world_units": 0.24783847514786422,
+      "aggregate_relative_length_error": 4.790620211688356e-05,
+      "maximum_nonzero_segment_relative_length_error": 0.0006461868694114874,
+      "maximum_ordinary_segment_relative_length_error": 0.0006461868694114874,
+      "maximum_segment_length_change_to_next_finer_unity_world_units": 0.041413726401344775,
+      "maximum_segment_relative_length_change_to_next_finer": 0.0004731780288781722,
+      "aggregate_total_length_relative_change_to_next_finer": 3.378921341566807e-05
+    },
+    "39": {
+      "relative_tolerance": 0.0002,
+      "absolute_tolerance_unity_world_units": 0.1403313084170638,
+      "total_polyline_vertex_count": 73,
+      "total_polyline_segment_count": 41,
+      "minimum_vertices_per_bezier": 2,
+      "maximum_vertices_per_bezier": 5,
+      "median_vertices_per_bezier": 2.0,
+      "reference_total_length_unity_world_units": 5008.305865176797,
+      "total_polyline_length_unity_world_units": 5008.303667756097,
+      "aggregate_absolute_length_error_unity_world_units": 0.0021974207000141632,
+      "aggregate_relative_length_error": 4.387552915433995e-07,
+      "maximum_nonzero_segment_relative_length_error": 4.926475113466511e-06,
+      "maximum_ordinary_segment_relative_length_error": 4.926475113466511e-06,
+      "maximum_segment_length_change_to_next_finer_unity_world_units": 0.0006177079607141422,
+      "maximum_segment_relative_length_change_to_next_finer": 2.7784560812600776e-06,
+      "aggregate_total_length_relative_change_to_next_finer": 2.180262630607315e-07
+    }
+  },
+  "zero_chord_report": [
+    {
+      "segment_id": "env38_shape_4330855547529842337_segment_0006",
+      "p0": [
+        213.256165,
+        121.9834
+      ],
+      "p1": [
+        213.2562,
+        121.983459
+      ],
+      "p2": [
+        213.256165,
+        121.9834
+      ],
+      "high_accuracy_reference_bezier_length_unity_world_units": 6.860029153709443e-05,
+      "adaptive_vertex_count": 3,
+      "adaptive_polyline_length_unity_world_units": 6.860029155159526e-05,
+      "absolute_length_error_unity_world_units": 1.4500824586233252e-14,
+      "maximum_vertex_excursion_from_p0_unity_world_units": 3.430014577579763e-05,
+      "excursion_preserved": true
+    },
+    {
+      "segment_id": "env38_shape_4330855547529842337_segment_0019",
+      "p0": [
+        331.0658,
+        207.331726
+      ],
+      "p1": [
+        331.065918,
+        207.331726
+      ],
+      "p2": [
+        331.0658,
+        207.331726
+      ],
+      "high_accuracy_reference_bezier_length_unity_world_units": 0.00011799999998629573,
+      "adaptive_vertex_count": 3,
+      "adaptive_polyline_length_unity_world_units": 0.00011800000004313915,
+      "absolute_length_error_unity_world_units": 5.684341886080802e-14,
+      "maximum_vertex_excursion_from_p0_unity_world_units": 5.9000000021569576e-05,
+      "excursion_preserved": true
+    },
+    {
+      "segment_id": "env38_shape_4330855547829185599_segment_0007",
+      "p0": [
+        117.5127,
+        -53.993515
+      ],
+      "p1": [
+        117.51297,
+        -53.99369
+      ],
+      "p2": [
+        117.5127,
+        -53.993515
+      ],
+      "high_accuracy_reference_bezier_length_unity_world_units": 0.0003217530108635848,
+      "adaptive_vertex_count": 3,
+      "adaptive_polyline_length_unity_world_units": 0.0003217530108635848,
+      "absolute_length_error_unity_world_units": 0.0,
+      "maximum_vertex_excursion_from_p0_unity_world_units": 0.0001608765054317924,
+      "excursion_preserved": true
+    },
+    {
+      "segment_id": "env38_shape_4330855547829185599_segment_0011",
+      "p0": [
+        82.70692,
+        21.4694939
+      ],
+      "p1": [
+        82.70704,
+        21.4688988
+      ],
+      "p2": [
+        82.70692,
+        21.4694939
+      ],
+      "high_accuracy_reference_bezier_length_unity_world_units": 0.0006070782568995186,
+      "adaptive_vertex_count": 3,
+      "adaptive_polyline_length_unity_world_units": 0.0006070782568995186,
+      "absolute_length_error_unity_world_units": 0.0,
+      "maximum_vertex_excursion_from_p0_unity_world_units": 0.0003035391284497593,
+      "excursion_preserved": true
+    },
+    {
+      "segment_id": "env38_shape_4330855547829185599_segment_0012",
+      "p0": [
+        82.70692,
+        21.4694939
+      ],
+      "p1": [
+        82.70692,
+        21.4687786
+      ],
+      "p2": [
+        82.70692,
+        21.4694939
+      ],
+      "high_accuracy_reference_bezier_length_unity_world_units": 0.0007152999999995302,
+      "adaptive_vertex_count": 3,
+      "adaptive_polyline_length_unity_world_units": 0.0007153000000030829,
+      "absolute_length_error_unity_world_units": 3.552713678800501e-15,
+      "maximum_vertex_excursion_from_p0_unity_world_units": 0.00035765000000154146,
+      "excursion_preserved": true
+    }
+  ],
+  "tested_at_utc": "2026-08-18T20:37:30.782482+00:00",
+  "software_versions": {
+    "python": "3.12.13",
+    "numpy": "2.5.2",
+    "scipy": "1.18.0",
+    "matplotlib": "3.11.1"
+  },
+  "source_hashes": {
+    "38": "43ea446a4a88e9f3d594fb8b72742f5d4b2a1ee8a03ebf8350c4c3cce45c5819",
+    "39": "e5dbce6b4d88656c9e0f3bbf6a814434f64b0fbe9b3ff1864ea3fafaf0883602"
+  },
+  "coordinate_space": "Unity world XY",
+  "units": "Unity world units",
+  "meter_scale_verified": false,
+  "crs": null,
+  "selected_tolerance_purpose": "curve approximation, not topology"
+}

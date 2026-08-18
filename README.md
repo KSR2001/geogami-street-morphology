@@ -11,7 +11,7 @@ The planned workflow is:
 
 The analysis will compare street-network orientation, curvature, and topology without assuming in advance that the intended classifications are quantitatively supported. The immutable raw Bézier representation, detailed sampled geometry, and topological network are kept conceptually and operationally distinct.
 
-Phases 0–6 establish the methodology, verified Unity source provenance, exporter contract, frozen canonical raw Bézier exports, reproducible Python environment, and lossless world-XY Bézier reconstruction with visual geometry QA. Network topology and scientific morphology metrics have not yet been implemented.
+Phases 0–7 establish the methodology, verified Unity source provenance, exporter contract, frozen canonical raw Bézier exports, reproducible Python environment, lossless world-XY reconstruction, and converged adaptive Bézier linework. Network topology and scientific morphology metrics have not yet been implemented.
 
 The Phase 4 canonical exports in `data/raw/` are frozen immutable research inputs; all later transformations must create new files under `data/processed/`.
 
@@ -36,6 +36,13 @@ conda run -n geogami-morphology pytest
 conda run -n geogami-morphology python scripts/reconstruct_bezier_geometry.py
 ```
 
+Run the Phase 7 adaptive-discretization tests and convergence analysis:
+
+```powershell
+conda run -n geogami-morphology pytest
+conda run -n geogami-morphology python scripts/analyze_discretization_convergence.py
+```
+
 ## Documentation
 
 - [Methodology and geometry provenance](docs/methodology.md)
@@ -44,3 +51,4 @@ conda run -n geogami-morphology python scripts/reconstruct_bezier_geometry.py
 - [Phase 4 raw-data provenance and integrity record](docs/raw-data-provenance.md)
 - [Phase 5 Python environment and reproducibility](docs/python-environment.md)
 - [Phase 6 lossless Bézier reconstruction and geometry QA](docs/phase6-reconstruction-qa.md)
+- [Phase 7 adaptive Bézier discretization and convergence QA](docs/phase7-discretization-convergence.md)

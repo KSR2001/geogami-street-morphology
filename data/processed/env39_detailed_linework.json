@@ -1,0 +1,1412 @@
+{
+  "detailed_linework_schema_version": "1.0.0",
+  "phase7_analysis_version": "1.0.0",
+  "source_schema_version": "1.0.0",
+  "source_file": "data/raw/env39_bezier.json",
+  "source_file_sha256": "e5dbce6b4d88656c9e0f3bbf6a814434f64b0fbe9b3ff1864ea3fafaf0883602",
+  "environment_id": 39,
+  "environment_label": "Grid-like / Grid",
+  "coordinate_space": "Unity world XY",
+  "units": "Unity world units",
+  "meter_scale_verified": false,
+  "crs": null,
+  "algorithm": "recursive quadratic de Casteljau subdivision at t=0.5",
+  "flatness_criterion": "maximum curve-to-chord perpendicular deviation = 0.5 * distance(p1, infinite p0-p2 line)",
+  "zero_chord_policy": "mandatory initial de Casteljau split when p0 == p2 and p1 differs",
+  "common_reference_scale_unity_world_units": 701.656542085319,
+  "selected_relative_tolerance": 0.0002,
+  "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+  "source_bezier_record_count": 32,
+  "topology_constructed": false,
+  "intersections_detected": false,
+  "snapping_performed": false,
+  "shapes": [
+    {
+      "shape_id": "env39_shape_3305298596651482022",
+      "shape_index": 1,
+      "segment_count": 32,
+      "segments": [
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0001",
+          "segment_index": 1,
+          "original_world_control_points": {
+            "p0": {
+              "x": 39.5062256,
+              "y": 113.766319,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 212.739929,
+              "y": 113.792358,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 385.97287,
+              "y": 113.819283,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              39.5062256,
+              113.766319
+            ],
+            [
+              385.97287,
+              113.819283
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 346.46664844865387,
+          "adaptive_polyline_length_unity_world_units": 346.46664844827615,
+          "absolute_length_error_unity_world_units": 3.7772451833006926e-10,
+          "relative_length_error": 1.0902189865067136e-12,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0002",
+          "segment_index": 2,
+          "original_world_control_points": {
+            "p0": {
+              "x": 385.97287,
+              "y": 113.819283,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 384.649353,
+              "y": 168.9279,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 383.326172,
+              "y": 224.036575,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              385.97287,
+              113.819283
+            ],
+            [
+              383.326172,
+              224.036575
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 110.24906560218274,
+          "adaptive_polyline_length_unity_world_units": 110.24906560201075,
+          "absolute_length_error_unity_world_units": 1.7199397461808985e-10,
+          "relative_length_error": 1.5600492727866228e-12,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0003",
+          "segment_index": 3,
+          "original_world_control_points": {
+            "p0": {
+              "x": 385.97287,
+              "y": 113.819283,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 387.228363,
+              "y": 4.472106,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 388.4834,
+              "y": -104.874329,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              385.97287,
+              113.819283
+            ],
+            [
+              388.4834,
+              -104.874329
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 218.70802155054622,
+          "adaptive_polyline_length_unity_world_units": 218.70802155039362,
+          "absolute_length_error_unity_world_units": 1.5259615793183912e-10,
+          "relative_length_error": 6.977163290582471e-13,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0004",
+          "segment_index": 4,
+          "original_world_control_points": {
+            "p0": {
+              "x": 383.326172,
+              "y": 224.036575,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 192.004944,
+              "y": 224.547989,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 0.6841152,
+              "y": 225.05864,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              383.326172,
+              224.036575
+            ],
+            [
+              0.6841152,
+              225.05864
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 382.6434218031092,
+          "adaptive_polyline_length_unity_world_units": 382.6434218028564,
+          "absolute_length_error_unity_world_units": 2.5283952709287405e-10,
+          "relative_length_error": 6.607706096224848e-13,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0005",
+          "segment_index": 5,
+          "original_world_control_points": {
+            "p0": {
+              "x": 383.326172,
+              "y": 224.036575,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 412.6687,
+              "y": 224.204941,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 442.0116,
+              "y": 224.37355,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              383.326172,
+              224.036575
+            ],
+            [
+              442.0116,
+              224.37355
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 58.6863954568105,
+          "adaptive_polyline_length_unity_world_units": 58.686395456645734,
+          "absolute_length_error_unity_world_units": 1.6476775499540963e-10,
+          "relative_length_error": 2.8075971221757576e-12,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0006",
+          "segment_index": 6,
+          "original_world_control_points": {
+            "p0": {
+              "x": 39.5062256,
+              "y": 113.766319,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 39.05419,
+              "y": 169.411743,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 38.6014137,
+              "y": 225.057266,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              39.5062256,
+              113.766319
+            ],
+            [
+              38.6014137,
+              225.057266
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 111.29462506749218,
+          "adaptive_polyline_length_unity_world_units": 111.29462506667244,
+          "absolute_length_error_unity_world_units": 8.197389433917124e-10,
+          "relative_length_error": 7.36548546611842e-12,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0007",
+          "segment_index": 7,
+          "original_world_control_points": {
+            "p0": {
+              "x": 39.5062256,
+              "y": 113.766319,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 41.31582,
+              "y": -23.7643738,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 40.4110374,
+              "y": -163.103928,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              39.5062256,
+              113.766319
+            ],
+            [
+              40.2413742375,
+              44.8879187625
+            ],
+            [
+              40.63722575,
+              -24.216589149999997
+            ],
+            [
+              40.6937801375,
+              -93.54720473749998
+            ],
+            [
+              40.4110374,
+              -163.103928
+            ]
+          ],
+          "adaptive_vertex_count": 5,
+          "bezier_reference_length_unity_world_units": 276.87617997006475,
+          "adaptive_polyline_length_unity_world_units": 276.8759015564533,
+          "absolute_length_error_unity_world_units": 0.00027841361145419796,
+          "relative_length_error": 1.0055527762781884e-06,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0008",
+          "segment_index": 8,
+          "original_world_control_points": {
+            "p0": {
+              "x": 383.326172,
+              "y": 224.036575,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 382.771729,
+              "y": 266.6471,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 382.2173,
+              "y": 309.25766,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              383.326172,
+              224.036575
+            ],
+            [
+              382.2173,
+              309.25766
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 85.22829885483856,
+          "adaptive_polyline_length_unity_world_units": 85.22829885483816,
+          "absolute_length_error_unity_world_units": 3.979039320256561e-13,
+          "relative_length_error": 4.6686832586365346e-15,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0009",
+          "segment_index": 9,
+          "original_world_control_points": {
+            "p0": {
+              "x": 382.2173,
+              "y": 309.25766,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 381.8887,
+              "y": 339.4833,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 382.2173,
+              "y": 369.6955,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              382.2173,
+              309.25766
+            ],
+            [
+              382.053,
+              339.47993999999994
+            ],
+            [
+              382.2173,
+              369.6955
+            ]
+          ],
+          "adaptive_vertex_count": 3,
+          "bezier_reference_length_unity_world_units": 60.43903104243445,
+          "adaptive_polyline_length_unity_world_units": 60.43873329105214,
+          "absolute_length_error_unity_world_units": 0.00029775138231258325,
+          "relative_length_error": 4.926475113466511e-06,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0010",
+          "segment_index": 10,
+          "original_world_control_points": {
+            "p0": {
+              "x": 382.2173,
+              "y": 309.25766,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 350.536041,
+              "y": 309.25766,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 318.854767,
+              "y": 309.25766,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              382.2173,
+              309.25766
+            ],
+            [
+              318.854767,
+              309.25766
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 63.36253300000005,
+          "adaptive_polyline_length_unity_world_units": 63.36253300000004,
+          "absolute_length_error_unity_world_units": 7.105427357601002e-15,
+          "relative_length_error": 1.1213925676868058e-16,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0011",
+          "segment_index": 11,
+          "original_world_control_points": {
+            "p0": {
+              "x": 318.854767,
+              "y": 309.25766,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 322.4136,
+              "y": 124.894951,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 326.294525,
+              "y": -64.14967,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              318.854767,
+              309.25766
+            ],
+            [
+              326.294525,
+              -64.14967
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 373.48146077529066,
+          "adaptive_polyline_length_unity_world_units": 373.48143741935485,
+          "absolute_length_error_unity_world_units": 2.3355935809377115e-05,
+          "relative_length_error": 6.253573004907325e-08,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0012",
+          "segment_index": 12,
+          "original_world_control_points": {
+            "p0": {
+              "x": 326.294525,
+              "y": -64.14967,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 383.114166,
+              "y": -63.4118538,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 439.933716,
+              "y": -62.6740646,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              326.294525,
+              -64.14967
+            ],
+            [
+              439.933716,
+              -62.6740646
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 113.64877096753492,
+          "adaptive_polyline_length_unity_world_units": 113.64877096753395,
+          "absolute_length_error_unity_world_units": 9.663381206337363e-13,
+          "relative_length_error": 8.502847082347964e-15,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0013",
+          "segment_index": 13,
+          "original_world_control_points": {
+            "p0": {
+              "x": 326.294525,
+              "y": -64.14967,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 296.2766,
+              "y": -64.5697,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 266.2587,
+              "y": -64.98972,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              326.294525,
+              -64.14967
+            ],
+            [
+              266.2587,
+              -64.98972
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 60.04170190320359,
+          "adaptive_polyline_length_unity_world_units": 60.04170190320333,
+          "absolute_length_error_unity_world_units": 2.5579538487363607e-13,
+          "relative_length_error": 4.26029537413875e-15,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0014",
+          "segment_index": 14,
+          "original_world_control_points": {
+            "p0": {
+              "x": 266.2587,
+              "y": -64.98972,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 262.9795,
+              "y": 150.339355,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 259.701172,
+              "y": 365.668671,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              266.2587,
+              -64.98972
+            ],
+            [
+              259.701172,
+              365.668671
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 430.708313029172,
+          "adaptive_polyline_length_unity_world_units": 430.70831302887535,
+          "absolute_length_error_unity_world_units": 2.9666580303455703e-10,
+          "relative_length_error": 6.887858767993265e-13,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0015",
+          "segment_index": 15,
+          "original_world_control_points": {
+            "p0": {
+              "x": 318.854767,
+              "y": 309.25766,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 318.310516,
+              "y": 341.527649,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 317.767639,
+              "y": 373.797943,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              318.854767,
+              309.25766
+            ],
+            [
+              317.767639,
+              373.797943
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 64.54943824420394,
+          "adaptive_polyline_length_unity_world_units": 64.54943823929432,
+          "absolute_length_error_unity_world_units": 4.909622930426849e-09,
+          "relative_length_error": 7.605988625110455e-11,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0016",
+          "segment_index": 16,
+          "original_world_control_points": {
+            "p0": {
+              "x": 266.2587,
+              "y": -64.98972,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 266.17746,
+              "y": -115.39711,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 266.09726,
+              "y": -165.804245,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              266.2587,
+              -64.98972
+            ],
+            [
+              266.09726,
+              -165.804245
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 100.81465426320459,
+          "adaptive_polyline_length_unity_world_units": 100.8146542614179,
+          "absolute_length_error_unity_world_units": 1.7866881307782023e-09,
+          "relative_length_error": 1.772250417199823e-11,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0017",
+          "segment_index": 17,
+          "original_world_control_points": {
+            "p0": {
+              "x": 318.854767,
+              "y": 309.25766,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 233.3591,
+              "y": 309.3436,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 147.863861,
+              "y": 309.430145,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              318.854767,
+              309.25766
+            ],
+            [
+              147.863861,
+              309.430145
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 170.9909929964097,
+          "adaptive_polyline_length_unity_world_units": 170.99099299605243,
+          "absolute_length_error_unity_world_units": 3.5726088754017837e-10,
+          "relative_length_error": 2.0893550080013854e-12,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0018",
+          "segment_index": 18,
+          "original_world_control_points": {
+            "p0": {
+              "x": 388.4834,
+              "y": -104.874329,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 388.928253,
+              "y": -138.279785,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 389.3737,
+              "y": -171.685287,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              388.4834,
+              -104.874329
+            ],
+            [
+              389.3737,
+              -171.685287
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 66.81688965437638,
+          "adaptive_polyline_length_unity_world_units": 66.81688965349827,
+          "absolute_length_error_unity_world_units": 8.781171345617622e-10,
+          "relative_length_error": 1.31421432380944e-11,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0019",
+          "segment_index": 19,
+          "original_world_control_points": {
+            "p0": {
+              "x": 388.4834,
+              "y": -104.874329,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 414.3168,
+              "y": -104.428894,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 440.150177,
+              "y": -103.983543,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              388.4834,
+              -104.874329
+            ],
+            [
+              440.150177,
+              -103.983543
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 51.67445544239292,
+          "adaptive_polyline_length_unity_world_units": 51.67445544237038,
+          "absolute_length_error_unity_world_units": 2.2538415578310378e-11,
+          "relative_length_error": 4.361616467044607e-13,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0020",
+          "segment_index": 20,
+          "original_world_control_points": {
+            "p0": {
+              "x": 388.4834,
+              "y": -104.874329,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 233.036514,
+              "y": -105.32003,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 77.58896,
+              "y": -105.765144,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              388.4834,
+              -104.874329
+            ],
+            [
+              77.58896,
+              -105.765144
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 310.8957162368009,
+          "adaptive_polyline_length_unity_world_units": 310.895716236615,
+          "absolute_length_error_unity_world_units": 1.8593482309370302e-10,
+          "relative_length_error": 5.980617081004791e-13,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0021",
+          "segment_index": 21,
+          "original_world_control_points": {
+            "p0": {
+              "x": 77.58896,
+              "y": -105.765144,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 76.5434341,
+              "y": -50.7044,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 75.49738,
+              "y": 4.35697126,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              77.58896,
+              -105.765144
+            ],
+            [
+              75.49738,
+              4.35697126
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 110.14197645004353,
+          "adaptive_polyline_length_unity_world_units": 110.14197644964034,
+          "absolute_length_error_unity_world_units": 4.0319036997971125e-10,
+          "relative_length_error": 3.660642227194679e-12,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0022",
+          "segment_index": 22,
+          "original_world_control_points": {
+            "p0": {
+              "x": 75.49738,
+              "y": 4.35697126,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 70.1664658,
+              "y": 185.595459,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 70.1664658,
+              "y": 370.069824,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              75.49738,
+              4.35697126
+            ],
+            [
+              73.1651050375,
+              95.17845745875
+            ],
+            [
+              71.49919435,
+              186.40442831500002
+            ],
+            [
+              70.4996479375,
+              278.03488382875
+            ],
+            [
+              70.1664658,
+              370.069824
+            ]
+          ],
+          "adaptive_vertex_count": 5,
+          "bezier_reference_length_unity_world_units": 365.76488186790016,
+          "adaptive_polyline_length_unity_world_units": 365.7640582569176,
+          "absolute_length_error_unity_world_units": 0.0008236109825361382,
+          "relative_length_error": 2.25174975336641e-06,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0023",
+          "segment_index": 23,
+          "original_world_control_points": {
+            "p0": {
+              "x": 75.49738,
+              "y": 4.35697126,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 200.758484,
+              "y": 4.334838,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 326.01944,
+              "y": 4.312198,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              75.49738,
+              4.35697126
+            ],
+            [
+              326.01944,
+              4.312198
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 250.5220640011055,
+          "adaptive_polyline_length_unity_world_units": 250.52206400093465,
+          "absolute_length_error_unity_world_units": 1.708428953861585e-10,
+          "relative_length_error": 6.819475005818434e-13,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0024",
+          "segment_index": 24,
+          "original_world_control_points": {
+            "p0": {
+              "x": 75.49738,
+              "y": 4.35697126,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 57.9785957,
+              "y": 4.33912754,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 40.45769,
+              "y": 4.323607,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              75.49738,
+              4.35697126
+            ],
+            [
+              40.45769,
+              4.323607
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 35.03970591018323,
+          "adaptive_polyline_length_unity_world_units": 35.039705884466926,
+          "absolute_length_error_unity_world_units": 2.571630375314271e-08,
+          "relative_length_error": 7.339189381058431e-10,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0025",
+          "segment_index": 25,
+          "original_world_control_points": {
+            "p0": {
+              "x": 147.863861,
+              "y": 309.430145,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 148.546753,
+              "y": 288.782043,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 149.229645,
+              "y": 268.13327,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              147.863861,
+              309.430145
+            ],
+            [
+              149.229645,
+              268.13327
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 41.319453659268596,
+          "adaptive_polyline_length_unity_world_units": 41.319453659266614,
+          "absolute_length_error_unity_world_units": 1.9824142327706795e-12,
+          "relative_length_error": 4.79777455219569e-14,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0026",
+          "segment_index": 26,
+          "original_world_control_points": {
+            "p0": {
+              "x": 149.229645,
+              "y": 268.13327,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 150.086945,
+              "y": 219.700165,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 150.943787,
+              "y": 171.266708,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              149.229645,
+              268.13327
+            ],
+            [
+              150.943787,
+              171.266708
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 96.88172746482084,
+          "adaptive_polyline_length_unity_world_units": 96.88172746445021,
+          "absolute_length_error_unity_world_units": 3.7063330182718346e-10,
+          "relative_length_error": 3.8256264780349395e-12,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0027",
+          "segment_index": 27,
+          "original_world_control_points": {
+            "p0": {
+              "x": 150.943787,
+              "y": 171.266708,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 151.434937,
+              "y": 144.252182,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 151.926239,
+              "y": 117.237411,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              150.943787,
+              171.266708
+            ],
+            [
+              151.926239,
+              117.237411
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 54.03822856324738,
+          "adaptive_polyline_length_unity_world_units": 54.03822856318028,
+          "absolute_length_error_unity_world_units": 6.709655053782626e-11,
+          "relative_length_error": 1.2416497046955411e-12,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0028",
+          "segment_index": 28,
+          "original_world_control_points": {
+            "p0": {
+              "x": 149.229645,
+              "y": 268.13327,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 234.457657,
+              "y": 268.6406,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 319.9088,
+              "y": 267.53772,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              149.229645,
+              268.13327
+            ],
+            [
+              234.51343975,
+              268.2380475
+            ],
+            [
+              319.9088,
+              267.53772
+            ]
+          ],
+          "adaptive_vertex_count": 3,
+          "bezier_reference_length_unity_world_units": 170.6827233195935,
+          "adaptive_polyline_length_unity_world_units": 170.6820910087087,
+          "absolute_length_error_unity_world_units": 0.0006323108847823278,
+          "relative_length_error": 3.7045980547097454e-06,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0029",
+          "segment_index": 29,
+          "original_world_control_points": {
+            "p0": {
+              "x": 150.943787,
+              "y": 171.266708,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 177.0543,
+              "y": 170.989426,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 203.164871,
+              "y": 170.711792,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              150.943787,
+              171.266708
+            ],
+            [
+              203.164871,
+              170.711792
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 52.22403226430592,
+          "adaptive_polyline_length_unity_world_units": 52.22403226391192,
+          "absolute_length_error_unity_world_units": 3.9399594697897555e-10,
+          "relative_length_error": 7.544341750268562e-12,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0030",
+          "segment_index": 30,
+          "original_world_control_points": {
+            "p0": {
+              "x": 203.164871,
+              "y": 170.711792,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 289.553467,
+              "y": 170.711792,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 383.2774,
+              "y": 171.527237,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              203.164871,
+              170.711792
+            ],
+            [
+              291.38730125,
+              170.91565325
+            ],
+            [
+              383.2774,
+              171.527237
+            ]
+          ],
+          "adaptive_vertex_count": 3,
+          "bezier_reference_length_unity_world_units": 180.11494167915518,
+          "adaptive_polyline_length_unity_world_units": 180.11479974323808,
+          "absolute_length_error_unity_world_units": 0.0001419359170995449,
+          "relative_length_error": 7.880296647036654e-07,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0031",
+          "segment_index": 31,
+          "original_world_control_points": {
+            "p0": {
+              "x": 203.164871,
+              "y": 170.711792,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 202.350861,
+              "y": 239.985336,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 201.534927,
+              "y": 309.2591,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              203.164871,
+              170.711792
+            ],
+            [
+              201.534927,
+              309.2591
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 138.55689543548687,
+          "adaptive_polyline_length_unity_world_units": 138.55689543104666,
+          "absolute_length_error_unity_world_units": 4.4402099774742965e-09,
+          "relative_length_error": 3.204611335667298e-11,
+          "zero_chord": false
+        },
+        {
+          "environment_id": 39,
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0032",
+          "segment_index": 32,
+          "original_world_control_points": {
+            "p0": {
+              "x": 203.164871,
+              "y": 170.711792,
+              "z": 0.0
+            },
+            "p1": {
+              "x": 203.979919,
+              "y": 143.002457,
+              "z": 0.0
+            },
+            "p2": {
+              "x": 204.794846,
+              "y": 115.293137,
+              "z": 0.0
+            }
+          },
+          "selected_relative_tolerance": 0.0002,
+          "selected_absolute_tolerance_unity_world_units": 0.1403313084170638,
+          "adaptive_vertices_xy": [
+            [
+              203.164871,
+              170.711792
+            ],
+            [
+              204.794846,
+              115.293137
+            ]
+          ],
+          "adaptive_vertex_count": 2,
+          "bezier_reference_length_unity_world_units": 55.44262025296505,
+          "adaptive_polyline_length_unity_world_units": 55.4426202529214,
+          "absolute_length_error_unity_world_units": 4.3648640257742954e-11,
+          "relative_length_error": 7.872759270501585e-13,
+          "zero_chord": false
+        }
+      ]
+    }
+  ]
+}
