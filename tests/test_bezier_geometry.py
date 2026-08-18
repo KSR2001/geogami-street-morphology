@@ -7,6 +7,8 @@ import pytest
 
 from scripts.bezier_geometry import (
     adaptive_quadratic_bezier_polyline,
+    adaptive_quadratic_bezier_samples,
+    quadratic_bezier_derivative,
     quadratic_bezier_point,
 )
 
@@ -113,3 +115,26 @@ def test_adaptive_rejects_invalid_tolerance(invalid_tolerance: float) -> None:
         adaptive_quadratic_bezier_polyline(
             [0.0, 0.0], [0.5, 1.0], [1.0, 0.0], invalid_tolerance
         )
+
+
+def test_quadratic_bezier_derivative_endpoints_and_array_shape() -> None:
+    p0 = np.array([1.0, 2.0])
+    p1 = np.array([4.0, 8.0])
+    p2 = np.array([10.0, 5.0])
+    result = quadratic_bezier_derivative(p0, p1, p2, [0.0, 1.0])
+    np.testing.assert_array_equal(result[0], 2.0 * (p1 - p0))
+    np.testing.assert_array_equal(result[1], 2.0 * (p2 - p1))
+
+
+def test_parameter_aware_adaptive_samples_match_curve_and_order() -> None:
+    p0 = np.array([0.0, 0.0])
+    p1 = np.array([4.0, 8.0])
+    p2 = np.array([10.0, 1.0])
+    samples = adaptive_quadratic_bezier_samples(p0, p1, p2, 0.01)
+
+    assert samples[0, 0] == 0.0
+    assert samples[-1, 0] == 1.0
+    assert np.all(np.diff(samples[:, 0]) > 0.0)
+    np.testing.assert_allclose(
+        samples[:, 1:], quadratic_bezier_point(p0, p1, p2, samples[:, 0])
+    )

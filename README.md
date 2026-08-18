@@ -11,7 +11,7 @@ The planned workflow is:
 
 The analysis will compare street-network orientation, curvature, and topology without assuming in advance that the intended classifications are quantitatively supported. The immutable raw Bézier representation, detailed sampled geometry, and topological network are kept conceptually and operationally distinct.
 
-Phases 0–7 establish the methodology, verified Unity source provenance, exporter contract, frozen canonical raw Bézier exports, reproducible Python environment, lossless world-XY reconstruction, and converged adaptive Bézier linework. Network topology and scientific morphology metrics have not yet been implemented.
+Phases 0–8 establish the methodology, verified Unity source provenance, exporter contract, frozen canonical raw Bézier exports, reproducible Python environment, converged adaptive linework, and a refined pairwise geometric-intersection inventory. Final navigable topology and scientific morphology metrics have not yet been implemented.
 
 The Phase 4 canonical exports in `data/raw/` are frozen immutable research inputs; all later transformations must create new files under `data/processed/`.
 
@@ -43,6 +43,13 @@ conda run -n geogami-morphology pytest
 conda run -n geogami-morphology python scripts/analyze_discretization_convergence.py
 ```
 
+Run the Phase 8 geometric-intersection tests and inventory:
+
+```powershell
+conda run -n geogami-morphology pytest
+conda run -n geogami-morphology python scripts/analyze_geometric_intersections.py
+```
+
 ## Documentation
 
 - [Methodology and geometry provenance](docs/methodology.md)
@@ -52,3 +59,4 @@ conda run -n geogami-morphology python scripts/analyze_discretization_convergenc
 - [Phase 5 Python environment and reproducibility](docs/python-environment.md)
 - [Phase 6 lossless Bézier reconstruction and geometry QA](docs/phase6-reconstruction-qa.md)
 - [Phase 7 adaptive Bézier discretization and convergence QA](docs/phase7-discretization-convergence.md)
+- [Phase 8 geometric intersection reconstruction and QA](docs/phase8-intersection-reconstruction.md)
