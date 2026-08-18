@@ -1,0 +1,534 @@
+{
+  "phase12_final_morphology_schema_version": "1.0.0",
+  "analysis_version": "1.0.0",
+  "generated_at_utc": "2026-08-18T22:55:57.127273+00:00",
+  "acceptance_status": "PASS",
+  "input_provenance": {
+    "raw_hashes": {
+      "38": {
+        "path": "data/raw/env38_bezier.json",
+        "sha256": "43ea446a4a88e9f3d594fb8b72742f5d4b2a1ee8a03ebf8350c4c3cce45c5819",
+        "verified": true
+      },
+      "39": {
+        "path": "data/raw/env39_bezier.json",
+        "sha256": "e5dbce6b4d88656c9e0f3bbf6a814434f64b0fbe9b3ff1864ea3fafaf0883602",
+        "verified": true
+      }
+    },
+    "graph_manifests": {
+      "env38_analytical_detailed": {
+        "manifest_path": "data/graphs/env38_analytical_detailed.manifest.json",
+        "manifest_sha256": "ee157d2dddd38ba50f62c1b622fc66990fc79b0f181bef1704fffb71628b363f",
+        "graphml_path": "data/graphs/env38_analytical_detailed.graphml",
+        "graphml_sha256": "503cea7e7d7807a21b642698e36a5428da8f2d183e2279cbb092aa8d6b16786f",
+        "round_trip_passed": true
+      },
+      "env38_analytical_simplified": {
+        "manifest_path": "data/graphs/env38_analytical_simplified.manifest.json",
+        "manifest_sha256": "635d640cf505ed9dca83cfab52716d35f2ebf08783ffa4a1371ab6961225ceb3",
+        "graphml_path": "data/graphs/env38_analytical_simplified.graphml",
+        "graphml_sha256": "8208b9a7d745489001671e40ada9584196884fbed7fe892ea2fc638d3665f9d7",
+        "round_trip_passed": true
+      },
+      "env39_analytical_detailed": {
+        "manifest_path": "data/graphs/env39_analytical_detailed.manifest.json",
+        "manifest_sha256": "2bcb5d3bb18f47d25659e1f0a34c3a9410139e143c56efb7cd202ed37e60f428",
+        "graphml_path": "data/graphs/env39_analytical_detailed.graphml",
+        "graphml_sha256": "d0219a53008272e443269169ece5cabb7316561bf445d7d94be9c220b4433c83",
+        "round_trip_passed": true
+      },
+      "env39_analytical_simplified": {
+        "manifest_path": "data/graphs/env39_analytical_simplified.manifest.json",
+        "manifest_sha256": "5d14a07c94ffdf048f20c05c0ef6980d0ba4dfb0cfe716dbaa614d286b35dae9",
+        "graphml_path": "data/graphs/env39_analytical_simplified.graphml",
+        "graphml_sha256": "1e2883ffb514660870a9992e7569ad805d7cca9381a68cc08d5ebc8dd87ccfc3",
+        "round_trip_passed": true
+      }
+    }
+  },
+  "software_versions": {
+    "python": "3.12.13",
+    "numpy": "2.5.2",
+    "scipy": "1.18.0",
+    "networkx": "3.6.1",
+    "matplotlib": "3.11.1"
+  },
+  "coordinate_convention": {
+    "name": "Unity-frame local planar bearing",
+    "formula": "degrees(atan2(dx, dy)) mod 360",
+    "zero_degrees": "+Unity Y",
+    "90_degrees": "+Unity X",
+    "180_degrees": "-Unity Y",
+    "270_degrees": "-Unity X",
+    "geographic_north_claimed": false,
+    "crs": null,
+    "units": "Unity world units",
+    "meter_scale_verified": false
+  },
+  "orientation_bin_configuration": {
+    "bin_count": 36,
+    "bin_width_degrees": 10.0,
+    "canonical_bin_centres_degrees": [
+      0.0,
+      10.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0,
+      90.0,
+      100.0,
+      110.0,
+      120.0,
+      130.0,
+      140.0,
+      150.0,
+      160.0,
+      170.0,
+      180.0,
+      190.0,
+      200.0,
+      210.0,
+      220.0,
+      230.0,
+      240.0,
+      250.0,
+      260.0,
+      270.0,
+      280.0,
+      290.0,
+      300.0,
+      310.0,
+      320.0,
+      330.0,
+      340.0,
+      350.0
+    ],
+    "canonical_edge_shift_degrees": -5.0,
+    "logarithm_base": "natural"
+  },
+  "results": {
+    "38": {
+      "environment_id": 38,
+      "intended_class": "curvilinear/curvy",
+      "H_o_nats": 3.0131094587621066,
+      "H_w_nats": 3.1312256499064475,
+      "H_w_from_simplified_geometry_nats": 3.1312256499064475,
+      "phi": 0.4518145655192265,
+      "street_length_summary": {
+        "count": 84,
+        "total": 5173.197186865086,
+        "mean": 61.58568079601293,
+        "median": 51.63582671892276,
+        "minimum": 0.01877981148047633,
+        "maximum": 228.44007725666845,
+        "standard_deviation_population": 45.74587310599434,
+        "q25": 36.226328456809426,
+        "q75": 78.67685552817322,
+        "q90": 131.92855107063,
+        "q95": 149.06045695817085
+      },
+      "aggregate_circuity": 1.0213150770501422,
+      "individual_edge_circuity_summary": {
+        "count": 84,
+        "total": 85.53827298515225,
+        "mean": 1.0183127736327648,
+        "median": 1.002327065680324,
+        "minimum": 0.9999999999958674,
+        "maximum": 1.2432551101540879,
+        "standard_deviation_population": 0.03709214380000908,
+        "q25": 1.0000000000005311,
+        "q75": 1.026793477197241,
+        "q90": 1.043765223595224,
+        "q95": 1.063983335320957,
+        "values_below_one_within_numerical_tolerance": 11,
+        "ratio_numerical_tolerance": 1e-09,
+        "minimum_network_length_minus_straight_distance_unity": -3.19175796903437e-11
+      },
+      "topology": {
+        "node_count": 60,
+        "edge_street_segment_count": 84,
+        "connected_component_count": 1,
+        "average_incident_streets_per_node": 2.8,
+        "dead_end_count": 21,
+        "dead_end_proportion": 0.35,
+        "degree_2_count": 0,
+        "degree_2_proportion": 0.0,
+        "three_way_count": 9,
+        "three_way_proportion": 0.15,
+        "four_way_count": 30,
+        "four_way_proportion": 0.5,
+        "degree_ge_5_count": 0,
+        "degree_distribution": {
+          "1": 21,
+          "3": 9,
+          "4": 30
+        },
+        "intersection_node_count_degree_ge_3": 39,
+        "three_way_proportion_among_intersections": 0.23076923076923078,
+        "four_way_proportion_among_intersections": 0.7692307692307693,
+        "networkx_degree_equals_incident_street_count_verified": true
+      },
+      "formula_crosschecks": {
+        "entropy_absolute_error": 4.440892098500626e-16,
+        "maximum_stored_vs_recomputed_length_error_unity": 0.0,
+        "aggregate_circuity_absolute_error": 0.0,
+        "topology_degree_distribution_matches": true,
+        "phi_absolute_error": 0.0,
+        "H_w_detailed_vs_simplified_absolute_error": 0.0
+      }
+    },
+    "39": {
+      "environment_id": 39,
+      "intended_class": "grid-like",
+      "H_o_nats": 1.5143534129805727,
+      "H_w_nats": 1.381012158514464,
+      "H_w_from_simplified_geometry_nats": 1.381012158514464,
+      "phi": 0.9966031867759313,
+      "street_length_summary": {
+        "count": 70,
+        "total": 5008.303760229,
+        "mean": 71.5471965747,
+        "median": 58.786673719117275,
+        "minimum": 0.0573219415371643,
+        "maximum": 298.747810146568,
+        "standard_deviation_population": 48.68088725463586,
+        "q25": 51.73867390170525,
+        "q75": 69.10977350501989,
+        "q90": 124.5810805194109,
+        "q95": 172.79136337280642
+      },
+      "aggregate_circuity": 1.0233180457073998,
+      "individual_edge_circuity_summary": {
+        "count": 70,
+        "total": 70.65582617792342,
+        "mean": 1.0093689453989059,
+        "median": 1.0,
+        "minimum": 0.9999999998429255,
+        "maximum": 1.358318066052315,
+        "standard_deviation_population": 0.054869283486562385,
+        "q25": 0.999999999999999,
+        "q75": 1.0000000000000842,
+        "q90": 1.0000000000774825,
+        "q95": 1.0000042464415282,
+        "values_below_one_within_numerical_tolerance": 27,
+        "ratio_numerical_tolerance": 1e-09,
+        "minimum_network_length_minus_straight_distance_unity": -5.955989479389245e-09
+      },
+      "topology": {
+        "node_count": 51,
+        "edge_street_segment_count": 70,
+        "connected_component_count": 1,
+        "average_incident_streets_per_node": 2.7450980392156863,
+        "dead_end_count": 19,
+        "dead_end_proportion": 0.37254901960784315,
+        "degree_2_count": 0,
+        "degree_2_proportion": 0.0,
+        "three_way_count": 7,
+        "three_way_proportion": 0.13725490196078433,
+        "four_way_count": 25,
+        "four_way_proportion": 0.49019607843137253,
+        "degree_ge_5_count": 0,
+        "degree_distribution": {
+          "1": 19,
+          "3": 7,
+          "4": 25
+        },
+        "intersection_node_count_degree_ge_3": 32,
+        "three_way_proportion_among_intersections": 0.21875,
+        "four_way_proportion_among_intersections": 0.78125,
+        "networkx_degree_equals_incident_street_count_verified": true
+      },
+      "formula_crosschecks": {
+        "entropy_absolute_error": 0.0,
+        "maximum_stored_vs_recomputed_length_error_unity": 0.0,
+        "aggregate_circuity_absolute_error": 0.0,
+        "topology_degree_distribution_matches": true,
+        "phi_absolute_error": 0.0,
+        "H_w_detailed_vs_simplified_absolute_error": 0.0
+      }
+    }
+  },
+  "orientation_bin_origin_sensitivity": {
+    "offsets_degrees": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      4.0,
+      4.5,
+      5.0,
+      5.5,
+      6.0,
+      6.5,
+      7.0,
+      7.5,
+      8.0,
+      8.5,
+      9.0,
+      9.5
+    ],
+    "summary": {
+      "38": {
+        "H_o": {
+          "minimum": 2.9844556268480833,
+          "maximum": 3.137905505674299,
+          "mean": 3.0551313140725447
+        },
+        "H_w": {
+          "minimum": 3.08632270749412,
+          "maximum": 3.1591970629194774,
+          "mean": 3.128948517370688
+        }
+      },
+      "39": {
+        "H_o": {
+          "minimum": 1.5143534129805727,
+          "maximum": 2.0106200590986782,
+          "mean": 1.5871885449125593
+        },
+        "H_w": {
+          "minimum": 1.381012158514464,
+          "maximum": 1.8414407753813764,
+          "mean": 1.4519280263033374
+        }
+      },
+      "comparison_consistency": {
+        "offset_count": 20,
+        "Env38_H_o_greater_count": 20,
+        "Env38_H_o_greater_proportion": 1.0,
+        "Env38_H_w_greater_count": 20,
+        "Env38_H_w_greater_proportion": 1.0
+      }
+    },
+    "rows": [
+      {
+        "bin_centre_origin_offset_degrees": 0.0,
+        "env38_H_o": 3.0131094587621066,
+        "env38_H_w": 3.1312256499064475,
+        "env39_H_o": 1.5143534129805727,
+        "env39_H_w": 1.381012158514464,
+        "H_o_difference_env38_minus_env39": 1.4987560457815339,
+        "H_w_difference_env38_minus_env39": 1.7502134913919836
+      },
+      {
+        "bin_centre_origin_offset_degrees": 0.5,
+        "env38_H_o": 3.069789611751977,
+        "env38_H_w": 3.12916217848718,
+        "env39_H_o": 1.5143534129805727,
+        "env39_H_w": 1.381012158514464,
+        "H_o_difference_env38_minus_env39": 1.5554361987714045,
+        "H_w_difference_env38_minus_env39": 1.7481500199727162
+      },
+      {
+        "bin_centre_origin_offset_degrees": 1.0,
+        "env38_H_o": 3.074089320042992,
+        "env38_H_w": 3.1512008866807104,
+        "env39_H_o": 1.5143534129805727,
+        "env39_H_w": 1.381012158514464,
+        "H_o_difference_env38_minus_env39": 1.5597359070624193,
+        "H_w_difference_env38_minus_env39": 1.7701887281662465
+      },
+      {
+        "bin_centre_origin_offset_degrees": 1.5,
+        "env38_H_o": 3.0651506895083847,
+        "env38_H_w": 3.1488862236595874,
+        "env39_H_o": 1.5143534129805727,
+        "env39_H_w": 1.381012158514464,
+        "H_o_difference_env38_minus_env39": 1.550797276527812,
+        "H_w_difference_env38_minus_env39": 1.7678740651451235
+      },
+      {
+        "bin_centre_origin_offset_degrees": 2.0,
+        "env38_H_o": 3.0713798340770104,
+        "env38_H_w": 3.1591970629194774,
+        "env39_H_o": 1.5143534129805727,
+        "env39_H_w": 1.381012158514464,
+        "H_o_difference_env38_minus_env39": 1.5570264210964377,
+        "H_w_difference_env38_minus_env39": 1.7781849044050135
+      },
+      {
+        "bin_centre_origin_offset_degrees": 2.5,
+        "env38_H_o": 3.0746863274529055,
+        "env38_H_w": 3.1331716085510624,
+        "env39_H_o": 1.5143534129805727,
+        "env39_H_w": 1.381012158514464,
+        "H_o_difference_env38_minus_env39": 1.5603329144723328,
+        "H_w_difference_env38_minus_env39": 1.7521594500365985
+      },
+      {
+        "bin_centre_origin_offset_degrees": 3.0,
+        "env38_H_o": 3.077800853877974,
+        "env38_H_w": 3.1438685764295267,
+        "env39_H_o": 1.5143534129805727,
+        "env39_H_w": 1.381012158514464,
+        "H_o_difference_env38_minus_env39": 1.5634474408974013,
+        "H_w_difference_env38_minus_env39": 1.7628564179150628
+      },
+      {
+        "bin_centre_origin_offset_degrees": 3.5,
+        "env38_H_o": 3.0688010054379307,
+        "env38_H_w": 3.1482381279041274,
+        "env39_H_o": 1.5796319791561508,
+        "env39_H_w": 1.4647363383994658,
+        "H_o_difference_env38_minus_env39": 1.4891690262817798,
+        "H_w_difference_env38_minus_env39": 1.6835017895046616
+      },
+      {
+        "bin_centre_origin_offset_degrees": 4.0,
+        "env38_H_o": 3.1185858820931176,
+        "env38_H_w": 3.149519138942023,
+        "env39_H_o": 1.841703556675048,
+        "env39_H_w": 1.7360310853874459,
+        "H_o_difference_env38_minus_env39": 1.2768823254180697,
+        "H_w_difference_env38_minus_env39": 1.413488053554577
+      },
+      {
+        "bin_centre_origin_offset_degrees": 4.5,
+        "env38_H_o": 3.097260902880741,
+        "env38_H_w": 3.1446474616362576,
+        "env39_H_o": 1.9399302248610155,
+        "env39_H_w": 1.811918528455284,
+        "H_o_difference_env38_minus_env39": 1.1573306780197257,
+        "H_w_difference_env38_minus_env39": 1.3327289331809737
+      },
+      {
+        "bin_centre_origin_offset_degrees": 5.0,
+        "env38_H_o": 3.137905505674299,
+        "env38_H_w": 3.146208631929227,
+        "env39_H_o": 2.0106200590986782,
+        "env39_H_w": 1.8414407753813764,
+        "H_o_difference_env38_minus_env39": 1.1272854465756206,
+        "H_w_difference_env38_minus_env39": 1.3047678565478504
+      },
+      {
+        "bin_centre_origin_offset_degrees": 5.5,
+        "env38_H_o": 3.093066905091473,
+        "env38_H_w": 3.1343755079356557,
+        "env39_H_o": 1.656583883751704,
+        "env39_H_w": 1.4692514207262046,
+        "H_o_difference_env38_minus_env39": 1.4364830213397692,
+        "H_w_difference_env38_minus_env39": 1.665124087209451
+      },
+      {
+        "bin_centre_origin_offset_degrees": 6.0,
+        "env38_H_o": 3.0603055443423215,
+        "env38_H_w": 3.1407420171920393,
+        "env39_H_o": 1.5143534129805727,
+        "env39_H_w": 1.381012158514464,
+        "H_o_difference_env38_minus_env39": 1.5459521313617488,
+        "H_w_difference_env38_minus_env39": 1.7597298586775754
+      },
+      {
+        "bin_centre_origin_offset_degrees": 6.5,
+        "env38_H_o": 3.077439933776719,
+        "env38_H_w": 3.1097220552095926,
+        "env39_H_o": 1.5143534129805727,
+        "env39_H_w": 1.381012158514464,
+        "H_o_difference_env38_minus_env39": 1.5630865207961464,
+        "H_w_difference_env38_minus_env39": 1.7287098966951286
+      },
+      {
+        "bin_centre_origin_offset_degrees": 7.0,
+        "env38_H_o": 3.0354232133924066,
+        "env38_H_w": 3.1156535238102068,
+        "env39_H_o": 1.5143534129805727,
+        "env39_H_w": 1.381012158514464,
+        "H_o_difference_env38_minus_env39": 1.521069800411834,
+        "H_w_difference_env38_minus_env39": 1.7346413652957429
+      },
+      {
+        "bin_centre_origin_offset_degrees": 7.5,
+        "env38_H_o": 2.9877621299110473,
+        "env38_H_w": 3.08632270749412,
+        "env39_H_o": 1.5143534129805727,
+        "env39_H_w": 1.381012158514464,
+        "H_o_difference_env38_minus_env39": 1.4734087169304746,
+        "H_w_difference_env38_minus_env39": 1.7053105489796563
+      },
+      {
+        "bin_centre_origin_offset_degrees": 8.0,
+        "env38_H_o": 2.985021372519694,
+        "env38_H_w": 3.0981134694169916,
+        "env39_H_o": 1.5143534129805727,
+        "env39_H_w": 1.381012158514464,
+        "H_o_difference_env38_minus_env39": 1.4706679595391212,
+        "H_w_difference_env38_minus_env39": 1.7171013109025277
+      },
+      {
+        "bin_centre_origin_offset_degrees": 8.5,
+        "env38_H_o": 2.9844556268480833,
+        "env38_H_w": 3.094854891472632,
+        "env39_H_o": 1.5143534129805727,
+        "env39_H_w": 1.381012158514464,
+        "H_o_difference_env38_minus_env39": 1.4701022138675106,
+        "H_w_difference_env38_minus_env39": 1.713842732958168
+      },
+      {
+        "bin_centre_origin_offset_degrees": 9.0,
+        "env38_H_o": 3.002151599443881,
+        "env38_H_w": 3.1116011879626195,
+        "env39_H_o": 1.5143534129805727,
+        "env39_H_w": 1.381012158514464,
+        "H_o_difference_env38_minus_env39": 1.4877981864633085,
+        "H_w_difference_env38_minus_env39": 1.7305890294481556
+      },
+      {
+        "bin_centre_origin_offset_degrees": 9.5,
+        "env38_H_o": 3.008440564565828,
+        "env38_H_w": 3.1022594398742718,
+        "env39_H_o": 1.5143534129805727,
+        "env39_H_w": 1.381012158514464,
+        "H_o_difference_env38_minus_env39": 1.4940871515852554,
+        "H_w_difference_env38_minus_env39": 1.7212472813598079
+      }
+    ]
+  },
+  "hypothesis_assessment": {
+    "H1": {
+      "expectation": "Env38 H_o > Env39 H_o",
+      "assessment": "supported"
+    },
+    "H2": {
+      "expectation": "Env38 H_w > Env39 H_w",
+      "assessment": "supported"
+    },
+    "H3": {
+      "expectation": "Env38 phi < Env39 phi",
+      "assessment": "supported"
+    },
+    "H4": {
+      "expectation": "Env38 aggregate circuity > Env39 aggregate circuity",
+      "assessment": "not_supported"
+    }
+  },
+  "overall_interpretation": "3 of 4 pre-registered directional expectations are supported. Orientation, curvature, and topology are interpreted descriptively for these two designed environments without inferential testing.",
+  "qa_checks": {
+    "raw_hashes_pass": true,
+    "phase11_manifests_and_round_trips_pass": true,
+    "graph_counts_pass": true,
+    "one_component_each": true,
+    "all_48_validated_crossings_retained": true,
+    "zero_chord_artifacts_absent_from_analytical_metrics": true,
+    "H_w_representation_invariance_pass": true,
+    "all_formula_crosschecks_pass": true,
+    "numerical_tolerance": 1e-12,
+    "inferential_tests_performed": false
+  },
+  "artifact_exclusion_policy": {
+    "registered_env38_artifact_count": 5,
+    "retained_in_provenance_graph": true,
+    "excluded_from_analytical_graph": true,
+    "arbitrary_short_edge_threshold_used": false
+  },
+  "canonical_snapping_tolerance_unity_world_units": 0.0,
+  "crs": null,
+  "meter_scale_verified": false
+}
