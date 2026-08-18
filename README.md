@@ -11,10 +11,13 @@ The planned workflow is:
 
 The analysis will compare street-network orientation, curvature, and topology without assuming in advance that the intended classifications are quantitatively supported. The immutable raw Bézier representation, detailed sampled geometry, and topological network are kept conceptually and operationally distinct.
 
-Phases 0–2 establish the methodology, verified Unity source provenance, and the future exporter's technical contract. No exporter or Python/OSMnx analysis has yet been implemented, and no metric values have been calculated.
+Phases 0–4 establish the methodology, verified Unity source provenance, exporter contract, and frozen canonical raw Bézier exports. Bézier reconstruction and Python/OSMnx analysis have not yet been implemented, and no metric values have been calculated.
+
+The Phase 4 canonical exports in `data/raw/` are frozen immutable research inputs; all later transformations must create new files under `data/processed/`.
 
 ## Documentation
 
 - [Methodology and geometry provenance](docs/methodology.md)
 - [Phase 1 Unity source-data model and provenance](docs/source-data-model.md)
 - [Phase 2 lossless Unity-to-JSON exporter specification](docs/exporter-specification.md)
+- [Phase 4 raw-data provenance and integrity record](docs/raw-data-provenance.md)
