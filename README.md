@@ -11,7 +11,7 @@ The planned workflow is:
 
 The analysis will compare street-network orientation, curvature, and topology without assuming in advance that the intended classifications are quantitatively supported. The immutable raw Bézier representation, detailed sampled geometry, and topological network are kept conceptually and operationally distinct.
 
-Phases 0–8 establish the methodology, verified Unity source provenance, exporter contract, frozen canonical raw Bézier exports, reproducible Python environment, converged adaptive linework, and a refined pairwise geometric-intersection inventory. Phases 9–11 validate all 48 junctions, select zero canonical snapping, and construct provenance-preserving analytical graphs. **Phase 12 is COMPLETE:** the final descriptive orientation, length, topology, and circuity metrics quantify a strong orientation-based distinction between Env38 and Env39, while the pre-specified aggregate-circuity expectation is not supported.
+Phases 0–8 establish the methodology, verified Unity source provenance, exporter contract, frozen canonical raw Bézier exports, reproducible Python environment, converged adaptive linework, and a refined pairwise geometric-intersection inventory. Phases 9–11 validate all 48 junctions, select zero canonical snapping, and construct provenance-preserving analytical graphs. **Phase 12 is COMPLETE:** final primary metrics show a strong orientation-based distinction, while aggregate-circuity H4 is not supported. **Phase 13 is COMPLETE:** the final robustness and interpretation audit explains that result without changing any Phase 12 metric.
 
 The Phase 4 canonical exports in `data/raw/` are frozen immutable research inputs; all later transformations must create new files under `data/processed/`.
 
@@ -94,3 +94,4 @@ Primary results are in `outputs/tables/phase12-primary-morphology-metrics.csv`; 
 - [Phase 10 exact topology and snapping sensitivity](docs/phase10-topology-and-snapping.md)
 - [Phase 11 network graph construction](docs/phase11-network-graph-construction.md)
 - [Phase 12 final morphology analysis](docs/phase12-final-morphology-analysis.md)
+- [Phase 13 final results robustness and interpretation audit](docs/phase13-results-robustness-and-interpretation.md)
