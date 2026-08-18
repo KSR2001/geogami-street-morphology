@@ -1,0 +1,50 @@
+{
+  "phase11_graph_manifest_schema_version": "1.0.0",
+  "environment_id": 39,
+  "graph_variant": "provenance_detailed",
+  "graphml_path": "data/graphs/env39_provenance_detailed.graphml",
+  "graphml_sha256": "49a3210af8c59ab7f166c7611ea30add8953088d8799cd591d2415f3d9c17daa",
+  "source_phase10_topology_sha256": "5cceb430df2d02926013140ad1672feadda2d4d63436410910087dd6e8a9c72c",
+  "coordinate_system": "Unity world XY",
+  "coordinate_units": "Unity world units",
+  "crs": null,
+  "meters_per_unit": null,
+  "canonical_snapping_tolerance": 0.0,
+  "summary": {
+    "graph_type": "MultiGraph",
+    "nodes": 53,
+    "edges": 72,
+    "self_loops": 0,
+    "parallel_edge_pairs": 0,
+    "components": 1,
+    "validated_crossing_nodes_represented": 20,
+    "zero_chord_artifact_edges_represented": 0,
+    "simplified": false,
+    "crs_assigned": false
+  },
+  "graph_attributes": {
+    "environment_id": 39,
+    "graph_variant": "provenance_detailed",
+    "coordinate_system": "Unity world XY",
+    "coordinate_units": "Unity world units",
+    "meters_per_unit": null,
+    "crs": null,
+    "canonical_snapping_tolerance": 0.0,
+    "simplified": false,
+    "directed_street_semantics": false
+  },
+  "round_trip_validation": {
+    "node_count_matches": true,
+    "edge_count_matches": true,
+    "directed_matches": true,
+    "multigraph_matches": true,
+    "node_ids_match": true,
+    "edge_keys_match": true,
+    "coordinates_match": true,
+    "provenance_ids_match": true,
+    "geometry_matches": true,
+    "connectivity_matches": true,
+    "zero_chord_policy_matches": true,
+    "passed": true
+  }
+}
