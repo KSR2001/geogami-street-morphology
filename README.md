@@ -11,7 +11,7 @@ The planned workflow is:
 
 The analysis will compare street-network orientation, curvature, and topology without assuming in advance that the intended classifications are quantitatively supported. The immutable raw Bézier representation, detailed sampled geometry, and topological network are kept conceptually and operationally distinct.
 
-Phases 0–4 establish the methodology, verified Unity source provenance, exporter contract, and frozen canonical raw Bézier exports. Bézier reconstruction and Python/OSMnx analysis have not yet been implemented, and no metric values have been calculated.
+Phases 0–6 establish the methodology, verified Unity source provenance, exporter contract, frozen canonical raw Bézier exports, reproducible Python environment, and lossless world-XY Bézier reconstruction with visual geometry QA. Network topology and scientific morphology metrics have not yet been implemented.
 
 The Phase 4 canonical exports in `data/raw/` are frozen immutable research inputs; all later transformations must create new files under `data/processed/`.
 
@@ -29,6 +29,13 @@ Run the environment and raw-input smoke test:
 conda run -n geogami-morphology python scripts/check_environment.py
 ```
 
+Run the Phase 6 mathematical tests and reconstruction QA:
+
+```powershell
+conda run -n geogami-morphology pytest
+conda run -n geogami-morphology python scripts/reconstruct_bezier_geometry.py
+```
+
 ## Documentation
 
 - [Methodology and geometry provenance](docs/methodology.md)
@@ -36,3 +43,4 @@ conda run -n geogami-morphology python scripts/check_environment.py
 - [Phase 2 lossless Unity-to-JSON exporter specification](docs/exporter-specification.md)
 - [Phase 4 raw-data provenance and integrity record](docs/raw-data-provenance.md)
 - [Phase 5 Python environment and reproducibility](docs/python-environment.md)
+- [Phase 6 lossless Bézier reconstruction and geometry QA](docs/phase6-reconstruction-qa.md)
