@@ -10,10 +10,11 @@ __pycache__/
 .coverage.*
 htmlcov/
 
-# Local Python environments
+# Local Python/Conda environments
 .venv/
 venv/
 env/
+.conda/
 
 # Packaging/build artifacts
 build/

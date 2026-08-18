@@ -15,9 +15,24 @@ Phases 0–4 establish the methodology, verified Unity source provenance, export
 
 The Phase 4 canonical exports in `data/raw/` are frozen immutable research inputs; all later transformations must create new files under `data/processed/`.
 
+## Python environment
+
+Create the dedicated Conda environment:
+
+```powershell
+conda env create -f environment.yml
+```
+
+Run the environment and raw-input smoke test:
+
+```powershell
+conda run -n geogami-morphology python scripts/check_environment.py
+```
+
 ## Documentation
 
 - [Methodology and geometry provenance](docs/methodology.md)
 - [Phase 1 Unity source-data model and provenance](docs/source-data-model.md)
 - [Phase 2 lossless Unity-to-JSON exporter specification](docs/exporter-specification.md)
 - [Phase 4 raw-data provenance and integrity record](docs/raw-data-provenance.md)
+- [Phase 5 Python environment and reproducibility](docs/python-environment.md)
