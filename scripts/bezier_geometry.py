@@ -1,0 +1,191 @@
+"""Focused mathematical helpers for quadratic Bézier geometry."""
+
+from __future__ import annotations
+
+import numpy as np
+from numpy.typing import ArrayLike, NDArray
+
+
+def _validated_xy_control_points(
+    p0: ArrayLike, p1: ArrayLike, p2: ArrayLike
+) -> tuple[NDArray[np.float64], NDArray[np.float64], NDArray[np.float64]]:
+    """Return finite float64 XY copies/views after common validation."""
+    control_points = tuple(
+        np.asarray(point, dtype=np.float64) for point in (p0, p1, p2)
+    )
+    for name, point in zip(("p0", "p1", "p2"), control_points, strict=True):
+        if point.shape != (2,):
+            raise ValueError(f"{name} must have shape (2,), received {point.shape}")
+        if not np.all(np.isfinite(point)):
+            raise ValueError(f"{name} must contain only finite values")
+    return control_points
+
+
+def quadratic_bezier_point(
+    p0: ArrayLike,
+    p1: ArrayLike,
+    p2: ArrayLike,
+    t: ArrayLike,
+) -> NDArray[np.float64]:
+    """Evaluate a planar quadratic Bézier curve without mutating inputs.
+
+    Parameters
+    ----------
+    p0, p1, p2
+        Finite XY control coordinates, each with shape ``(2,)``.
+    t
+        A finite scalar or array of parameters in the closed interval [0, 1].
+
+    Returns
+    -------
+    numpy.ndarray
+        For scalar ``t``, an XY array with shape ``(2,)``. For array ``t``,
+        an array with shape ``t.shape + (2,)``.
+    """
+    control_points = _validated_xy_control_points(p0, p1, p2)
+
+    parameter = np.asarray(t, dtype=np.float64)
+    if not np.all(np.isfinite(parameter)):
+        raise ValueError("t must contain only finite values")
+    if np.any((parameter < 0.0) | (parameter > 1.0)):
+        raise ValueError("t must be within the closed interval [0, 1]")
+
+    p0_array, p1_array, p2_array = control_points
+    one_minus_t = 1.0 - parameter
+    return (
+        one_minus_t[..., np.newaxis] ** 2 * p0_array
+        + 2.0 * one_minus_t[..., np.newaxis] * parameter[..., np.newaxis] * p1_array
+        + parameter[..., np.newaxis] ** 2 * p2_array
+    )
+
+
+def quadratic_bezier_derivative(
+    p0: ArrayLike,
+    p1: ArrayLike,
+    p2: ArrayLike,
+    t: ArrayLike,
+) -> NDArray[np.float64]:
+    """Evaluate the derivative of a planar quadratic Bézier at ``t``."""
+    p0_array, p1_array, p2_array = _validated_xy_control_points(p0, p1, p2)
+    parameter = np.asarray(t, dtype=np.float64)
+    if not np.all(np.isfinite(parameter)):
+        raise ValueError("t must contain only finite values")
+    if np.any((parameter < 0.0) | (parameter > 1.0)):
+        raise ValueError("t must be within the closed interval [0, 1]")
+    one_minus_t = 1.0 - parameter
+    return 2.0 * (
+        one_minus_t[..., np.newaxis] * (p1_array - p0_array)
+        + parameter[..., np.newaxis] * (p2_array - p1_array)
+    )
+
+
+def subdivide_quadratic_bezier(
+    p0: ArrayLike, p1: ArrayLike, p2: ArrayLike
+) -> tuple[
+    tuple[NDArray[np.float64], NDArray[np.float64], NDArray[np.float64]],
+    tuple[NDArray[np.float64], NDArray[np.float64], NDArray[np.float64]],
+]:
+    """Split a quadratic Bézier at t=0.5 using de Casteljau construction."""
+    p0_array, p1_array, p2_array = _validated_xy_control_points(p0, p1, p2)
+    p01 = (p0_array + p1_array) / 2.0
+    p12 = (p1_array + p2_array) / 2.0
+    midpoint = (p01 + p12) / 2.0
+    return (p0_array, p01, midpoint), (midpoint, p12, p2_array)
+
+
+def adaptive_quadratic_bezier_polyline(
+    p0: ArrayLike,
+    p1: ArrayLike,
+    p2: ArrayLike,
+    tolerance: float,
+    *,
+    max_depth: int = 60,
+) -> NDArray[np.float64]:
+    """Approximate a quadratic Bézier with an ordered adaptive XY polyline.
+
+    For a non-zero endpoint chord, the maximum perpendicular distance between
+    a quadratic Bézier and its endpoint chord is exactly half the perpendicular
+    distance from ``p1`` to the infinite ``p0``-``p2`` line. A sub-curve is
+    therefore accepted when ``control_point_distance / 2 <= tolerance``.
+
+    A curve with ``p0 == p2`` and a distinct ``p1`` receives a mandatory first
+    de Casteljau split. This preserves its out-and-back excursion before the
+    ordinary non-zero-chord criterion is applied to both halves.
+
+    Returned vertices follow increasing Bézier parameter and include the exact
+    original endpoints. Input arrays are never mutated.
+    """
+    return adaptive_quadratic_bezier_samples(
+        p0, p1, p2, tolerance, max_depth=max_depth
+    )[:, 1:]
+
+
+def adaptive_quadratic_bezier_samples(
+    p0: ArrayLike,
+    p1: ArrayLike,
+    p2: ArrayLike,
+    tolerance: float,
+    *,
+    max_depth: int = 60,
+) -> NDArray[np.float64]:
+    """Return ordered ``(t, x, y)`` adaptive samples for a quadratic Bézier.
+
+    The geometric criterion and zero-chord policy are identical to
+    :func:`adaptive_quadratic_bezier_polyline`; this form additionally retains
+    the exact dyadic source-curve parameters generated by subdivision.
+    """
+    p0_array, p1_array, p2_array = _validated_xy_control_points(p0, p1, p2)
+    tolerance_value = float(tolerance)
+    if not np.isfinite(tolerance_value) or tolerance_value <= 0.0:
+        raise ValueError("tolerance must be finite and greater than zero")
+    if not isinstance(max_depth, int) or max_depth < 1:
+        raise ValueError("max_depth must be a positive integer")
+
+    def recurse(
+        start: NDArray[np.float64],
+        control: NDArray[np.float64],
+        end: NDArray[np.float64],
+        parameter_start: float,
+        parameter_end: float,
+        depth: int,
+    ) -> list[tuple[float, NDArray[np.float64]]]:
+        chord = end - start
+        chord_length = float(np.linalg.norm(chord))
+        if chord_length == 0.0:
+            if np.array_equal(start, control):
+                return [(parameter_start, start), (parameter_end, end)]
+            if depth >= max_depth:
+                raise RuntimeError("adaptive Bézier subdivision exceeded max_depth")
+            left, right = subdivide_quadratic_bezier(start, control, end)
+            parameter_midpoint = (parameter_start + parameter_end) / 2.0
+            left_vertices = recurse(
+                *left, parameter_start, parameter_midpoint, depth + 1
+            )
+            right_vertices = recurse(
+                *right, parameter_midpoint, parameter_end, depth + 1
+            )
+            return left_vertices[:-1] + right_vertices
+
+        cross = chord[0] * (control[1] - start[1]) - chord[1] * (
+            control[0] - start[0]
+        )
+        maximum_curve_to_chord_deviation = abs(float(cross)) / chord_length / 2.0
+        if maximum_curve_to_chord_deviation <= tolerance_value:
+            return [(parameter_start, start), (parameter_end, end)]
+        if depth >= max_depth:
+            raise RuntimeError("adaptive Bézier subdivision exceeded max_depth")
+
+        left, right = subdivide_quadratic_bezier(start, control, end)
+        parameter_midpoint = (parameter_start + parameter_end) / 2.0
+        left_vertices = recurse(*left, parameter_start, parameter_midpoint, depth + 1)
+        right_vertices = recurse(*right, parameter_midpoint, parameter_end, depth + 1)
+        return left_vertices[:-1] + right_vertices
+
+    samples = recurse(p0_array, p1_array, p2_array, 0.0, 1.0, 0)
+    result = np.array(
+        [[parameter, point[0], point[1]] for parameter, point in samples],
+        dtype=np.float64,
+    )
+    result[0] = [0.0, p0_array[0], p0_array[1]]
+    result[-1] = [1.0, p2_array[0], p2_array[1]]
+    return result

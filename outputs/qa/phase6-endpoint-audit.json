@@ -1,0 +1,2788 @@
+{
+  "audit_schema_version": "1.0.0",
+  "phase6_reconstruction_version": "1.0.0",
+  "coordinate_space": "Unity world XY",
+  "comparison": "exact coordinate equality only",
+  "snapping_performed": false,
+  "topology_constructed": false,
+  "warning": "This is source endpoint QA, not final topology. Crossings may occur inside Bézier curves and across different Shapes; endpoint equality alone is insufficient to identify navigable intersections.",
+  "environments": [
+    {
+      "environment_id": 38,
+      "total_source_segments": 120,
+      "total_endpoint_occurrences": 240,
+      "distinct_exact_endpoint_positions": 119,
+      "distinct_directed_p0_p2_pairs": 119,
+      "distinct_undirected_p0_p2_pairs": 119,
+      "endpoint_positions_appearing_once": 21,
+      "endpoint_positions_with_multiple_occurrences": 98,
+      "endpoint_positions_shared_by_multiple_source_segments": 98,
+      "maximum_endpoint_occurrence_count": 6,
+      "endpoint_occurrence_frequency": {
+        "1": 21,
+        "2": 83,
+        "3": 9,
+        "4": 5,
+        "6": 1
+      },
+      "exact_endpoint_positions": [
+        {
+          "position_xy": [
+            2.35858154,
+            220.477509
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0026",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            35.6348457,
+            65.27544
+          ],
+          "endpoint_occurrence_count": 3,
+          "distinct_source_segment_count": 3,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0020",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0021",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0024",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            35.86326,
+            37.3374062
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0021",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0022",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            36.91024,
+            157.210281
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0024",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0025",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            38.6048965,
+            178.315781
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0025",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0026",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            39.14038,
+            17.2817326
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0022",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0023",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            40.72269,
+            -7.124259
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0032",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            40.8395042,
+            195.634842
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0026",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0027",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            40.94345,
+            -7.055625
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0023",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            41.9568863,
+            221.892853
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0027",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0028",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            43.6329231,
+            238.094589
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0028",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            47.1299973,
+            88.2654648
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0019",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0020",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            47.99772,
+            -55.9712143
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0031",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0032",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            52.1229858,
+            -84.5067
+          ],
+          "endpoint_occurrence_count": 3,
+          "distinct_source_segment_count": 3,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0027",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0028",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0031",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            52.61229,
+            -164.559021
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0028",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            57.7309456,
+            364.452759
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0017",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            58.6248245,
+            110.434319
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0018",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0019",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            61.6103973,
+            -37.3758965
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0026",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0027",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            64.9214249,
+            219.95816
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0025",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0026",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            69.55453,
+            -21.15689
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0025",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0026",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            70.54418,
+            219.988846
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0016",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0017",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            72.31711,
+            114.152306
+          ],
+          "endpoint_occurrence_count": 3,
+          "distinct_source_segment_count": 3,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0013",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0014",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0018",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            72.66594,
+            114.315727
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0003",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            72.914856,
+            136.863861
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0014",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0015",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            74.70795,
+            164.954742
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0015",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0016",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            82.70692,
+            21.4694939
+          ],
+          "endpoint_occurrence_count": 6,
+          "distinct_source_segment_count": 4,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0010",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0011",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0011",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0012",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0012",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0013",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            88.42153,
+            -4.60680676
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0024",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0025",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            90.43803,
+            -5.15984249
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0009",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0010",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            100.964554,
+            -29.97353
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0008",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0009",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            105.966957,
+            116.081627
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0002",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0003",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            117.5127,
+            -53.993515
+          ],
+          "endpoint_occurrence_count": 4,
+          "distinct_source_segment_count": 3,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0006",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0007",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0007",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0008",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            125.049477,
+            10.1802359
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0023",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0024",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            136.50444,
+            9.269164
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0022",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0023",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            137.1695,
+            232.247681
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0024",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0025",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            148.943878,
+            -78.8380051
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0005",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0006",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            150.509354,
+            212.02124
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855546755831596_segment_0001",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855546755831596_segment_0002",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            160.768951,
+            171.922485
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0024",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            165.963425,
+            100.570053
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0001",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0002",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            167.1005,
+            3.60353327
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0021",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0022",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            168.079529,
+            265.528717
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0029",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            177.217178,
+            99.70418
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0001",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0004",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            183.0481,
+            -95.28108
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0004",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0005",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            183.610336,
+            170.883209
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0023",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0024",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            189.062622,
+            231.818237
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0030",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0031",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            190.7823,
+            232.411346
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0012",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            192.105728,
+            194.691055
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0011",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0012",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            193.969421,
+            248.589188
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0031",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0032",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            196.5312,
+            266.521484
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0032",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            200.534454,
+            171.412552
+          ],
+          "endpoint_occurrence_count": 4,
+          "distinct_source_segment_count": 4,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0010",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0011",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0013",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0023",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            201.329361,
+            116.088776
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0004",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0005",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            204.35701,
+            163.317947
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0009",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0010",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            207.019424,
+            172.7983
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0013",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0014",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            211.707077,
+            155.770859
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0008",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0009",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            212.147278,
+            232.0985
+          ],
+          "endpoint_occurrence_count": 3,
+          "distinct_source_segment_count": 3,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0023",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0024",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0030",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            213.256165,
+            121.9834
+          ],
+          "endpoint_occurrence_count": 4,
+          "distinct_source_segment_count": 3,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0005",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0006",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0006",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0007",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            213.429,
+            142.87561
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0007",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0008",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            218.979279,
+            -103.80719
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0003",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0004",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            242.7432,
+            176.897461
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0014",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0015",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            243.733292,
+            -16.7450562
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0020",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0021",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            247.704025,
+            291.84
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0008",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0009",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            248.2164,
+            267.857178
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0028",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0029",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            249.138641,
+            333.433777
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0009",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0010",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            256.022736,
+            357.8171
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0010",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            258.637146,
+            309.5465
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855546755831596_segment_0002",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855546755831596_segment_0003",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            260.467224,
+            -104.757195
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0001",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0003",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            260.660156,
+            29.3958836
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0005",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0006",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            263.0767,
+            154.7248
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0006",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0007",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            264.1401,
+            113.43824
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855546755831596_segment_0001",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855546755831596_segment_0004",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            264.966125,
+            226.26561
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0022",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0023",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            266.427765,
+            -31.2446632
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0001",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0005",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            268.837524,
+            249.960556
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0007",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0008",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            270.286774,
+            191.72197
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0015",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0016",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            270.2964,
+            -66.0614
+          ],
+          "endpoint_occurrence_count": 3,
+          "distinct_source_segment_count": 3,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0001",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0002",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0029",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            274.5499,
+            -164.5191
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0030",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            275.892578,
+            -110.37674
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0029",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0030",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            277.478943,
+            223.209656
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0021",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0022",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            281.901978,
+            -38.01455
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0019",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0020",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            282.841736,
+            201.692108
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0016",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0017",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            298.572449,
+            283.035156
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0027",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0028",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            300.761017,
+            -31.2446632
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0018",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0019",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            301.928284,
+            228.827286
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0020",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0021",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            309.5056,
+            204.422577
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0017",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0018",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            319.106323,
+            215.684967
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0009",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0010",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            319.917084,
+            44.6244621
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0014",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0015",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            320.647644,
+            255.546143
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0010",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0011",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            321.070831,
+            -9.967396
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0017",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0018",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            324.0194,
+            108.619087
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0015",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0016",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            328.613617,
+            284.7548
+          ],
+          "endpoint_occurrence_count": 3,
+          "distinct_source_segment_count": 3,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0011",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0012",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0027",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            331.0658,
+            207.331726
+          ],
+          "endpoint_occurrence_count": 4,
+          "distinct_source_segment_count": 3,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0018",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0019",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0019",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0020",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            336.061676,
+            7.44067526
+          ],
+          "endpoint_occurrence_count": 3,
+          "distinct_source_segment_count": 3,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0013",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0014",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0017",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            337.967041,
+            147.180389
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0016",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            338.264374,
+            146.771729
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0007",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0008",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            338.264374,
+            176.704773
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0008",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0009",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            344.254944,
+            202.171112
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0020",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0021",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            347.991882,
+            -103.453026
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0001",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0002",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            348.001526,
+            143.165344
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0006",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0007",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            352.8568,
+            180.379868
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0021",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0022",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            352.9862,
+            -69.4465256
+          ],
+          "endpoint_occurrence_count": 3,
+          "distinct_source_segment_count": 3,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0002",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0003",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0011",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            353.469727,
+            -15.7705336
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0012",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0013",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            353.9619,
+            253.097946
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0019",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0020",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            355.167,
+            310.9762
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0012",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0013",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            357.338226,
+            -35.1131744
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0011",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0012",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            361.345245,
+            126.575935
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0005",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0006",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            366.43692,
+            211.2648
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855546755831596_segment_0003",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855546755831596_segment_0004",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            369.8082,
+            253.097946
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0018",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0019",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            379.065,
+            314.626526
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0013",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0014",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            382.9608,
+            252.127426
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0017",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0018",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            385.868652,
+            -60.742218
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0003",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0004",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            389.6759,
+            181.383591
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547529842337_segment_0022",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            390.1316,
+            117.607666
+          ],
+          "endpoint_occurrence_count": 3,
+          "distinct_source_segment_count": 3,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0001",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0002",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0005",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            390.801544,
+            251.882431
+          ],
+          "endpoint_occurrence_count": 4,
+          "distinct_source_segment_count": 4,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0001",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0004",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0015",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0017",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            393.3378,
+            322.593262
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0014",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            394.3185,
+            367.160583
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0004",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            401.458862,
+            -160.432449
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0003",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            401.683319,
+            -40.3689346
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0002",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0003",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            418.24173,
+            246.982239
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0015",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0016",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            439.6425,
+            -60.92745
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547524397474_segment_0004",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            440.047668,
+            245.022171
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547456548042_segment_0016",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            440.35083,
+            -100.550011
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env38_shape_4330855547829185599_segment_0002",
+              "endpoint": "p0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "environment_id": 39,
+      "total_source_segments": 32,
+      "total_endpoint_occurrences": 64,
+      "distinct_exact_endpoint_positions": 33,
+      "distinct_directed_p0_p2_pairs": 32,
+      "distinct_undirected_p0_p2_pairs": 32,
+      "endpoint_positions_appearing_once": 19,
+      "endpoint_positions_with_multiple_occurrences": 14,
+      "endpoint_positions_shared_by_multiple_source_segments": 14,
+      "maximum_endpoint_occurrence_count": 4,
+      "endpoint_occurrence_frequency": {
+        "1": 19,
+        "2": 2,
+        "3": 7,
+        "4": 5
+      },
+      "exact_endpoint_positions": [
+        {
+          "position_xy": [
+            0.6841152,
+            225.05864
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0004",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            38.6014137,
+            225.057266
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0006",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            39.5062256,
+            113.766319
+          ],
+          "endpoint_occurrence_count": 3,
+          "distinct_source_segment_count": 3,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0001",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0006",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0007",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            40.4110374,
+            -163.103928
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0007",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            40.45769,
+            4.323607
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0024",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            70.1664658,
+            370.069824
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0022",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            75.49738,
+            4.35697126
+          ],
+          "endpoint_occurrence_count": 4,
+          "distinct_source_segment_count": 4,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0021",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0022",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0023",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0024",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            77.58896,
+            -105.765144
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0020",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0021",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            147.863861,
+            309.430145
+          ],
+          "endpoint_occurrence_count": 2,
+          "distinct_source_segment_count": 2,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0017",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0025",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            149.229645,
+            268.13327
+          ],
+          "endpoint_occurrence_count": 3,
+          "distinct_source_segment_count": 3,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0025",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0026",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0028",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            150.943787,
+            171.266708
+          ],
+          "endpoint_occurrence_count": 3,
+          "distinct_source_segment_count": 3,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0026",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0027",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0029",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            151.926239,
+            117.237411
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0027",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            201.534927,
+            309.2591
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0031",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            203.164871,
+            170.711792
+          ],
+          "endpoint_occurrence_count": 4,
+          "distinct_source_segment_count": 4,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0029",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0030",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0031",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0032",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            204.794846,
+            115.293137
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0032",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            259.701172,
+            365.668671
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0014",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            266.09726,
+            -165.804245
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0016",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            266.2587,
+            -64.98972
+          ],
+          "endpoint_occurrence_count": 3,
+          "distinct_source_segment_count": 3,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0013",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0014",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0016",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            317.767639,
+            373.797943
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0015",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            318.854767,
+            309.25766
+          ],
+          "endpoint_occurrence_count": 4,
+          "distinct_source_segment_count": 4,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0010",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0011",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0015",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0017",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            319.9088,
+            267.53772
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0028",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            326.01944,
+            4.312198
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0023",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            326.294525,
+            -64.14967
+          ],
+          "endpoint_occurrence_count": 3,
+          "distinct_source_segment_count": 3,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0011",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0012",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0013",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            382.2173,
+            309.25766
+          ],
+          "endpoint_occurrence_count": 3,
+          "distinct_source_segment_count": 3,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0008",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0009",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0010",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            382.2173,
+            369.6955
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0009",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            383.2774,
+            171.527237
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0030",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            383.326172,
+            224.036575
+          ],
+          "endpoint_occurrence_count": 4,
+          "distinct_source_segment_count": 4,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0002",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0004",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0005",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0008",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            385.97287,
+            113.819283
+          ],
+          "endpoint_occurrence_count": 3,
+          "distinct_source_segment_count": 3,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0001",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0002",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0003",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            388.4834,
+            -104.874329
+          ],
+          "endpoint_occurrence_count": 4,
+          "distinct_source_segment_count": 4,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0003",
+              "endpoint": "p2"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0018",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0019",
+              "endpoint": "p0"
+            },
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0020",
+              "endpoint": "p0"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            389.3737,
+            -171.685287
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0018",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            439.933716,
+            -62.6740646
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0012",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            440.150177,
+            -103.983543
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0019",
+              "endpoint": "p2"
+            }
+          ]
+        },
+        {
+          "position_xy": [
+            442.0116,
+            224.37355
+          ],
+          "endpoint_occurrence_count": 1,
+          "distinct_source_segment_count": 1,
+          "references": [
+            {
+              "segment_id": "env39_shape_3305298596651482022_segment_0005",
+              "endpoint": "p2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

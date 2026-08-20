@@ -1,0 +1,91 @@
+{
+  "manifest_schema_version": "1.0.0",
+  "phase": 4,
+  "dataset_status": "frozen_canonical_raw_input",
+  "canonicalization": {
+    "purpose": "timestamp_independent_fingerprint",
+    "excluded_fields": [
+      "export_timestamp_utc"
+    ],
+    "object_key_order": "lexicographic",
+    "array_order": "preserved",
+    "json_separators": ", and : without whitespace",
+    "unicode_serialization": "UTF-8 with Unicode emitted directly and no BOM",
+    "non_finite_numbers": "forbidden",
+    "hash_algorithm": "SHA-256"
+  },
+  "source_provenance": {
+    "source_unity_version": "2022.3.62f3",
+    "source_git_branch": "analysis/osmnx-env38-env39",
+    "source_git_commit": "b4f10aede3cf7b825e9cf9ee25bbc42c0fa0a55e",
+    "source_git_worktree_dirty": true,
+    "authoritative_source_paths_clean_relative_to_recorded_head": true,
+    "meter_scale_verified": false,
+    "meters_per_unity_world_unit": null
+  },
+  "determinism": {
+    "determinism_run_verified": true,
+    "comparison": "exact parsed structure after removing only export_timestamp_utc",
+    "coordinate_tolerance_used": false,
+    "run2_directory": "outputs/qa/export-determinism/run2"
+  },
+  "canonical_files": [
+    {
+      "file_name": "env38_bezier.json",
+      "relative_path": "data/raw/env38_bezier.json",
+      "environment_id": 38,
+      "source_export_timestamp_utc": "2026-08-18T18:27:10.401Z",
+      "source_unity_version": "2022.3.62f3",
+      "source_git_branch": "analysis/osmnx-env38-env39",
+      "source_git_commit": "b4f10aede3cf7b825e9cf9ee25bbc42c0fa0a55e",
+      "source_git_worktree_dirty": true,
+      "shape_count": 5,
+      "ordered_shape_segment_counts": [
+        4,
+        32,
+        32,
+        24,
+        28
+      ],
+      "segment_count": 120,
+      "sha256": "43ea446a4a88e9f3d594fb8b72742f5d4b2a1ee8a03ebf8350c4c3cce45c5819",
+      "timestamp_independent_fingerprint_sha256": "8480876d91fd62e86077755d37ef59c0a2b1db32feb79947f56012ed64453d4d",
+      "determinism_run_verified": true,
+      "meter_scale_verified": false,
+      "known_anomaly_ids": [
+        "env38_shape_4330855547529842337_segment_0006",
+        "env38_shape_4330855547529842337_segment_0019",
+        "env38_shape_4330855547829185599_segment_0007",
+        "env38_shape_4330855547829185599_segment_0011",
+        "env38_shape_4330855547829185599_segment_0012"
+      ]
+    },
+    {
+      "file_name": "env39_bezier.json",
+      "relative_path": "data/raw/env39_bezier.json",
+      "environment_id": 39,
+      "source_export_timestamp_utc": "2026-08-18T18:27:10.401Z",
+      "source_unity_version": "2022.3.62f3",
+      "source_git_branch": "analysis/osmnx-env38-env39",
+      "source_git_commit": "b4f10aede3cf7b825e9cf9ee25bbc42c0fa0a55e",
+      "source_git_worktree_dirty": true,
+      "shape_count": 1,
+      "ordered_shape_segment_counts": [
+        32
+      ],
+      "segment_count": 32,
+      "sha256": "e5dbce6b4d88656c9e0f3bbf6a814434f64b0fbe9b3ff1864ea3fafaf0883602",
+      "timestamp_independent_fingerprint_sha256": "9a09801089782ded7fa63061a8b3164d56d39ae9985ed02face9f61538788151",
+      "determinism_run_verified": true,
+      "meter_scale_verified": false,
+      "known_anomaly_ids": []
+    }
+  ],
+  "known_anomaly_ids": [
+    "env38_shape_4330855547529842337_segment_0006",
+    "env38_shape_4330855547529842337_segment_0019",
+    "env38_shape_4330855547829185599_segment_0007",
+    "env38_shape_4330855547829185599_segment_0011",
+    "env38_shape_4330855547829185599_segment_0012"
+  ]
+}

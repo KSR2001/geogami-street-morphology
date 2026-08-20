@@ -1,0 +1,1573 @@
+{
+  "diagnostic_schema_version": "1.0.0",
+  "phase6_reconstruction_version": "1.0.0",
+  "coordinate_space": "Unity world XY",
+  "units": "Unity world units",
+  "purpose": "source-geometry QA only",
+  "not_a_scientific_morphology_metric": true,
+  "not_network_circuity": true,
+  "method": "Perpendicular distance from p1 to the infinite p0-p2 chord line; zero-chord segments are reported separately because chord direction is undefined.",
+  "environments": [
+    {
+      "environment_id": 38,
+      "source_segment_count": 120,
+      "classification_counts": {
+        "control_point_deviates_from_chord": 109,
+        "exactly_collinear": 1,
+        "near_collinear": 5,
+        "zero_chord_undefined": 5
+      },
+      "near_straight_ratio_threshold": 1e-06,
+      "defined_perpendicular_deviation_range_world_units": {
+        "minimum": 0.0,
+        "maximum": 64.7332620883058
+      },
+      "zero_chord_segment_ids": [
+        "env38_shape_4330855547529842337_segment_0006",
+        "env38_shape_4330855547529842337_segment_0019",
+        "env38_shape_4330855547829185599_segment_0007",
+        "env38_shape_4330855547829185599_segment_0011",
+        "env38_shape_4330855547829185599_segment_0012"
+      ],
+      "segments": [
+        {
+          "shape_id": "env38_shape_4330855546755831596",
+          "shape_index": 1,
+          "segment_id": "env38_shape_4330855546755831596_segment_0001",
+          "segment_index": 1,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 64.7332620883058,
+          "control_point_deviation_ratio_to_chord": 0.4303084722552394,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855546755831596",
+          "shape_index": 1,
+          "segment_id": "env38_shape_4330855546755831596_segment_0002",
+          "segment_index": 2,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 61.954425648810854,
+          "control_point_deviation_ratio_to_chord": 0.42547668845930053,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855546755831596",
+          "shape_index": 1,
+          "segment_id": "env38_shape_4330855546755831596_segment_0003",
+          "segment_index": 3,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 60.24065142242217,
+          "control_point_deviation_ratio_to_chord": 0.41295525050495585,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855546755831596",
+          "shape_index": 1,
+          "segment_id": "env38_shape_4330855546755831596_segment_0004",
+          "segment_index": 4,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 54.96734004142771,
+          "control_point_deviation_ratio_to_chord": 0.38834128913486243,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0001",
+          "segment_index": 1,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.003843062417426495,
+          "control_point_deviation_ratio_to_chord": 2.8620527352520176e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0002",
+          "segment_index": 2,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0031392934498901655,
+          "control_point_deviation_ratio_to_chord": 1.9818973777609555e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0003",
+          "segment_index": 3,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00474875058874123,
+          "control_point_deviation_ratio_to_chord": 3.955191811691775e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0004",
+          "segment_index": 4,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00028229237975202373,
+          "control_point_deviation_ratio_to_chord": 2.4476545869010327e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0005",
+          "segment_index": 5,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.001543040118413258,
+          "control_point_deviation_ratio_to_chord": 5.1177043228123265e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0006",
+          "segment_index": 6,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0015279933500302102,
+          "control_point_deviation_ratio_to_chord": 7.177053319603299e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0007",
+          "segment_index": 7,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00044137289098162104,
+          "control_point_deviation_ratio_to_chord": 4.2506929426336426e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0008",
+          "segment_index": 8,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0013260000000059335,
+          "control_point_deviation_ratio_to_chord": 4.4298869169668606e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0009",
+          "segment_index": 9,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0016631677974618493,
+          "control_point_deviation_ratio_to_chord": 3.829210343102546e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0010",
+          "segment_index": 10,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00048164234628514943,
+          "control_point_deviation_ratio_to_chord": 1.2073971043042493e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0011",
+          "segment_index": 11,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0008521491714081524,
+          "control_point_deviation_ratio_to_chord": 2.8146547954862238e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0012",
+          "segment_index": 12,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0014871488052135564,
+          "control_point_deviation_ratio_to_chord": 3.985055511969825e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0013",
+          "segment_index": 13,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00012697517842058862,
+          "control_point_deviation_ratio_to_chord": 5.252295255464714e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0014",
+          "segment_index": 14,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0002125489441250117,
+          "control_point_deviation_ratio_to_chord": 1.3003360279825393e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0015",
+          "segment_index": 15,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 2.432723055338705,
+          "control_point_deviation_ratio_to_chord": 0.08727481880200774,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0016",
+          "segment_index": 16,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 6.393392150727938e-05,
+          "control_point_deviation_ratio_to_chord": 2.9201767977843657e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0017",
+          "segment_index": 17,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0012615775884033344,
+          "control_point_deviation_ratio_to_chord": 0.00016082175063472572,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0018",
+          "segment_index": 18,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0013297363221069607,
+          "control_point_deviation_ratio_to_chord": 0.00010082652346438557,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0019",
+          "segment_index": 19,
+          "classification": "exactly_collinear",
+          "control_point_perpendicular_deviation_world_units": 0.0,
+          "control_point_deviation_ratio_to_chord": 0.0,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0020",
+          "segment_index": 20,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 5.444121481019605,
+          "control_point_deviation_ratio_to_chord": 0.09481939388966867,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0021",
+          "segment_index": 21,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 5.272530004235838e-05,
+          "control_point_deviation_ratio_to_chord": 2.1017473955499423e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0022",
+          "segment_index": 22,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00015259505406220756,
+          "control_point_deviation_ratio_to_chord": 1.1846904036265501e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0023",
+          "segment_index": 23,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 1.3288537102994935,
+          "control_point_deviation_ratio_to_chord": 0.02500668451601421,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0024",
+          "segment_index": 24,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.000771879684936897,
+          "control_point_deviation_ratio_to_chord": 1.0294759029650662e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0025",
+          "segment_index": 25,
+          "classification": "near_collinear",
+          "control_point_perpendicular_deviation_world_units": 2.647108421579271e-05,
+          "control_point_deviation_ratio_to_chord": 3.612031799763967e-07,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0026",
+          "segment_index": 26,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00015866965738406226,
+          "control_point_deviation_ratio_to_chord": 2.536077040933928e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0027",
+          "segment_index": 27,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.001982659630589697,
+          "control_point_deviation_ratio_to_chord": 6.58902227329764e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0028",
+          "segment_index": 28,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0007311139746262519,
+          "control_point_deviation_ratio_to_chord": 1.3901156602593379e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0029",
+          "segment_index": 29,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.004798751075212669,
+          "control_point_deviation_ratio_to_chord": 5.985667539151114e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0030",
+          "segment_index": 30,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0003525890041342918,
+          "control_point_deviation_ratio_to_chord": 1.5272613200763013e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0031",
+          "segment_index": 31,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0006650503482215464,
+          "control_point_deviation_ratio_to_chord": 3.805937274338809e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547456548042",
+          "shape_index": 2,
+          "segment_id": "env38_shape_4330855547456548042_segment_0032",
+          "segment_index": 32,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00015026070453547826,
+          "control_point_deviation_ratio_to_chord": 8.29511638249167e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0001",
+          "segment_index": 1,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0007013886404182872,
+          "control_point_deviation_ratio_to_chord": 2.002193733865957e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0002",
+          "segment_index": 2,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00035456956874577004,
+          "control_point_deviation_ratio_to_chord": 4.284359518902943e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0003",
+          "segment_index": 3,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0004847715705837848,
+          "control_point_deviation_ratio_to_chord": 1.425169742072758e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0004",
+          "segment_index": 4,
+          "classification": "near_collinear",
+          "control_point_perpendicular_deviation_world_units": 1.8611118743574105e-05,
+          "control_point_deviation_ratio_to_chord": 3.4609775979741337e-07,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0005",
+          "segment_index": 5,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00021869591350198988,
+          "control_point_deviation_ratio_to_chord": 3.590228062365976e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0006",
+          "segment_index": 6,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0008822852109353609,
+          "control_point_deviation_ratio_to_chord": 7.038449494999401e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0007",
+          "segment_index": 7,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0013377684974673991,
+          "control_point_deviation_ratio_to_chord": 1.4021285327250562e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0008",
+          "segment_index": 8,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.001419479780759063,
+          "control_point_deviation_ratio_to_chord": 3.0259885472757088e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0009",
+          "segment_index": 9,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0004424420333069176,
+          "control_point_deviation_ratio_to_chord": 1.06308954601935e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0010",
+          "segment_index": 10,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.000559340706747232,
+          "control_point_deviation_ratio_to_chord": 2.207649653688453e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0011",
+          "segment_index": 11,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0008747306123088861,
+          "control_point_deviation_ratio_to_chord": 2.5275329823005134e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0012",
+          "segment_index": 12,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00044579162645874893,
+          "control_point_deviation_ratio_to_chord": 2.2599539821939955e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0013",
+          "segment_index": 13,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 4.749962626410692e-05,
+          "control_point_deviation_ratio_to_chord": 1.6371392250201277e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0014",
+          "segment_index": 14,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0004019540903739229,
+          "control_point_deviation_ratio_to_chord": 9.91563250828139e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0015",
+          "segment_index": 15,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00042324434145017296,
+          "control_point_deviation_ratio_to_chord": 6.600200991887634e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0016",
+          "segment_index": 16,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00013900638456987597,
+          "control_point_deviation_ratio_to_chord": 3.389884725557397e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0017",
+          "segment_index": 17,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00018019716657415293,
+          "control_point_deviation_ratio_to_chord": 7.843810587161574e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0018",
+          "segment_index": 18,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0005601355073191938,
+          "control_point_deviation_ratio_to_chord": 1.9042860101719178e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0019",
+          "segment_index": 19,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 7.998901878522137e-05,
+          "control_point_deviation_ratio_to_chord": 3.991999246297561e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0020",
+          "segment_index": 20,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00047308404704204563,
+          "control_point_deviation_ratio_to_chord": 1.082699773470618e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0021",
+          "segment_index": 21,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0001209943529553164,
+          "control_point_deviation_ratio_to_chord": 1.52600326771515e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0022",
+          "segment_index": 22,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00014835071406060784,
+          "control_point_deviation_ratio_to_chord": 4.767635081964168e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0023",
+          "segment_index": 23,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0002554510354714774,
+          "control_point_deviation_ratio_to_chord": 2.22302663068843e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0024",
+          "segment_index": 24,
+          "classification": "near_collinear",
+          "control_point_perpendicular_deviation_world_units": 3.745054764790394e-05,
+          "control_point_deviation_ratio_to_chord": 9.481111403797272e-07,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0025",
+          "segment_index": 25,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00031049563013803056,
+          "control_point_deviation_ratio_to_chord": 1.2371728888514065e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0026",
+          "segment_index": 26,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.001180679321087643,
+          "control_point_deviation_ratio_to_chord": 6.53751956736947e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0027",
+          "segment_index": 27,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.001278619487171129,
+          "control_point_deviation_ratio_to_chord": 2.6595670321290508e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0028",
+          "segment_index": 28,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0009220221441147046,
+          "control_point_deviation_ratio_to_chord": 1.1517528905853866e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0029",
+          "segment_index": 29,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0003802595001445034,
+          "control_point_deviation_ratio_to_chord": 8.513154075653679e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0030",
+          "segment_index": 30,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00046356057316598496,
+          "control_point_deviation_ratio_to_chord": 8.559251866472674e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0031",
+          "segment_index": 31,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0007018800921198685,
+          "control_point_deviation_ratio_to_chord": 2.4343677505193864e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547524397474",
+          "shape_index": 3,
+          "segment_id": "env38_shape_4330855547524397474_segment_0032",
+          "segment_index": 32,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0003236949189190514,
+          "control_point_deviation_ratio_to_chord": 6.554421032706206e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0001",
+          "segment_index": 1,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0027789701875337637,
+          "control_point_deviation_ratio_to_chord": 0.0002462095027641605,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0002",
+          "segment_index": 2,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0012809384928672458,
+          "control_point_deviation_ratio_to_chord": 2.0670557855392665e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0003",
+          "segment_index": 3,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0014912697931830144,
+          "control_point_deviation_ratio_to_chord": 4.471867842240193e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0004",
+          "segment_index": 4,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0011151589020911758,
+          "control_point_deviation_ratio_to_chord": 3.82529571947102e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0005",
+          "segment_index": 5,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 3.672031410225739e-05,
+          "control_point_deviation_ratio_to_chord": 2.760104892844179e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0006",
+          "segment_index": 6,
+          "classification": "zero_chord_undefined",
+          "control_point_perpendicular_deviation_world_units": null,
+          "control_point_deviation_ratio_to_chord": null,
+          "zero_chord_control_point_displacement_from_p0_world_units": 6.860029153709445e-05
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0007",
+          "segment_index": 7,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0001599981631161394,
+          "control_point_deviation_ratio_to_chord": 7.658006905629755e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0008",
+          "segment_index": 8,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 5.3460281846108186e-05,
+          "control_point_deviation_ratio_to_chord": 4.109261148298347e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0009",
+          "segment_index": 9,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 7.07287149708967e-05,
+          "control_point_deviation_ratio_to_chord": 6.7138162489836726e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0010",
+          "segment_index": 10,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0003857294714495058,
+          "control_point_deviation_ratio_to_chord": 4.308964158590393e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0011",
+          "segment_index": 11,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00017227598414888462,
+          "control_point_deviation_ratio_to_chord": 6.958546726286655e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0012",
+          "segment_index": 12,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0006799702336180013,
+          "control_point_deviation_ratio_to_chord": 1.8015558393822923e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0013",
+          "segment_index": 13,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 2.0828676640523706e-05,
+          "control_point_deviation_ratio_to_chord": 3.1409288224983146e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0014",
+          "segment_index": 14,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00014525147617339303,
+          "control_point_deviation_ratio_to_chord": 4.039454816352038e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0015",
+          "segment_index": 15,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 4.467848672428057e-05,
+          "control_point_deviation_ratio_to_chord": 1.4283577874278082e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0016",
+          "segment_index": 16,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 4.700950407824191e-05,
+          "control_point_deviation_ratio_to_chord": 2.932197040773667e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0017",
+          "segment_index": 17,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00011177752233479481,
+          "control_point_deviation_ratio_to_chord": 4.170288946780034e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0018",
+          "segment_index": 18,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00039025320018940056,
+          "control_point_deviation_ratio_to_chord": 1.7938071727224427e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0019",
+          "segment_index": 19,
+          "classification": "zero_chord_undefined",
+          "control_point_perpendicular_deviation_world_units": null,
+          "control_point_deviation_ratio_to_chord": null,
+          "zero_chord_control_point_displacement_from_p0_world_units": 0.00011799999998629573
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0020",
+          "segment_index": 20,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0003046154084491354,
+          "control_point_deviation_ratio_to_chord": 2.1508104961579313e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0021",
+          "segment_index": 21,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00021146115356143568,
+          "control_point_deviation_ratio_to_chord": 9.02617329041262e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0022",
+          "segment_index": 22,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 4.18474074051506,
+          "control_point_deviation_ratio_to_chord": 0.11361458166994723,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0023",
+          "segment_index": 23,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 1.9709303806586476e-05,
+          "control_point_deviation_ratio_to_chord": 1.1639998188186692e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547529842337",
+          "shape_index": 4,
+          "segment_id": "env38_shape_4330855547529842337_segment_0024",
+          "segment_index": 24,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00046798861084050786,
+          "control_point_deviation_ratio_to_chord": 2.0467451580513833e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0001",
+          "segment_index": 1,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.002604434045277354,
+          "control_point_deviation_ratio_to_chord": 2.9753272104604163e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0002",
+          "segment_index": 2,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0004215955892667018,
+          "control_point_deviation_ratio_to_chord": 4.562497648517422e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0003",
+          "segment_index": 3,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0008266222327957008,
+          "control_point_deviation_ratio_to_chord": 1.991917423127775e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0004",
+          "segment_index": 4,
+          "classification": "near_collinear",
+          "control_point_perpendicular_deviation_world_units": 1.4017539409924355e-05,
+          "control_point_deviation_ratio_to_chord": 3.7958175664800263e-07,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0005",
+          "segment_index": 5,
+          "classification": "near_collinear",
+          "control_point_perpendicular_deviation_world_units": 2.6327986043710625e-05,
+          "control_point_deviation_ratio_to_chord": 6.953811763755482e-07,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0006",
+          "segment_index": 6,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0005347052765579849,
+          "control_point_deviation_ratio_to_chord": 1.3346096848326698e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0007",
+          "segment_index": 7,
+          "classification": "zero_chord_undefined",
+          "control_point_perpendicular_deviation_world_units": null,
+          "control_point_deviation_ratio_to_chord": null,
+          "zero_chord_control_point_displacement_from_p0_world_units": 0.0003217530108635848
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0008",
+          "segment_index": 8,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 6.850983397635323e-05,
+          "control_point_deviation_ratio_to_chord": 2.3487617532596905e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0009",
+          "segment_index": 9,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00031199108607181706,
+          "control_point_deviation_ratio_to_chord": 1.1574876548339044e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0010",
+          "segment_index": 10,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0005292640192085969,
+          "control_point_deviation_ratio_to_chord": 1.9087093771403862e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0011",
+          "segment_index": 11,
+          "classification": "zero_chord_undefined",
+          "control_point_perpendicular_deviation_world_units": null,
+          "control_point_deviation_ratio_to_chord": null,
+          "zero_chord_control_point_displacement_from_p0_world_units": 0.0006070782568995186
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0012",
+          "segment_index": 12,
+          "classification": "zero_chord_undefined",
+          "control_point_perpendicular_deviation_world_units": null,
+          "control_point_deviation_ratio_to_chord": null,
+          "zero_chord_control_point_displacement_from_p0_world_units": 0.0007152999999995302
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0013",
+          "segment_index": 13,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0008019206240158321,
+          "control_point_deviation_ratio_to_chord": 8.598454308570945e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0014",
+          "segment_index": 14,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0001790296293060271,
+          "control_point_deviation_ratio_to_chord": 7.880026505628476e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0015",
+          "segment_index": 15,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0006531924866221044,
+          "control_point_deviation_ratio_to_chord": 2.3205602547914662e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0016",
+          "segment_index": 16,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00017436700697052228,
+          "control_point_deviation_ratio_to_chord": 3.159315346786046e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0017",
+          "segment_index": 17,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0011098594591493179,
+          "control_point_deviation_ratio_to_chord": 7.652565249719226e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0018",
+          "segment_index": 18,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0002472017426393926,
+          "control_point_deviation_ratio_to_chord": 1.7423177655033038e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0019",
+          "segment_index": 19,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0006042212399075912,
+          "control_point_deviation_ratio_to_chord": 2.419617478559985e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0020",
+          "segment_index": 20,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00041054624415303294,
+          "control_point_deviation_ratio_to_chord": 1.597226787650876e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0021",
+          "segment_index": 21,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0004872448124657342,
+          "control_point_deviation_ratio_to_chord": 1.7439614124463397e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0022",
+          "segment_index": 22,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0005436979570048895,
+          "control_point_deviation_ratio_to_chord": 2.6754613477021294e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0023",
+          "segment_index": 23,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00047173584252319285,
+          "control_point_deviation_ratio_to_chord": 1.933022150162785e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0024",
+          "segment_index": 24,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00015298266770658706,
+          "control_point_deviation_ratio_to_chord": 1.66387353309142e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0025",
+          "segment_index": 25,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00028669644349328097,
+          "control_point_deviation_ratio_to_chord": 1.3540389559757884e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0026",
+          "segment_index": 26,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.000705962287552998,
+          "control_point_deviation_ratio_to_chord": 4.042703787970837e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0027",
+          "segment_index": 27,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00037535319451345665,
+          "control_point_deviation_ratio_to_chord": 1.4281881568835509e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env38_shape_4330855547829185599",
+          "shape_index": 5,
+          "segment_id": "env38_shape_4330855547829185599_segment_0028",
+          "segment_index": 28,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.8648104812359068,
+          "control_point_deviation_ratio_to_chord": 0.05309430515873455,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        }
+      ]
+    },
+    {
+      "environment_id": 39,
+      "source_segment_count": 32,
+      "classification_counts": {
+        "control_point_deviates_from_chord": 24,
+        "exactly_collinear": 1,
+        "near_collinear": 7
+      },
+      "near_straight_ratio_threshold": 1e-06,
+      "defined_perpendicular_deviation_range_world_units": {
+        "minimum": 0.0,
+        "maximum": 2.688755786942994
+      },
+      "zero_chord_segment_ids": [],
+      "segments": [
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0001",
+          "segment_index": 1,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00044305826847967894,
+          "control_point_deviation_ratio_to_chord": 1.2787905285083245e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0002",
+          "segment_index": 2,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0001686477721473116,
+          "control_point_deviation_ratio_to_chord": 1.5296979727348887e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0003",
+          "segment_index": 3,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0002237263021150454,
+          "control_point_deviation_ratio_to_chord": 1.022945114354187e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0004",
+          "segment_index": 4,
+          "classification": "near_collinear",
+          "control_point_perpendicular_deviation_world_units": 0.00038096549474065717,
+          "control_point_deviation_ratio_to_chord": 9.956149068124743e-07,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0005",
+          "segment_index": 5,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00012042999228963576,
+          "control_point_deviation_ratio_to_chord": 2.0520938686480204e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0006",
+          "segment_index": 6,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0003699353316247351,
+          "control_point_deviation_ratio_to_chord": 3.323928099880122e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0007",
+          "segment_index": 7,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 1.360136915992073,
+          "control_point_deviation_ratio_to_chord": 0.0049125164866179825,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0008",
+          "segment_index": 8,
+          "classification": "near_collinear",
+          "control_point_perpendicular_deviation_world_units": 7.227093162216192e-06,
+          "control_point_deviation_ratio_to_chord": 8.479687215774964e-08,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0009",
+          "segment_index": 9,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.32860000000005124,
+          "control_point_deviation_ratio_to_chord": 0.005436991130061089,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0010",
+          "segment_index": 10,
+          "classification": "exactly_collinear",
+          "control_point_perpendicular_deviation_world_units": 0.0,
+          "control_point_deviation_ratio_to_chord": 0.0,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0011",
+          "segment_index": 11,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.11438215252067635,
+          "control_point_deviation_ratio_to_chord": 0.00030625927036969454,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0012",
+          "segment_index": 12,
+          "classification": "near_collinear",
+          "control_point_perpendicular_deviation_world_units": 1.2908094122584043e-05,
+          "control_point_deviation_ratio_to_chord": 1.1357882722965388e-07,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0013",
+          "segment_index": 13,
+          "classification": "near_collinear",
+          "control_point_perpendicular_deviation_world_units": 4.824621728935326e-06,
+          "control_point_deviation_ratio_to_chord": 8.035451321338917e-08,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0014",
+          "segment_index": 14,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0004377840754392816,
+          "control_point_deviation_ratio_to_chord": 1.0164282002375279e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0015",
+          "segment_index": 15,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0006894709334899065,
+          "control_point_deviation_ratio_to_chord": 1.068128479962809e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0016",
+          "segment_index": 16,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0005197951605682721,
+          "control_point_deviation_ratio_to_chord": 5.155948451902784e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0017",
+          "segment_index": 17,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0003027157158904663,
+          "control_point_deviation_ratio_to_chord": 1.7703605937738191e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0018",
+          "segment_index": 18,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0002966671709798908,
+          "control_point_deviation_ratio_to_chord": 4.440002707674054e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0019",
+          "segment_index": 19,
+          "classification": "near_collinear",
+          "control_point_perpendicular_deviation_world_units": 4.179551727332398e-05,
+          "control_point_deviation_ratio_to_chord": 8.088235650579071e-07,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0020",
+          "segment_index": 20,
+          "classification": "near_collinear",
+          "control_point_perpendicular_deviation_world_units": 0.00029445581128462596,
+          "control_point_deviation_ratio_to_chord": 9.471208379742452e-07,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0021",
+          "segment_index": 21,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0002580965887904124,
+          "control_point_deviation_ratio_to_chord": 2.3433081292891146e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0022",
+          "segment_index": 22,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 2.688755786942994,
+          "control_point_deviation_ratio_to_chord": 0.007351314441617662,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0023",
+          "segment_index": 23,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0002533832212210578,
+          "control_point_deviation_ratio_to_chord": 1.011420779369407e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0024",
+          "segment_index": 24,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0011625994553723159,
+          "control_point_deviation_ratio_to_chord": 3.3179486700192174e-05,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0025",
+          "segment_index": 25,
+          "classification": "near_collinear",
+          "control_point_perpendicular_deviation_world_units": 1.1089704505760955e-05,
+          "control_point_deviation_ratio_to_chord": 2.683894273435993e-07,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0026",
+          "segment_index": 26,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0002320781459777259,
+          "control_point_deviation_ratio_to_chord": 2.3954790242864393e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0027",
+          "segment_index": 27,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 7.376030466489169e-05,
+          "control_point_deviation_ratio_to_chord": 1.3649652593377075e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0028",
+          "segment_index": 28,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.8047108162720874,
+          "control_point_deviation_ratio_to_chord": 0.004714728740988802,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0029",
+          "segment_index": 29,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.00017568191927785058,
+          "control_point_deviation_ratio_to_chord": 3.364005260835653e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0030",
+          "segment_index": 30,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.3911134172159524,
+          "control_point_deviation_ratio_to_chord": 0.002171472528978583,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0031",
+          "segment_index": 31,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 0.0009606394257180994,
+          "control_point_deviation_ratio_to_chord": 6.933176603947258e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        },
+        {
+          "shape_id": "env39_shape_3305298596651482022",
+          "shape_index": 1,
+          "segment_id": "env39_shape_3305298596651482022_segment_0032",
+          "segment_index": 32,
+          "classification": "control_point_deviates_from_chord",
+          "control_point_perpendicular_deviation_world_units": 6.025335381254266e-05,
+          "control_point_deviation_ratio_to_chord": 1.086769592376323e-06,
+          "zero_chord_control_point_displacement_from_p0_world_units": null
+        }
+      ]
+    }
+  ]
+}

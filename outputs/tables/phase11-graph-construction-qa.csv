@@ -1,0 +1,9 @@
+environment_id,graph_variant,graph_type,nodes,edges,self_loops,parallel_edge_pairs,components,validated_crossing_nodes_represented,zero_chord_artifact_edges_represented,simplified,crs_assigned
+38,provenance_detailed,MultiGraph,147,176,5,1,1,28,5,False,False
+38,analytical_detailed,MultiGraph,147,171,0,0,1,28,0,False,False
+38,analytical_simplified,MultiGraph,60,84,0,0,1,28,0,True,False
+38,osmnx_style_bidirectional,MultiDiGraph,60,168,0,0,1,28,0,True,False
+39,provenance_detailed,MultiGraph,53,72,0,0,1,20,0,False,False
+39,analytical_detailed,MultiGraph,53,72,0,0,1,20,0,False,False
+39,analytical_simplified,MultiGraph,51,70,0,0,1,20,0,True,False
+39,osmnx_style_bidirectional,MultiDiGraph,51,140,0,0,1,20,0,True,False

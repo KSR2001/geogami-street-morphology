@@ -1,0 +1,62 @@
+{
+  "phase11_artifact_exclusion_schema_version": "1.0.0",
+  "policy": "Exclude only the five explicitly pre-registered Env38 zero-chord source anomalies from analytical graphs; use no numerical length threshold.",
+  "exclusion_count": 5,
+  "exclusions": [
+    {
+      "source_anomaly_id": "env38_shape_4330855547529842337_segment_0006",
+      "phase10_fragment_id": "env38_topology_fragment_00118",
+      "graph_endpoints": [
+        "env38_topology_location_0065",
+        "env38_topology_location_0065"
+      ],
+      "geometry_length_unity_world_units": 6.860029155159526e-05,
+      "reason_for_analytical_exclusion": "pre-registered Phase 10 zero-chord source anomaly; no length threshold used",
+      "retained_in_provenance_detailed_graph": true
+    },
+    {
+      "source_anomaly_id": "env38_shape_4330855547529842337_segment_0019",
+      "phase10_fragment_id": "env38_topology_fragment_00136",
+      "graph_endpoints": [
+        "env38_topology_location_0110",
+        "env38_topology_location_0110"
+      ],
+      "geometry_length_unity_world_units": 0.00011800000004313915,
+      "reason_for_analytical_exclusion": "pre-registered Phase 10 zero-chord source anomaly; no length threshold used",
+      "retained_in_provenance_detailed_graph": true
+    },
+    {
+      "source_anomaly_id": "env38_shape_4330855547829185599_segment_0007",
+      "phase10_fragment_id": "env38_topology_fragment_00152",
+      "graph_endpoints": [
+        "env38_topology_location_0034",
+        "env38_topology_location_0034"
+      ],
+      "geometry_length_unity_world_units": 0.0003217530108635848,
+      "reason_for_analytical_exclusion": "pre-registered Phase 10 zero-chord source anomaly; no length threshold used",
+      "retained_in_provenance_detailed_graph": true
+    },
+    {
+      "source_anomaly_id": "env38_shape_4330855547829185599_segment_0011",
+      "phase10_fragment_id": "env38_topology_fragment_00157",
+      "graph_endpoints": [
+        "env38_topology_location_0028",
+        "env38_topology_location_0028"
+      ],
+      "geometry_length_unity_world_units": 0.0006070782568995186,
+      "reason_for_analytical_exclusion": "pre-registered Phase 10 zero-chord source anomaly; no length threshold used",
+      "retained_in_provenance_detailed_graph": true
+    },
+    {
+      "source_anomaly_id": "env38_shape_4330855547829185599_segment_0012",
+      "phase10_fragment_id": "env38_topology_fragment_00158",
+      "graph_endpoints": [
+        "env38_topology_location_0028",
+        "env38_topology_location_0028"
+      ],
+      "geometry_length_unity_world_units": 0.0007153000000030829,
+      "reason_for_analytical_exclusion": "pre-registered Phase 10 zero-chord source anomaly; no length threshold used",
+      "retained_in_provenance_detailed_graph": true
+    }
+  ]
+}

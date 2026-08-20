@@ -1,0 +1,2614 @@
+{
+  "phase13_results_audit_schema_version": "1.0.0",
+  "generated_at_utc": "2026-08-18T23:06:59.869290+00:00",
+  "acceptance_status": "PASS",
+  "phase12_output_verification": {
+    "passed": true,
+    "phase12_files": {
+      "outputs/tables/phase12-primary-morphology-metrics.csv": "65fe640ff7280c17a4b8edbc6043170bc7f328d1687cadad0661d7d7043740f6",
+      "outputs/tables/phase12-edge-circuity.csv": "e0a463448a529fd440827140a4738fdb3f02ddf698f2811178da0615d65c17e4",
+      "outputs/qa/phase12-final-morphology-results.json": "5505a07319d1dd9a9313153d29c2d13110164ccea63ac972ffa840b41755c272"
+    },
+    "raw_hashes": {
+      "38": "43ea446a4a88e9f3d594fb8b72742f5d4b2a1ee8a03ebf8350c4c3cce45c5819",
+      "39": "e5dbce6b4d88656c9e0f3bbf6a814434f64b0fbe9b3ff1864ea3fafaf0883602"
+    }
+  },
+  "original_phase12_metrics": {
+    "38": {
+      "H_o_nats": 3.0131094587621066,
+      "H_w_nats": 3.1312256499064475,
+      "phi": 0.4518145655192265,
+      "aggregate_circuity": 1.0213150770501422,
+      "mean_edge_circuity": 1.0183127736327648,
+      "median_edge_circuity": 1.002327065680324,
+      "node_count": 60,
+      "street_segment_count": 84,
+      "dead_end_count": 21,
+      "three_way_count": 9,
+      "four_way_count": 30
+    },
+    "39": {
+      "H_o_nats": 1.5143534129805727,
+      "H_w_nats": 1.381012158514464,
+      "phi": 0.9966031867759313,
+      "aggregate_circuity": 1.0233180457073998,
+      "mean_edge_circuity": 1.0093689453989059,
+      "median_edge_circuity": 1.0,
+      "node_count": 51,
+      "street_segment_count": 70,
+      "dead_end_count": 19,
+      "three_way_count": 7,
+      "four_way_count": 25
+    }
+  },
+  "circuity_audits": {
+    "38": {
+      "decomposition": {
+        "total_network_length": 5173.197186865085,
+        "total_straight_distance": 5065.2313895206535,
+        "total_excess_length": 107.96579734443185,
+        "aggregate_circuity_ratio_of_sums": 1.0213150770501422,
+        "aggregate_circuity_D_weighted_mean": 1.0213150770501422,
+        "aggregate_identity_absolute_error": 0.0,
+        "excess_share_sum": 1.0000000000000036,
+        "straight_distance_weight_sum": 0.9999999999999999,
+        "aggregate_excess_contribution_sum": 0.02131507705014233
+      },
+      "top_5_excess_share": 0.4839422340890156,
+      "top_10_excess_share": 0.6868082176803014,
+      "top_2_excess_share": 0.2709449045070843,
+      "rankings": {
+        "top_5_by_individual_circuity": [
+          {
+            "simplified_edge_id": "env38_simplified_edge_00026",
+            "network_length": 2.079230137340751,
+            "straight_distance": 1.6724082775602294,
+            "individual_circuity": 1.2432551101540879,
+            "excess_length": 0.40682185978052177,
+            "excess_share": 0.0037680623844482996,
+            "straight_distance_weight": 0.00033017411228640774,
+            "aggregate_circuity_excess_contribution": 8.031654005425825e-05,
+            "source_fragment_count": 2,
+            "source_shape_ids": [
+              "env38_shape_4330855547456548042",
+              "env38_shape_4330855547456548042"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547456548042_segment_0031",
+              "env38_shape_4330855547456548042_segment_0030"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00066",
+              "env38_topology_fragment_00065"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00060",
+            "network_length": 50.75530305691636,
+            "straight_distance": 44.233268453687856,
+            "individual_circuity": 1.1474463640428711,
+            "excess_length": 6.522034603228505,
+            "excess_share": 0.06040834008220167,
+            "straight_distance_weight": 0.008732724144685887,
+            "aggregate_circuity_excess_contribution": 0.0012876084233233254,
+            "source_fragment_count": 4,
+            "source_shape_ids": [
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547529842337_segment_0018",
+              "env38_shape_4330855547529842337_segment_0020",
+              "env38_shape_4330855547529842337_segment_0021",
+              "env38_shape_4330855547529842337_segment_0022"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00135",
+              "env38_topology_fragment_00137",
+              "env38_topology_fragment_00138",
+              "env38_topology_fragment_00139"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00051",
+            "network_length": 90.35246281158291,
+            "straight_distance": 78.89128527066593,
+            "individual_circuity": 1.1452781191432633,
+            "excess_length": 11.461177540916978,
+            "excess_share": 0.1061556328283632,
+            "straight_distance_weight": 0.015575060486650697,
+            "aggregate_circuity_excess_contribution": 0.0022627154930431725,
+            "source_fragment_count": 4,
+            "source_shape_ids": [
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547524397474_segment_0020",
+              "env38_shape_4330855547524397474_segment_0019",
+              "env38_shape_4330855547524397474_segment_0018",
+              "env38_shape_4330855547524397474_segment_0017"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00097",
+              "env38_topology_fragment_00096",
+              "env38_topology_fragment_00095",
+              "env38_topology_fragment_00094"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00015",
+            "network_length": 228.44007725666845,
+            "straight_distance": 210.64847214606712,
+            "individual_circuity": 1.0844611163296942,
+            "excess_length": 17.791605110601324,
+            "excess_share": 0.1647892716787211,
+            "straight_distance_weight": 0.04158713708160957,
+            "aggregate_circuity_excess_contribution": 0.003512496022868765,
+            "source_fragment_count": 8,
+            "source_shape_ids": [
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547829185599_segment_0010",
+              "env38_shape_4330855547829185599_segment_0009",
+              "env38_shape_4330855547829185599_segment_0008",
+              "env38_shape_4330855547829185599_segment_0006",
+              "env38_shape_4330855547829185599_segment_0005",
+              "env38_shape_4330855547829185599_segment_0004",
+              "env38_shape_4330855547829185599_segment_0003",
+              "env38_shape_4330855547829185599_segment_0001"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00155",
+              "env38_topology_fragment_00154",
+              "env38_topology_fragment_00153",
+              "env38_topology_fragment_00151",
+              "env38_topology_fragment_00150",
+              "env38_topology_fragment_00149",
+              "env38_topology_fragment_00148",
+              "env38_topology_fragment_00144"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00014",
+            "network_length": 149.93310300631407,
+            "straight_distance": 140.85661421664307,
+            "individual_circuity": 1.0644377890250223,
+            "excess_length": 9.076488789671004,
+            "excess_share": 0.08406818652684278,
+            "straight_distance_weight": 0.027808525096811615,
+            "aggregate_circuity_excess_contribution": 0.0017919198732853849,
+            "source_fragment_count": 6,
+            "source_shape_ids": [
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547529842337_segment_0003",
+              "env38_shape_4330855547529842337_segment_0002",
+              "env38_shape_4330855547529842337_segment_0001",
+              "env38_shape_4330855547529842337_segment_0004",
+              "env38_shape_4330855547529842337_segment_0005",
+              "env38_shape_4330855547529842337_segment_0007"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00115",
+              "env38_topology_fragment_00114",
+              "env38_topology_fragment_00113",
+              "env38_topology_fragment_00116",
+              "env38_topology_fragment_00117",
+              "env38_topology_fragment_00119"
+            ]
+          }
+        ],
+        "top_10_by_individual_circuity": [
+          {
+            "simplified_edge_id": "env38_simplified_edge_00026",
+            "network_length": 2.079230137340751,
+            "straight_distance": 1.6724082775602294,
+            "individual_circuity": 1.2432551101540879,
+            "excess_length": 0.40682185978052177,
+            "excess_share": 0.0037680623844482996,
+            "straight_distance_weight": 0.00033017411228640774,
+            "aggregate_circuity_excess_contribution": 8.031654005425825e-05,
+            "source_fragment_count": 2,
+            "source_shape_ids": [
+              "env38_shape_4330855547456548042",
+              "env38_shape_4330855547456548042"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547456548042_segment_0031",
+              "env38_shape_4330855547456548042_segment_0030"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00066",
+              "env38_topology_fragment_00065"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00060",
+            "network_length": 50.75530305691636,
+            "straight_distance": 44.233268453687856,
+            "individual_circuity": 1.1474463640428711,
+            "excess_length": 6.522034603228505,
+            "excess_share": 0.06040834008220167,
+            "straight_distance_weight": 0.008732724144685887,
+            "aggregate_circuity_excess_contribution": 0.0012876084233233254,
+            "source_fragment_count": 4,
+            "source_shape_ids": [
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547529842337_segment_0018",
+              "env38_shape_4330855547529842337_segment_0020",
+              "env38_shape_4330855547529842337_segment_0021",
+              "env38_shape_4330855547529842337_segment_0022"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00135",
+              "env38_topology_fragment_00137",
+              "env38_topology_fragment_00138",
+              "env38_topology_fragment_00139"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00051",
+            "network_length": 90.35246281158291,
+            "straight_distance": 78.89128527066593,
+            "individual_circuity": 1.1452781191432633,
+            "excess_length": 11.461177540916978,
+            "excess_share": 0.1061556328283632,
+            "straight_distance_weight": 0.015575060486650697,
+            "aggregate_circuity_excess_contribution": 0.0022627154930431725,
+            "source_fragment_count": 4,
+            "source_shape_ids": [
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547524397474_segment_0020",
+              "env38_shape_4330855547524397474_segment_0019",
+              "env38_shape_4330855547524397474_segment_0018",
+              "env38_shape_4330855547524397474_segment_0017"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00097",
+              "env38_topology_fragment_00096",
+              "env38_topology_fragment_00095",
+              "env38_topology_fragment_00094"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00015",
+            "network_length": 228.44007725666845,
+            "straight_distance": 210.64847214606712,
+            "individual_circuity": 1.0844611163296942,
+            "excess_length": 17.791605110601324,
+            "excess_share": 0.1647892716787211,
+            "straight_distance_weight": 0.04158713708160957,
+            "aggregate_circuity_excess_contribution": 0.003512496022868765,
+            "source_fragment_count": 8,
+            "source_shape_ids": [
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547829185599_segment_0010",
+              "env38_shape_4330855547829185599_segment_0009",
+              "env38_shape_4330855547829185599_segment_0008",
+              "env38_shape_4330855547829185599_segment_0006",
+              "env38_shape_4330855547829185599_segment_0005",
+              "env38_shape_4330855547829185599_segment_0004",
+              "env38_shape_4330855547829185599_segment_0003",
+              "env38_shape_4330855547829185599_segment_0001"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00155",
+              "env38_topology_fragment_00154",
+              "env38_topology_fragment_00153",
+              "env38_topology_fragment_00151",
+              "env38_topology_fragment_00150",
+              "env38_topology_fragment_00149",
+              "env38_topology_fragment_00148",
+              "env38_topology_fragment_00144"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00014",
+            "network_length": 149.93310300631407,
+            "straight_distance": 140.85661421664307,
+            "individual_circuity": 1.0644377890250223,
+            "excess_length": 9.076488789671004,
+            "excess_share": 0.08406818652684278,
+            "straight_distance_weight": 0.027808525096811615,
+            "aggregate_circuity_excess_contribution": 0.0017919198732853849,
+            "source_fragment_count": 6,
+            "source_shape_ids": [
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547529842337_segment_0003",
+              "env38_shape_4330855547529842337_segment_0002",
+              "env38_shape_4330855547529842337_segment_0001",
+              "env38_shape_4330855547529842337_segment_0004",
+              "env38_shape_4330855547529842337_segment_0005",
+              "env38_shape_4330855547529842337_segment_0007"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00115",
+              "env38_topology_fragment_00114",
+              "env38_topology_fragment_00113",
+              "env38_topology_fragment_00116",
+              "env38_topology_fragment_00117",
+              "env38_topology_fragment_00119"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00004",
+            "network_length": 64.86355587740165,
+            "straight_distance": 61.11085455266527,
+            "individual_circuity": 1.0614080976645859,
+            "excess_length": 3.7527013247363783,
+            "excess_share": 0.03475824211962732,
+            "straight_distance_weight": 0.012064770560945386,
+            "aggregate_circuity_excess_contribution": 0.0007408746089073562,
+            "source_fragment_count": 3,
+            "source_shape_ids": [
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547829185599_segment_0020",
+              "env38_shape_4330855547829185599_segment_0019",
+              "env38_shape_4330855547829185599_segment_0018"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00167",
+              "env38_topology_fragment_00166",
+              "env38_topology_fragment_00165"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00066",
+            "network_length": 83.34757158866859,
+            "straight_distance": 78.72789320636342,
+            "individual_circuity": 1.058679055086562,
+            "excess_length": 4.6196783823051675,
+            "excess_share": 0.04278835053259966,
+            "straight_distance_weight": 0.015542802915034017,
+            "aggregate_circuity_excess_contribution": 0.0009120369884508572,
+            "source_fragment_count": 3,
+            "source_shape_ids": [
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547524397474_segment_0013",
+              "env38_shape_4330855547524397474_segment_0012",
+              "env38_shape_4330855547524397474_segment_0011"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00089",
+              "env38_topology_fragment_00088",
+              "env38_topology_fragment_00087"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00036",
+            "network_length": 52.51635038092916,
+            "straight_distance": 50.19702375563983,
+            "individual_circuity": 1.0462044649615057,
+            "excess_length": 2.319326625289328,
+            "excess_share": 0.02148204970774426,
+            "straight_distance_weight": 0.009910114641453766,
+            "aggregate_circuity_excess_contribution": 0.0004578915447155548,
+            "source_fragment_count": 4,
+            "source_shape_ids": [
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547529842337_segment_0010",
+              "env38_shape_4330855547529842337_segment_0009",
+              "env38_shape_4330855547529842337_segment_0008",
+              "env38_shape_4330855547529842337_segment_0007"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00123",
+              "env38_topology_fragment_00122",
+              "env38_topology_fragment_00121",
+              "env38_topology_fragment_00120"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00009",
+            "network_length": 93.0250159804337,
+            "straight_distance": 89.06494631225235,
+            "individual_circuity": 1.0444627188602098,
+            "excess_length": 3.9600696681813474,
+            "excess_share": 0.03667892763805519,
+            "straight_distance_weight": 0.017583588875429632,
+            "aggregate_circuity_excess_contribution": 0.0007818141687217388,
+            "source_fragment_count": 4,
+            "source_shape_ids": [
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547524397474_segment_0027",
+              "env38_shape_4330855547524397474_segment_0026",
+              "env38_shape_4330855547524397474_segment_0025",
+              "env38_shape_4330855547524397474_segment_0024"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00106",
+              "env38_topology_fragment_00105",
+              "env38_topology_fragment_00104",
+              "env38_topology_fragment_00103"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00065",
+            "network_length": 143.91238565526908,
+            "straight_distance": 138.0934408871462,
+            "individual_circuity": 1.0421377346435903,
+            "excess_length": 5.81894476812289,
+            "excess_share": 0.05389618667437176,
+            "straight_distance_weight": 0.027263007406304218,
+            "aggregate_circuity_excess_contribution": 0.0011488013716730843,
+            "source_fragment_count": 3,
+            "source_shape_ids": [
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547524397474_segment_0014",
+              "env38_shape_4330855547524397474_segment_0015",
+              "env38_shape_4330855547524397474_segment_0016"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00090",
+              "env38_topology_fragment_00091",
+              "env38_topology_fragment_00092"
+            ]
+          }
+        ],
+        "top_5_by_excess_length": [
+          {
+            "simplified_edge_id": "env38_simplified_edge_00015",
+            "network_length": 228.44007725666845,
+            "straight_distance": 210.64847214606712,
+            "individual_circuity": 1.0844611163296942,
+            "excess_length": 17.791605110601324,
+            "excess_share": 0.1647892716787211,
+            "straight_distance_weight": 0.04158713708160957,
+            "aggregate_circuity_excess_contribution": 0.003512496022868765,
+            "source_fragment_count": 8,
+            "source_shape_ids": [
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547829185599_segment_0010",
+              "env38_shape_4330855547829185599_segment_0009",
+              "env38_shape_4330855547829185599_segment_0008",
+              "env38_shape_4330855547829185599_segment_0006",
+              "env38_shape_4330855547829185599_segment_0005",
+              "env38_shape_4330855547829185599_segment_0004",
+              "env38_shape_4330855547829185599_segment_0003",
+              "env38_shape_4330855547829185599_segment_0001"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00155",
+              "env38_topology_fragment_00154",
+              "env38_topology_fragment_00153",
+              "env38_topology_fragment_00151",
+              "env38_topology_fragment_00150",
+              "env38_topology_fragment_00149",
+              "env38_topology_fragment_00148",
+              "env38_topology_fragment_00144"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00051",
+            "network_length": 90.35246281158291,
+            "straight_distance": 78.89128527066593,
+            "individual_circuity": 1.1452781191432633,
+            "excess_length": 11.461177540916978,
+            "excess_share": 0.1061556328283632,
+            "straight_distance_weight": 0.015575060486650697,
+            "aggregate_circuity_excess_contribution": 0.0022627154930431725,
+            "source_fragment_count": 4,
+            "source_shape_ids": [
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547524397474_segment_0020",
+              "env38_shape_4330855547524397474_segment_0019",
+              "env38_shape_4330855547524397474_segment_0018",
+              "env38_shape_4330855547524397474_segment_0017"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00097",
+              "env38_topology_fragment_00096",
+              "env38_topology_fragment_00095",
+              "env38_topology_fragment_00094"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00014",
+            "network_length": 149.93310300631407,
+            "straight_distance": 140.85661421664307,
+            "individual_circuity": 1.0644377890250223,
+            "excess_length": 9.076488789671004,
+            "excess_share": 0.08406818652684278,
+            "straight_distance_weight": 0.027808525096811615,
+            "aggregate_circuity_excess_contribution": 0.0017919198732853849,
+            "source_fragment_count": 6,
+            "source_shape_ids": [
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547529842337_segment_0003",
+              "env38_shape_4330855547529842337_segment_0002",
+              "env38_shape_4330855547529842337_segment_0001",
+              "env38_shape_4330855547529842337_segment_0004",
+              "env38_shape_4330855547529842337_segment_0005",
+              "env38_shape_4330855547529842337_segment_0007"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00115",
+              "env38_topology_fragment_00114",
+              "env38_topology_fragment_00113",
+              "env38_topology_fragment_00116",
+              "env38_topology_fragment_00117",
+              "env38_topology_fragment_00119"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00016",
+            "network_length": 185.37170785461072,
+            "straight_distance": 177.97380472696227,
+            "individual_circuity": 1.0415673707655906,
+            "excess_length": 7.397903127648448,
+            "excess_share": 0.06852080297288687,
+            "straight_distance_weight": 0.03513636219959633,
+            "aggregate_circuity_excess_contribution": 0.0014605261949047002,
+            "source_fragment_count": 5,
+            "source_shape_ids": [
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547524397474_segment_0024",
+              "env38_shape_4330855547524397474_segment_0023",
+              "env38_shape_4330855547524397474_segment_0022",
+              "env38_shape_4330855547524397474_segment_0021",
+              "env38_shape_4330855547524397474_segment_0020"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00102",
+              "env38_topology_fragment_00101",
+              "env38_topology_fragment_00100",
+              "env38_topology_fragment_00099",
+              "env38_topology_fragment_00098"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00060",
+            "network_length": 50.75530305691636,
+            "straight_distance": 44.233268453687856,
+            "individual_circuity": 1.1474463640428711,
+            "excess_length": 6.522034603228505,
+            "excess_share": 0.06040834008220167,
+            "straight_distance_weight": 0.008732724144685887,
+            "aggregate_circuity_excess_contribution": 0.0012876084233233254,
+            "source_fragment_count": 4,
+            "source_shape_ids": [
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547529842337_segment_0018",
+              "env38_shape_4330855547529842337_segment_0020",
+              "env38_shape_4330855547529842337_segment_0021",
+              "env38_shape_4330855547529842337_segment_0022"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00135",
+              "env38_topology_fragment_00137",
+              "env38_topology_fragment_00138",
+              "env38_topology_fragment_00139"
+            ]
+          }
+        ],
+        "top_10_by_excess_length": [
+          {
+            "simplified_edge_id": "env38_simplified_edge_00015",
+            "network_length": 228.44007725666845,
+            "straight_distance": 210.64847214606712,
+            "individual_circuity": 1.0844611163296942,
+            "excess_length": 17.791605110601324,
+            "excess_share": 0.1647892716787211,
+            "straight_distance_weight": 0.04158713708160957,
+            "aggregate_circuity_excess_contribution": 0.003512496022868765,
+            "source_fragment_count": 8,
+            "source_shape_ids": [
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547829185599_segment_0010",
+              "env38_shape_4330855547829185599_segment_0009",
+              "env38_shape_4330855547829185599_segment_0008",
+              "env38_shape_4330855547829185599_segment_0006",
+              "env38_shape_4330855547829185599_segment_0005",
+              "env38_shape_4330855547829185599_segment_0004",
+              "env38_shape_4330855547829185599_segment_0003",
+              "env38_shape_4330855547829185599_segment_0001"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00155",
+              "env38_topology_fragment_00154",
+              "env38_topology_fragment_00153",
+              "env38_topology_fragment_00151",
+              "env38_topology_fragment_00150",
+              "env38_topology_fragment_00149",
+              "env38_topology_fragment_00148",
+              "env38_topology_fragment_00144"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00051",
+            "network_length": 90.35246281158291,
+            "straight_distance": 78.89128527066593,
+            "individual_circuity": 1.1452781191432633,
+            "excess_length": 11.461177540916978,
+            "excess_share": 0.1061556328283632,
+            "straight_distance_weight": 0.015575060486650697,
+            "aggregate_circuity_excess_contribution": 0.0022627154930431725,
+            "source_fragment_count": 4,
+            "source_shape_ids": [
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547524397474_segment_0020",
+              "env38_shape_4330855547524397474_segment_0019",
+              "env38_shape_4330855547524397474_segment_0018",
+              "env38_shape_4330855547524397474_segment_0017"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00097",
+              "env38_topology_fragment_00096",
+              "env38_topology_fragment_00095",
+              "env38_topology_fragment_00094"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00014",
+            "network_length": 149.93310300631407,
+            "straight_distance": 140.85661421664307,
+            "individual_circuity": 1.0644377890250223,
+            "excess_length": 9.076488789671004,
+            "excess_share": 0.08406818652684278,
+            "straight_distance_weight": 0.027808525096811615,
+            "aggregate_circuity_excess_contribution": 0.0017919198732853849,
+            "source_fragment_count": 6,
+            "source_shape_ids": [
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547529842337_segment_0003",
+              "env38_shape_4330855547529842337_segment_0002",
+              "env38_shape_4330855547529842337_segment_0001",
+              "env38_shape_4330855547529842337_segment_0004",
+              "env38_shape_4330855547529842337_segment_0005",
+              "env38_shape_4330855547529842337_segment_0007"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00115",
+              "env38_topology_fragment_00114",
+              "env38_topology_fragment_00113",
+              "env38_topology_fragment_00116",
+              "env38_topology_fragment_00117",
+              "env38_topology_fragment_00119"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00016",
+            "network_length": 185.37170785461072,
+            "straight_distance": 177.97380472696227,
+            "individual_circuity": 1.0415673707655906,
+            "excess_length": 7.397903127648448,
+            "excess_share": 0.06852080297288687,
+            "straight_distance_weight": 0.03513636219959633,
+            "aggregate_circuity_excess_contribution": 0.0014605261949047002,
+            "source_fragment_count": 5,
+            "source_shape_ids": [
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547524397474_segment_0024",
+              "env38_shape_4330855547524397474_segment_0023",
+              "env38_shape_4330855547524397474_segment_0022",
+              "env38_shape_4330855547524397474_segment_0021",
+              "env38_shape_4330855547524397474_segment_0020"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00102",
+              "env38_topology_fragment_00101",
+              "env38_topology_fragment_00100",
+              "env38_topology_fragment_00099",
+              "env38_topology_fragment_00098"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00060",
+            "network_length": 50.75530305691636,
+            "straight_distance": 44.233268453687856,
+            "individual_circuity": 1.1474463640428711,
+            "excess_length": 6.522034603228505,
+            "excess_share": 0.06040834008220167,
+            "straight_distance_weight": 0.008732724144685887,
+            "aggregate_circuity_excess_contribution": 0.0012876084233233254,
+            "source_fragment_count": 4,
+            "source_shape_ids": [
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547529842337_segment_0018",
+              "env38_shape_4330855547529842337_segment_0020",
+              "env38_shape_4330855547529842337_segment_0021",
+              "env38_shape_4330855547529842337_segment_0022"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00135",
+              "env38_topology_fragment_00137",
+              "env38_topology_fragment_00138",
+              "env38_topology_fragment_00139"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00065",
+            "network_length": 143.91238565526908,
+            "straight_distance": 138.0934408871462,
+            "individual_circuity": 1.0421377346435903,
+            "excess_length": 5.81894476812289,
+            "excess_share": 0.05389618667437176,
+            "straight_distance_weight": 0.027263007406304218,
+            "aggregate_circuity_excess_contribution": 0.0011488013716730843,
+            "source_fragment_count": 3,
+            "source_shape_ids": [
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547524397474_segment_0014",
+              "env38_shape_4330855547524397474_segment_0015",
+              "env38_shape_4330855547524397474_segment_0016"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00090",
+              "env38_topology_fragment_00091",
+              "env38_topology_fragment_00092"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00066",
+            "network_length": 83.34757158866859,
+            "straight_distance": 78.72789320636342,
+            "individual_circuity": 1.058679055086562,
+            "excess_length": 4.6196783823051675,
+            "excess_share": 0.04278835053259966,
+            "straight_distance_weight": 0.015542802915034017,
+            "aggregate_circuity_excess_contribution": 0.0009120369884508572,
+            "source_fragment_count": 3,
+            "source_shape_ids": [
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547524397474_segment_0013",
+              "env38_shape_4330855547524397474_segment_0012",
+              "env38_shape_4330855547524397474_segment_0011"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00089",
+              "env38_topology_fragment_00088",
+              "env38_topology_fragment_00087"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00009",
+            "network_length": 93.0250159804337,
+            "straight_distance": 89.06494631225235,
+            "individual_circuity": 1.0444627188602098,
+            "excess_length": 3.9600696681813474,
+            "excess_share": 0.03667892763805519,
+            "straight_distance_weight": 0.017583588875429632,
+            "aggregate_circuity_excess_contribution": 0.0007818141687217388,
+            "source_fragment_count": 4,
+            "source_shape_ids": [
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547524397474_segment_0027",
+              "env38_shape_4330855547524397474_segment_0026",
+              "env38_shape_4330855547524397474_segment_0025",
+              "env38_shape_4330855547524397474_segment_0024"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00106",
+              "env38_topology_fragment_00105",
+              "env38_topology_fragment_00104",
+              "env38_topology_fragment_00103"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00004",
+            "network_length": 64.86355587740165,
+            "straight_distance": 61.11085455266527,
+            "individual_circuity": 1.0614080976645859,
+            "excess_length": 3.7527013247363783,
+            "excess_share": 0.03475824211962732,
+            "straight_distance_weight": 0.012064770560945386,
+            "aggregate_circuity_excess_contribution": 0.0007408746089073562,
+            "source_fragment_count": 3,
+            "source_shape_ids": [
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547829185599_segment_0020",
+              "env38_shape_4330855547829185599_segment_0019",
+              "env38_shape_4330855547829185599_segment_0018"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00167",
+              "env38_topology_fragment_00166",
+              "env38_topology_fragment_00165"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00025",
+            "network_length": 94.29029901007382,
+            "straight_distance": 90.53910548092401,
+            "individual_circuity": 1.0414317493996024,
+            "excess_length": 3.751193529149816,
+            "excess_share": 0.03474427662663186,
+            "straight_distance_weight": 0.01787462378683003,
+            "aggregate_circuity_excess_contribution": 0.0007405769333481149,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env38_shape_4330855546755831596"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855546755831596_segment_0002"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00007"
+            ]
+          }
+        ],
+        "top_5_by_aggregate_contribution": [
+          {
+            "simplified_edge_id": "env38_simplified_edge_00015",
+            "network_length": 228.44007725666845,
+            "straight_distance": 210.64847214606712,
+            "individual_circuity": 1.0844611163296942,
+            "excess_length": 17.791605110601324,
+            "excess_share": 0.1647892716787211,
+            "straight_distance_weight": 0.04158713708160957,
+            "aggregate_circuity_excess_contribution": 0.003512496022868765,
+            "source_fragment_count": 8,
+            "source_shape_ids": [
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547829185599_segment_0010",
+              "env38_shape_4330855547829185599_segment_0009",
+              "env38_shape_4330855547829185599_segment_0008",
+              "env38_shape_4330855547829185599_segment_0006",
+              "env38_shape_4330855547829185599_segment_0005",
+              "env38_shape_4330855547829185599_segment_0004",
+              "env38_shape_4330855547829185599_segment_0003",
+              "env38_shape_4330855547829185599_segment_0001"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00155",
+              "env38_topology_fragment_00154",
+              "env38_topology_fragment_00153",
+              "env38_topology_fragment_00151",
+              "env38_topology_fragment_00150",
+              "env38_topology_fragment_00149",
+              "env38_topology_fragment_00148",
+              "env38_topology_fragment_00144"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00051",
+            "network_length": 90.35246281158291,
+            "straight_distance": 78.89128527066593,
+            "individual_circuity": 1.1452781191432633,
+            "excess_length": 11.461177540916978,
+            "excess_share": 0.1061556328283632,
+            "straight_distance_weight": 0.015575060486650697,
+            "aggregate_circuity_excess_contribution": 0.0022627154930431725,
+            "source_fragment_count": 4,
+            "source_shape_ids": [
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547524397474_segment_0020",
+              "env38_shape_4330855547524397474_segment_0019",
+              "env38_shape_4330855547524397474_segment_0018",
+              "env38_shape_4330855547524397474_segment_0017"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00097",
+              "env38_topology_fragment_00096",
+              "env38_topology_fragment_00095",
+              "env38_topology_fragment_00094"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00014",
+            "network_length": 149.93310300631407,
+            "straight_distance": 140.85661421664307,
+            "individual_circuity": 1.0644377890250223,
+            "excess_length": 9.076488789671004,
+            "excess_share": 0.08406818652684278,
+            "straight_distance_weight": 0.027808525096811615,
+            "aggregate_circuity_excess_contribution": 0.0017919198732853849,
+            "source_fragment_count": 6,
+            "source_shape_ids": [
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547529842337_segment_0003",
+              "env38_shape_4330855547529842337_segment_0002",
+              "env38_shape_4330855547529842337_segment_0001",
+              "env38_shape_4330855547529842337_segment_0004",
+              "env38_shape_4330855547529842337_segment_0005",
+              "env38_shape_4330855547529842337_segment_0007"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00115",
+              "env38_topology_fragment_00114",
+              "env38_topology_fragment_00113",
+              "env38_topology_fragment_00116",
+              "env38_topology_fragment_00117",
+              "env38_topology_fragment_00119"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00016",
+            "network_length": 185.37170785461072,
+            "straight_distance": 177.97380472696227,
+            "individual_circuity": 1.0415673707655906,
+            "excess_length": 7.397903127648448,
+            "excess_share": 0.06852080297288687,
+            "straight_distance_weight": 0.03513636219959633,
+            "aggregate_circuity_excess_contribution": 0.0014605261949047002,
+            "source_fragment_count": 5,
+            "source_shape_ids": [
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547524397474_segment_0024",
+              "env38_shape_4330855547524397474_segment_0023",
+              "env38_shape_4330855547524397474_segment_0022",
+              "env38_shape_4330855547524397474_segment_0021",
+              "env38_shape_4330855547524397474_segment_0020"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00102",
+              "env38_topology_fragment_00101",
+              "env38_topology_fragment_00100",
+              "env38_topology_fragment_00099",
+              "env38_topology_fragment_00098"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00060",
+            "network_length": 50.75530305691636,
+            "straight_distance": 44.233268453687856,
+            "individual_circuity": 1.1474463640428711,
+            "excess_length": 6.522034603228505,
+            "excess_share": 0.06040834008220167,
+            "straight_distance_weight": 0.008732724144685887,
+            "aggregate_circuity_excess_contribution": 0.0012876084233233254,
+            "source_fragment_count": 4,
+            "source_shape_ids": [
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547529842337_segment_0018",
+              "env38_shape_4330855547529842337_segment_0020",
+              "env38_shape_4330855547529842337_segment_0021",
+              "env38_shape_4330855547529842337_segment_0022"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00135",
+              "env38_topology_fragment_00137",
+              "env38_topology_fragment_00138",
+              "env38_topology_fragment_00139"
+            ]
+          }
+        ],
+        "top_10_by_aggregate_contribution": [
+          {
+            "simplified_edge_id": "env38_simplified_edge_00015",
+            "network_length": 228.44007725666845,
+            "straight_distance": 210.64847214606712,
+            "individual_circuity": 1.0844611163296942,
+            "excess_length": 17.791605110601324,
+            "excess_share": 0.1647892716787211,
+            "straight_distance_weight": 0.04158713708160957,
+            "aggregate_circuity_excess_contribution": 0.003512496022868765,
+            "source_fragment_count": 8,
+            "source_shape_ids": [
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547829185599_segment_0010",
+              "env38_shape_4330855547829185599_segment_0009",
+              "env38_shape_4330855547829185599_segment_0008",
+              "env38_shape_4330855547829185599_segment_0006",
+              "env38_shape_4330855547829185599_segment_0005",
+              "env38_shape_4330855547829185599_segment_0004",
+              "env38_shape_4330855547829185599_segment_0003",
+              "env38_shape_4330855547829185599_segment_0001"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00155",
+              "env38_topology_fragment_00154",
+              "env38_topology_fragment_00153",
+              "env38_topology_fragment_00151",
+              "env38_topology_fragment_00150",
+              "env38_topology_fragment_00149",
+              "env38_topology_fragment_00148",
+              "env38_topology_fragment_00144"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00051",
+            "network_length": 90.35246281158291,
+            "straight_distance": 78.89128527066593,
+            "individual_circuity": 1.1452781191432633,
+            "excess_length": 11.461177540916978,
+            "excess_share": 0.1061556328283632,
+            "straight_distance_weight": 0.015575060486650697,
+            "aggregate_circuity_excess_contribution": 0.0022627154930431725,
+            "source_fragment_count": 4,
+            "source_shape_ids": [
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547524397474_segment_0020",
+              "env38_shape_4330855547524397474_segment_0019",
+              "env38_shape_4330855547524397474_segment_0018",
+              "env38_shape_4330855547524397474_segment_0017"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00097",
+              "env38_topology_fragment_00096",
+              "env38_topology_fragment_00095",
+              "env38_topology_fragment_00094"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00014",
+            "network_length": 149.93310300631407,
+            "straight_distance": 140.85661421664307,
+            "individual_circuity": 1.0644377890250223,
+            "excess_length": 9.076488789671004,
+            "excess_share": 0.08406818652684278,
+            "straight_distance_weight": 0.027808525096811615,
+            "aggregate_circuity_excess_contribution": 0.0017919198732853849,
+            "source_fragment_count": 6,
+            "source_shape_ids": [
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547529842337_segment_0003",
+              "env38_shape_4330855547529842337_segment_0002",
+              "env38_shape_4330855547529842337_segment_0001",
+              "env38_shape_4330855547529842337_segment_0004",
+              "env38_shape_4330855547529842337_segment_0005",
+              "env38_shape_4330855547529842337_segment_0007"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00115",
+              "env38_topology_fragment_00114",
+              "env38_topology_fragment_00113",
+              "env38_topology_fragment_00116",
+              "env38_topology_fragment_00117",
+              "env38_topology_fragment_00119"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00016",
+            "network_length": 185.37170785461072,
+            "straight_distance": 177.97380472696227,
+            "individual_circuity": 1.0415673707655906,
+            "excess_length": 7.397903127648448,
+            "excess_share": 0.06852080297288687,
+            "straight_distance_weight": 0.03513636219959633,
+            "aggregate_circuity_excess_contribution": 0.0014605261949047002,
+            "source_fragment_count": 5,
+            "source_shape_ids": [
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547524397474_segment_0024",
+              "env38_shape_4330855547524397474_segment_0023",
+              "env38_shape_4330855547524397474_segment_0022",
+              "env38_shape_4330855547524397474_segment_0021",
+              "env38_shape_4330855547524397474_segment_0020"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00102",
+              "env38_topology_fragment_00101",
+              "env38_topology_fragment_00100",
+              "env38_topology_fragment_00099",
+              "env38_topology_fragment_00098"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00060",
+            "network_length": 50.75530305691636,
+            "straight_distance": 44.233268453687856,
+            "individual_circuity": 1.1474463640428711,
+            "excess_length": 6.522034603228505,
+            "excess_share": 0.06040834008220167,
+            "straight_distance_weight": 0.008732724144685887,
+            "aggregate_circuity_excess_contribution": 0.0012876084233233254,
+            "source_fragment_count": 4,
+            "source_shape_ids": [
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337",
+              "env38_shape_4330855547529842337"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547529842337_segment_0018",
+              "env38_shape_4330855547529842337_segment_0020",
+              "env38_shape_4330855547529842337_segment_0021",
+              "env38_shape_4330855547529842337_segment_0022"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00135",
+              "env38_topology_fragment_00137",
+              "env38_topology_fragment_00138",
+              "env38_topology_fragment_00139"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00065",
+            "network_length": 143.91238565526908,
+            "straight_distance": 138.0934408871462,
+            "individual_circuity": 1.0421377346435903,
+            "excess_length": 5.81894476812289,
+            "excess_share": 0.05389618667437176,
+            "straight_distance_weight": 0.027263007406304218,
+            "aggregate_circuity_excess_contribution": 0.0011488013716730843,
+            "source_fragment_count": 3,
+            "source_shape_ids": [
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547524397474_segment_0014",
+              "env38_shape_4330855547524397474_segment_0015",
+              "env38_shape_4330855547524397474_segment_0016"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00090",
+              "env38_topology_fragment_00091",
+              "env38_topology_fragment_00092"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00066",
+            "network_length": 83.34757158866859,
+            "straight_distance": 78.72789320636342,
+            "individual_circuity": 1.058679055086562,
+            "excess_length": 4.6196783823051675,
+            "excess_share": 0.04278835053259966,
+            "straight_distance_weight": 0.015542802915034017,
+            "aggregate_circuity_excess_contribution": 0.0009120369884508572,
+            "source_fragment_count": 3,
+            "source_shape_ids": [
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547524397474_segment_0013",
+              "env38_shape_4330855547524397474_segment_0012",
+              "env38_shape_4330855547524397474_segment_0011"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00089",
+              "env38_topology_fragment_00088",
+              "env38_topology_fragment_00087"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00009",
+            "network_length": 93.0250159804337,
+            "straight_distance": 89.06494631225235,
+            "individual_circuity": 1.0444627188602098,
+            "excess_length": 3.9600696681813474,
+            "excess_share": 0.03667892763805519,
+            "straight_distance_weight": 0.017583588875429632,
+            "aggregate_circuity_excess_contribution": 0.0007818141687217388,
+            "source_fragment_count": 4,
+            "source_shape_ids": [
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474",
+              "env38_shape_4330855547524397474"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547524397474_segment_0027",
+              "env38_shape_4330855547524397474_segment_0026",
+              "env38_shape_4330855547524397474_segment_0025",
+              "env38_shape_4330855547524397474_segment_0024"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00106",
+              "env38_topology_fragment_00105",
+              "env38_topology_fragment_00104",
+              "env38_topology_fragment_00103"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00004",
+            "network_length": 64.86355587740165,
+            "straight_distance": 61.11085455266527,
+            "individual_circuity": 1.0614080976645859,
+            "excess_length": 3.7527013247363783,
+            "excess_share": 0.03475824211962732,
+            "straight_distance_weight": 0.012064770560945386,
+            "aggregate_circuity_excess_contribution": 0.0007408746089073562,
+            "source_fragment_count": 3,
+            "source_shape_ids": [
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599",
+              "env38_shape_4330855547829185599"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855547829185599_segment_0020",
+              "env38_shape_4330855547829185599_segment_0019",
+              "env38_shape_4330855547829185599_segment_0018"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00167",
+              "env38_topology_fragment_00166",
+              "env38_topology_fragment_00165"
+            ]
+          },
+          {
+            "simplified_edge_id": "env38_simplified_edge_00025",
+            "network_length": 94.29029901007382,
+            "straight_distance": 90.53910548092401,
+            "individual_circuity": 1.0414317493996024,
+            "excess_length": 3.751193529149816,
+            "excess_share": 0.03474427662663186,
+            "straight_distance_weight": 0.01787462378683003,
+            "aggregate_circuity_excess_contribution": 0.0007405769333481149,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env38_shape_4330855546755831596"
+            ],
+            "source_segment_ids": [
+              "env38_shape_4330855546755831596_segment_0002"
+            ],
+            "source_fragment_ids": [
+              "env38_topology_fragment_00007"
+            ]
+          }
+        ]
+      },
+      "individual_circuity_distribution": {
+        "minimum": 0.9999999999958674,
+        "q25": 1.0000000000005311,
+        "median": 1.002327065680324,
+        "q75": 1.026793477197241,
+        "q90": 1.043765223595224,
+        "q95": 1.063983335320957,
+        "maximum": 1.2432551101540879,
+        "approximately_one_within_1e-6_count": 27,
+        "approximately_one_within_1e-6_proportion": 0.32142857142857145,
+        "greater_than_1_01_count": 27,
+        "greater_than_1_01_proportion": 0.32142857142857145,
+        "greater_than_1_05_count": 7,
+        "greater_than_1_05_proportion": 0.08333333333333333,
+        "greater_than_1_10_count": 3,
+        "greater_than_1_10_proportion": 0.03571428571428571,
+        "greater_than_1_20_count": 1,
+        "greater_than_1_20_proportion": 0.011904761904761904
+      },
+      "spearman_straight_distance_vs_individual_circuity": {
+        "rho": 0.4345334522193329,
+        "descriptive_only": true,
+        "p_value_calculated": false
+      }
+    },
+    "39": {
+      "decomposition": {
+        "total_network_length": 5008.303760229,
+        "total_straight_distance": 4894.181023424499,
+        "total_excess_length": 114.12273680450107,
+        "aggregate_circuity_ratio_of_sums": 1.0233180457073998,
+        "aggregate_circuity_D_weighted_mean": 1.0233180457073998,
+        "aggregate_identity_absolute_error": 0.0,
+        "excess_share_sum": 0.9999999999999997,
+        "straight_distance_weight_sum": 1.0,
+        "aggregate_excess_contribution_sum": 0.02331804570739977
+      },
+      "top_5_excess_share": 1.0000000000000204,
+      "top_10_excess_share": 1.0000000001448637,
+      "top_2_excess_share": 0.9999805484288415,
+      "rankings": {
+        "top_5_by_individual_circuity": [
+          {
+            "simplified_edge_id": "env39_simplified_edge_00015",
+            "network_length": 298.747810146568,
+            "straight_distance": 219.93951020236364,
+            "individual_circuity": 1.358318066052315,
+            "excess_length": 78.80829994420435,
+            "excess_share": 0.6905573959307301,
+            "straight_distance_weight": 0.04493898144545339,
+            "aggregate_circuity_excess_contribution": 0.01610244892189573,
+            "source_fragment_count": 2,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022",
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0021",
+              "env39_shape_3305298596651482022_segment_0020"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00048",
+              "env39_topology_fragment_00047"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00017",
+            "network_length": 154.01478561291103,
+            "straight_distance": 118.70256861915004,
+            "individual_circuity": 1.2974848598858721,
+            "excess_length": 35.312216993760984,
+            "excess_share": 0.30942315249811153,
+            "straight_distance_weight": 0.024253816532534566,
+            "aggregate_circuity_excess_contribution": 0.007215143212878697,
+            "source_fragment_count": 2,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022",
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0025",
+              "env39_shape_3305298596651482022_segment_0017"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00057",
+              "env39_topology_fragment_00043"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00062",
+            "network_length": 60.438733291052145,
+            "straight_distance": 60.437839999999994,
+            "individual_circuity": 1.000014780327228,
+            "excess_length": 0.0008932910521508575,
+            "excess_share": 7.827459077511586e-06,
+            "straight_distance_weight": 0.01234891797232934,
+            "aggregate_circuity_excess_contribution": 1.8252104854221645e-07,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0009"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00021"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00007",
+            "network_length": 167.42834546122702,
+            "straight_distance": 167.42761806838874,
+            "individual_circuity": 1.0000043445212128,
+            "excess_length": 0.000727392838285823,
+            "excess_share": 6.373776678103063e-06,
+            "straight_distance_weight": 0.03420952704181716,
+            "aggregate_circuity_excess_contribution": 1.4862401590876592e-07,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0007"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00019"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00010",
+            "network_length": 145.2018623357245,
+            "straight_distance": 145.20126315307687,
+            "individual_circuity": 1.000004126566358,
+            "excess_length": 0.0005991826476474671,
+            "excess_share": 5.250335423289945e-06,
+            "straight_distance_weight": 0.029668143139396662,
+            "aggregate_circuity_excess_contribution": 1.2242756137945508e-07,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0022"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00051"
+            ]
+          }
+        ],
+        "top_10_by_individual_circuity": [
+          {
+            "simplified_edge_id": "env39_simplified_edge_00015",
+            "network_length": 298.747810146568,
+            "straight_distance": 219.93951020236364,
+            "individual_circuity": 1.358318066052315,
+            "excess_length": 78.80829994420435,
+            "excess_share": 0.6905573959307301,
+            "straight_distance_weight": 0.04493898144545339,
+            "aggregate_circuity_excess_contribution": 0.01610244892189573,
+            "source_fragment_count": 2,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022",
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0021",
+              "env39_shape_3305298596651482022_segment_0020"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00048",
+              "env39_topology_fragment_00047"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00017",
+            "network_length": 154.01478561291103,
+            "straight_distance": 118.70256861915004,
+            "individual_circuity": 1.2974848598858721,
+            "excess_length": 35.312216993760984,
+            "excess_share": 0.30942315249811153,
+            "straight_distance_weight": 0.024253816532534566,
+            "aggregate_circuity_excess_contribution": 0.007215143212878697,
+            "source_fragment_count": 2,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022",
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0025",
+              "env39_shape_3305298596651482022_segment_0017"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00057",
+              "env39_topology_fragment_00043"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00062",
+            "network_length": 60.438733291052145,
+            "straight_distance": 60.437839999999994,
+            "individual_circuity": 1.000014780327228,
+            "excess_length": 0.0008932910521508575,
+            "excess_share": 7.827459077511586e-06,
+            "straight_distance_weight": 0.01234891797232934,
+            "aggregate_circuity_excess_contribution": 1.8252104854221645e-07,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0009"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00021"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00007",
+            "network_length": 167.42834546122702,
+            "straight_distance": 167.42761806838874,
+            "individual_circuity": 1.0000043445212128,
+            "excess_length": 0.000727392838285823,
+            "excess_share": 6.373776678103063e-06,
+            "straight_distance_weight": 0.03420952704181716,
+            "aggregate_circuity_excess_contribution": 1.4862401590876592e-07,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0007"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00019"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00010",
+            "network_length": 145.2018623357245,
+            "straight_distance": 145.20126315307687,
+            "individual_circuity": 1.000004126566358,
+            "excess_length": 0.0005991826476474671,
+            "excess_share": 5.250335423289945e-06,
+            "straight_distance_weight": 0.029668143139396662,
+            "aggregate_circuity_excess_contribution": 1.2242756137945508e-07,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0022"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00051"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00002",
+            "network_length": 0.09984333824298665,
+            "straight_distance": 0.09984333819449714,
+            "individual_circuity": 1.000000000485656,
+            "excess_length": 4.84895040786526e-11,
+            "excess_share": 4.248890750115637e-13,
+            "straight_distance_weight": 2.0400417907843535e-05,
+            "aggregate_circuity_excess_contribution": 9.907582871694455e-15,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0006"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00017"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00004",
+            "network_length": 32.395754920915905,
+            "straight_distance": 32.395754914959944,
+            "individual_circuity": 1.00000000018385,
+            "excess_length": 5.955961057679815e-09,
+            "excess_share": 5.2189083651952064e-11,
+            "straight_distance_weight": 0.006619239206704367,
+            "aggregate_circuity_excess_contribution": 1.2169474380235287e-12,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0004"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00013"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00041",
+            "network_length": 59.15573571310436,
+            "straight_distance": 59.15573570921997,
+            "individual_circuity": 1.000000000065664,
+            "excess_length": 3.884395027853316e-09,
+            "excess_share": 3.403699505127985e-11,
+            "straight_distance_weight": 0.012086952939846147,
+            "aggregate_circuity_excess_contribution": 7.936762063482835e-13,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0001"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00003"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00042",
+            "network_length": 69.32091680389706,
+            "straight_distance": 69.32091680060009,
+            "individual_circuity": 1.000000000047561,
+            "excess_length": 3.2969751373457257e-09,
+            "excess_share": 2.8889730737825163e-11,
+            "straight_distance_weight": 0.014163946218747682,
+            "aggregate_circuity_excess_contribution": 6.736520618190794e-13,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0014"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00032"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00028",
+            "network_length": 59.32054131019549,
+            "straight_distance": 59.32054130843801,
+            "individual_circuity": 1.0000000000296267,
+            "excess_length": 1.7574777189111046e-09,
+            "excess_share": 1.5399891100769577e-11,
+            "straight_distance_weight": 0.012120626724781614,
+            "aggregate_circuity_excess_contribution": 3.59095364576724e-13,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0004"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00010"
+            ]
+          }
+        ],
+        "top_5_by_excess_length": [
+          {
+            "simplified_edge_id": "env39_simplified_edge_00015",
+            "network_length": 298.747810146568,
+            "straight_distance": 219.93951020236364,
+            "individual_circuity": 1.358318066052315,
+            "excess_length": 78.80829994420435,
+            "excess_share": 0.6905573959307301,
+            "straight_distance_weight": 0.04493898144545339,
+            "aggregate_circuity_excess_contribution": 0.01610244892189573,
+            "source_fragment_count": 2,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022",
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0021",
+              "env39_shape_3305298596651482022_segment_0020"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00048",
+              "env39_topology_fragment_00047"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00017",
+            "network_length": 154.01478561291103,
+            "straight_distance": 118.70256861915004,
+            "individual_circuity": 1.2974848598858721,
+            "excess_length": 35.312216993760984,
+            "excess_share": 0.30942315249811153,
+            "straight_distance_weight": 0.024253816532534566,
+            "aggregate_circuity_excess_contribution": 0.007215143212878697,
+            "source_fragment_count": 2,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022",
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0025",
+              "env39_shape_3305298596651482022_segment_0017"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00057",
+              "env39_topology_fragment_00043"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00062",
+            "network_length": 60.438733291052145,
+            "straight_distance": 60.437839999999994,
+            "individual_circuity": 1.000014780327228,
+            "excess_length": 0.0008932910521508575,
+            "excess_share": 7.827459077511586e-06,
+            "straight_distance_weight": 0.01234891797232934,
+            "aggregate_circuity_excess_contribution": 1.8252104854221645e-07,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0009"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00021"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00007",
+            "network_length": 167.42834546122702,
+            "straight_distance": 167.42761806838874,
+            "individual_circuity": 1.0000043445212128,
+            "excess_length": 0.000727392838285823,
+            "excess_share": 6.373776678103063e-06,
+            "straight_distance_weight": 0.03420952704181716,
+            "aggregate_circuity_excess_contribution": 1.4862401590876592e-07,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0007"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00019"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00010",
+            "network_length": 145.2018623357245,
+            "straight_distance": 145.20126315307687,
+            "individual_circuity": 1.000004126566358,
+            "excess_length": 0.0005991826476474671,
+            "excess_share": 5.250335423289945e-06,
+            "straight_distance_weight": 0.029668143139396662,
+            "aggregate_circuity_excess_contribution": 1.2242756137945508e-07,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0022"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00051"
+            ]
+          }
+        ],
+        "top_10_by_excess_length": [
+          {
+            "simplified_edge_id": "env39_simplified_edge_00015",
+            "network_length": 298.747810146568,
+            "straight_distance": 219.93951020236364,
+            "individual_circuity": 1.358318066052315,
+            "excess_length": 78.80829994420435,
+            "excess_share": 0.6905573959307301,
+            "straight_distance_weight": 0.04493898144545339,
+            "aggregate_circuity_excess_contribution": 0.01610244892189573,
+            "source_fragment_count": 2,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022",
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0021",
+              "env39_shape_3305298596651482022_segment_0020"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00048",
+              "env39_topology_fragment_00047"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00017",
+            "network_length": 154.01478561291103,
+            "straight_distance": 118.70256861915004,
+            "individual_circuity": 1.2974848598858721,
+            "excess_length": 35.312216993760984,
+            "excess_share": 0.30942315249811153,
+            "straight_distance_weight": 0.024253816532534566,
+            "aggregate_circuity_excess_contribution": 0.007215143212878697,
+            "source_fragment_count": 2,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022",
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0025",
+              "env39_shape_3305298596651482022_segment_0017"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00057",
+              "env39_topology_fragment_00043"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00062",
+            "network_length": 60.438733291052145,
+            "straight_distance": 60.437839999999994,
+            "individual_circuity": 1.000014780327228,
+            "excess_length": 0.0008932910521508575,
+            "excess_share": 7.827459077511586e-06,
+            "straight_distance_weight": 0.01234891797232934,
+            "aggregate_circuity_excess_contribution": 1.8252104854221645e-07,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0009"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00021"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00007",
+            "network_length": 167.42834546122702,
+            "straight_distance": 167.42761806838874,
+            "individual_circuity": 1.0000043445212128,
+            "excess_length": 0.000727392838285823,
+            "excess_share": 6.373776678103063e-06,
+            "straight_distance_weight": 0.03420952704181716,
+            "aggregate_circuity_excess_contribution": 1.4862401590876592e-07,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0007"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00019"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00010",
+            "network_length": 145.2018623357245,
+            "straight_distance": 145.20126315307687,
+            "individual_circuity": 1.000004126566358,
+            "excess_length": 0.0005991826476474671,
+            "excess_share": 5.250335423289945e-06,
+            "straight_distance_weight": 0.029668143139396662,
+            "aggregate_circuity_excess_contribution": 1.2242756137945508e-07,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0022"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00051"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00004",
+            "network_length": 32.395754920915905,
+            "straight_distance": 32.395754914959944,
+            "individual_circuity": 1.00000000018385,
+            "excess_length": 5.955961057679815e-09,
+            "excess_share": 5.2189083651952064e-11,
+            "straight_distance_weight": 0.006619239206704367,
+            "aggregate_circuity_excess_contribution": 1.2169474380235287e-12,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0004"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00013"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00041",
+            "network_length": 59.15573571310436,
+            "straight_distance": 59.15573570921997,
+            "individual_circuity": 1.000000000065664,
+            "excess_length": 3.884395027853316e-09,
+            "excess_share": 3.403699505127985e-11,
+            "straight_distance_weight": 0.012086952939846147,
+            "aggregate_circuity_excess_contribution": 7.936762063482835e-13,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0001"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00003"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00042",
+            "network_length": 69.32091680389706,
+            "straight_distance": 69.32091680060009,
+            "individual_circuity": 1.000000000047561,
+            "excess_length": 3.2969751373457257e-09,
+            "excess_share": 2.8889730737825163e-11,
+            "straight_distance_weight": 0.014163946218747682,
+            "aggregate_circuity_excess_contribution": 6.736520618190794e-13,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0014"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00032"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00028",
+            "network_length": 59.32054131019549,
+            "straight_distance": 59.32054130843801,
+            "individual_circuity": 1.0000000000296267,
+            "excess_length": 1.7574777189111046e-09,
+            "excess_share": 1.5399891100769577e-11,
+            "straight_distance_weight": 0.012120626724781614,
+            "aggregate_circuity_excess_contribution": 3.59095364576724e-13,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0004"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00010"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00037",
+            "network_length": 58.6564197036583,
+            "straight_distance": 58.65641970202321,
+            "individual_circuity": 1.0000000000278757,
+            "excess_length": 1.635093838103785e-09,
+            "excess_share": 1.4327502861281677e-11,
+            "straight_distance_weight": 0.011984930557591192,
+            "aggregate_circuity_excess_contribution": 3.3408936659226724e-13,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0004"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00009"
+            ]
+          }
+        ],
+        "top_5_by_aggregate_contribution": [
+          {
+            "simplified_edge_id": "env39_simplified_edge_00015",
+            "network_length": 298.747810146568,
+            "straight_distance": 219.93951020236364,
+            "individual_circuity": 1.358318066052315,
+            "excess_length": 78.80829994420435,
+            "excess_share": 0.6905573959307301,
+            "straight_distance_weight": 0.04493898144545339,
+            "aggregate_circuity_excess_contribution": 0.01610244892189573,
+            "source_fragment_count": 2,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022",
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0021",
+              "env39_shape_3305298596651482022_segment_0020"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00048",
+              "env39_topology_fragment_00047"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00017",
+            "network_length": 154.01478561291103,
+            "straight_distance": 118.70256861915004,
+            "individual_circuity": 1.2974848598858721,
+            "excess_length": 35.312216993760984,
+            "excess_share": 0.30942315249811153,
+            "straight_distance_weight": 0.024253816532534566,
+            "aggregate_circuity_excess_contribution": 0.007215143212878697,
+            "source_fragment_count": 2,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022",
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0025",
+              "env39_shape_3305298596651482022_segment_0017"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00057",
+              "env39_topology_fragment_00043"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00062",
+            "network_length": 60.438733291052145,
+            "straight_distance": 60.437839999999994,
+            "individual_circuity": 1.000014780327228,
+            "excess_length": 0.0008932910521508575,
+            "excess_share": 7.827459077511586e-06,
+            "straight_distance_weight": 0.01234891797232934,
+            "aggregate_circuity_excess_contribution": 1.8252104854221645e-07,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0009"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00021"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00007",
+            "network_length": 167.42834546122702,
+            "straight_distance": 167.42761806838874,
+            "individual_circuity": 1.0000043445212128,
+            "excess_length": 0.000727392838285823,
+            "excess_share": 6.373776678103063e-06,
+            "straight_distance_weight": 0.03420952704181716,
+            "aggregate_circuity_excess_contribution": 1.4862401590876592e-07,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0007"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00019"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00010",
+            "network_length": 145.2018623357245,
+            "straight_distance": 145.20126315307687,
+            "individual_circuity": 1.000004126566358,
+            "excess_length": 0.0005991826476474671,
+            "excess_share": 5.250335423289945e-06,
+            "straight_distance_weight": 0.029668143139396662,
+            "aggregate_circuity_excess_contribution": 1.2242756137945508e-07,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0022"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00051"
+            ]
+          }
+        ],
+        "top_10_by_aggregate_contribution": [
+          {
+            "simplified_edge_id": "env39_simplified_edge_00015",
+            "network_length": 298.747810146568,
+            "straight_distance": 219.93951020236364,
+            "individual_circuity": 1.358318066052315,
+            "excess_length": 78.80829994420435,
+            "excess_share": 0.6905573959307301,
+            "straight_distance_weight": 0.04493898144545339,
+            "aggregate_circuity_excess_contribution": 0.01610244892189573,
+            "source_fragment_count": 2,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022",
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0021",
+              "env39_shape_3305298596651482022_segment_0020"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00048",
+              "env39_topology_fragment_00047"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00017",
+            "network_length": 154.01478561291103,
+            "straight_distance": 118.70256861915004,
+            "individual_circuity": 1.2974848598858721,
+            "excess_length": 35.312216993760984,
+            "excess_share": 0.30942315249811153,
+            "straight_distance_weight": 0.024253816532534566,
+            "aggregate_circuity_excess_contribution": 0.007215143212878697,
+            "source_fragment_count": 2,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022",
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0025",
+              "env39_shape_3305298596651482022_segment_0017"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00057",
+              "env39_topology_fragment_00043"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00062",
+            "network_length": 60.438733291052145,
+            "straight_distance": 60.437839999999994,
+            "individual_circuity": 1.000014780327228,
+            "excess_length": 0.0008932910521508575,
+            "excess_share": 7.827459077511586e-06,
+            "straight_distance_weight": 0.01234891797232934,
+            "aggregate_circuity_excess_contribution": 1.8252104854221645e-07,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0009"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00021"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00007",
+            "network_length": 167.42834546122702,
+            "straight_distance": 167.42761806838874,
+            "individual_circuity": 1.0000043445212128,
+            "excess_length": 0.000727392838285823,
+            "excess_share": 6.373776678103063e-06,
+            "straight_distance_weight": 0.03420952704181716,
+            "aggregate_circuity_excess_contribution": 1.4862401590876592e-07,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0007"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00019"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00010",
+            "network_length": 145.2018623357245,
+            "straight_distance": 145.20126315307687,
+            "individual_circuity": 1.000004126566358,
+            "excess_length": 0.0005991826476474671,
+            "excess_share": 5.250335423289945e-06,
+            "straight_distance_weight": 0.029668143139396662,
+            "aggregate_circuity_excess_contribution": 1.2242756137945508e-07,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0022"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00051"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00004",
+            "network_length": 32.395754920915905,
+            "straight_distance": 32.395754914959944,
+            "individual_circuity": 1.00000000018385,
+            "excess_length": 5.955961057679815e-09,
+            "excess_share": 5.2189083651952064e-11,
+            "straight_distance_weight": 0.006619239206704367,
+            "aggregate_circuity_excess_contribution": 1.2169474380235287e-12,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0004"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00013"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00041",
+            "network_length": 59.15573571310436,
+            "straight_distance": 59.15573570921997,
+            "individual_circuity": 1.000000000065664,
+            "excess_length": 3.884395027853316e-09,
+            "excess_share": 3.403699505127985e-11,
+            "straight_distance_weight": 0.012086952939846147,
+            "aggregate_circuity_excess_contribution": 7.936762063482835e-13,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0001"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00003"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00042",
+            "network_length": 69.32091680389706,
+            "straight_distance": 69.32091680060009,
+            "individual_circuity": 1.000000000047561,
+            "excess_length": 3.2969751373457257e-09,
+            "excess_share": 2.8889730737825163e-11,
+            "straight_distance_weight": 0.014163946218747682,
+            "aggregate_circuity_excess_contribution": 6.736520618190794e-13,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0014"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00032"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00028",
+            "network_length": 59.32054131019549,
+            "straight_distance": 59.32054130843801,
+            "individual_circuity": 1.0000000000296267,
+            "excess_length": 1.7574777189111046e-09,
+            "excess_share": 1.5399891100769577e-11,
+            "straight_distance_weight": 0.012120626724781614,
+            "aggregate_circuity_excess_contribution": 3.59095364576724e-13,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0004"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00010"
+            ]
+          },
+          {
+            "simplified_edge_id": "env39_simplified_edge_00037",
+            "network_length": 58.6564197036583,
+            "straight_distance": 58.65641970202321,
+            "individual_circuity": 1.0000000000278757,
+            "excess_length": 1.635093838103785e-09,
+            "excess_share": 1.4327502861281677e-11,
+            "straight_distance_weight": 0.011984930557591192,
+            "aggregate_circuity_excess_contribution": 3.3408936659226724e-13,
+            "source_fragment_count": 1,
+            "source_shape_ids": [
+              "env39_shape_3305298596651482022"
+            ],
+            "source_segment_ids": [
+              "env39_shape_3305298596651482022_segment_0004"
+            ],
+            "source_fragment_ids": [
+              "env39_topology_fragment_00009"
+            ]
+          }
+        ]
+      },
+      "individual_circuity_distribution": {
+        "minimum": 0.9999999998429255,
+        "q25": 0.999999999999999,
+        "median": 1.0,
+        "q75": 1.0000000000000842,
+        "q90": 1.0000000000774825,
+        "q95": 1.0000042464415282,
+        "maximum": 1.358318066052315,
+        "approximately_one_within_1e-6_count": 65,
+        "approximately_one_within_1e-6_proportion": 0.9285714285714286,
+        "greater_than_1_01_count": 2,
+        "greater_than_1_01_proportion": 0.02857142857142857,
+        "greater_than_1_05_count": 2,
+        "greater_than_1_05_proportion": 0.02857142857142857,
+        "greater_than_1_10_count": 2,
+        "greater_than_1_10_proportion": 0.02857142857142857,
+        "greater_than_1_20_count": 2,
+        "greater_than_1_20_proportion": 0.02857142857142857
+      },
+      "spearman_straight_distance_vs_individual_circuity": {
+        "rho": -0.06692183164921803,
+        "descriptive_only": true,
+        "p_value_calculated": false
+      }
+    }
+  },
+  "env39_aggregate_circuity_explanation": {
+    "classification": "concentrated in two L-shaped simplified streets",
+    "basis": "Env39's top two edges contribute 0.999980548 of total excess length. Each merges two source fragments of the same Shape across a suppressed degree-2 node, producing an L-shaped topological street; nearly all other Env39 edges are straight within 1e-6.",
+    "top_edge": {
+      "simplified_edge_id": "env39_simplified_edge_00015",
+      "network_length": 298.747810146568,
+      "straight_distance": 219.93951020236364,
+      "individual_circuity": 1.358318066052315,
+      "excess_length": 78.80829994420435,
+      "excess_share": 0.6905573959307301,
+      "straight_distance_weight": 0.04493898144545339,
+      "aggregate_circuity_excess_contribution": 0.01610244892189573,
+      "source_fragment_count": 2,
+      "source_shape_ids": [
+        "env39_shape_3305298596651482022",
+        "env39_shape_3305298596651482022"
+      ],
+      "source_segment_ids": [
+        "env39_shape_3305298596651482022_segment_0021",
+        "env39_shape_3305298596651482022_segment_0020"
+      ],
+      "source_fragment_ids": [
+        "env39_topology_fragment_00048",
+        "env39_topology_fragment_00047"
+      ]
+    },
+    "metric_definition_changed": false
+  },
+  "orientation_robustness": {
+    "offset_count": 20,
+    "env38_H_o_range": [
+      2.9844556268480833,
+      3.137905505674299
+    ],
+    "env38_H_w_range": [
+      3.08632270749412,
+      3.1591970629194774
+    ],
+    "env39_H_o_range": [
+      1.5143534129805727,
+      2.0106200590986782
+    ],
+    "env39_H_w_range": [
+      1.381012158514464,
+      1.8414407753813764
+    ],
+    "Env38_H_o_greater_count": 20,
+    "Env38_H_w_greater_count": 20
+  },
+  "topology_interpretation": {
+    "env38": {
+      "nodes": 60,
+      "streets": 84,
+      "dead_ends": 21,
+      "three_way": 9,
+      "four_way": 30
+    },
+    "env39": {
+      "nodes": 51,
+      "streets": 70,
+      "dead_ends": 19,
+      "three_way": 7,
+      "four_way": 25
+    },
+    "conclusion": "Topology shows descriptive structural differences but no dramatic grid-versus-curvy separation.",
+    "directional_hypothesis_preregistered": false
+  },
+  "descriptive_scalar_differences": {
+    "H_o_nats": {
+      "Env38": 3.0131094587621066,
+      "Env39": 1.5143534129805727,
+      "difference_Env38_minus_Env39": 1.4987560457815339,
+      "percentage_difference_relative_to_Env39": 98.97003123145872,
+      "statistical_effect_size": false
+    },
+    "H_w_nats": {
+      "Env38": 3.1312256499064475,
+      "Env39": 1.381012158514464,
+      "difference_Env38_minus_Env39": 1.7502134913919836,
+      "percentage_difference_relative_to_Env39": 126.73411168766715,
+      "statistical_effect_size": false
+    },
+    "phi": {
+      "Env38": 0.4518145655192265,
+      "Env39": 0.9966031867759313,
+      "difference_Env38_minus_Env39": -0.5447886212567048,
+      "percentage_difference_relative_to_Env39": -54.66454738310915,
+      "statistical_effect_size": false
+    },
+    "aggregate_circuity": {
+      "Env38": 1.0213150770501422,
+      "Env39": 1.0233180457073998,
+      "difference_Env38_minus_Env39": -0.0020029686572575756,
+      "percentage_difference_relative_to_Env39": -0.19573276027522435,
+      "statistical_effect_size": false
+    },
+    "median_street_length_unity": {
+      "Env38": 51.63582671892276,
+      "Env39": 58.786673719117275,
+      "difference_Env38_minus_Env39": -7.150847000194517,
+      "percentage_difference_relative_to_Env39": -12.164061253680151,
+      "statistical_effect_size": false
+    }
+  },
+  "evidence_matrix": [
+    {
+      "metric_family": "Orientation diversity",
+      "evidence": [
+        "H_o",
+        "H_w",
+        "20-offset bin-origin robustness"
+      ],
+      "result": "strong support"
+    },
+    {
+      "metric_family": "Orientation order",
+      "evidence": [
+        "phi"
+      ],
+      "result": "strong support"
+    },
+    {
+      "metric_family": "Curvature/circuity",
+      "evidence": [
+        "aggregate circuity",
+        "individual-edge distribution"
+      ],
+      "result": "mixed / H4 not supported"
+    },
+    {
+      "metric_family": "Topology",
+      "evidence": [
+        "degree",
+        "dead-end",
+        "3-way",
+        "4-way distributions"
+      ],
+      "result": "descriptive structural differences but limited discriminatory power"
+    }
+  ],
+  "research_question_answer": "The intended distinction is strongly supported by orientation diversity and order, robust across all bin offsets. Circuity evidence is mixed and H4 remains not supported; topology has limited discriminatory power.",
+  "confirmations": {
+    "phase13_replaces_phase12_metrics": false,
+    "metric_definition_changed": false,
+    "H4_assessment": "not_supported",
+    "inferential_p_values_calculated": false,
+    "edges_deleted_or_excluded": false,
+    "analytical_graphs_modified": false
+  },
+  "software_versions": {
+    "python": "3.12.13",
+    "numpy": "2.5.2",
+    "scipy": "1.18.0",
+    "matplotlib": "3.11.1"
+  }
+}

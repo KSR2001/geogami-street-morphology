@@ -1,0 +1,52 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local Python/Conda environments
+.venv/
+venv/
+env/
+.conda/
+
+# Packaging/build artifacts
+build/
+dist/
+*.egg-info/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Local secrets and machine-specific environment files
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system clutter
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary files and logs
+*.tmp
+*.temp
+*.log
+~$*
+
+# Large regenerated GIS/cache artifacts (add intentionally if needed)
+*.gpkg-wal
+*.gpkg-shm
+
+# Deliberately tracked when created: data/raw/, configuration, source scripts,
+# methodology, and small reproducibility-critical output tables.
